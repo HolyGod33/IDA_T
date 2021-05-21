@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="/ida/css/bootstrap.min.css">
+<body>
+<div th:include="Header::commonHeader"></div>
+
+<div class="container" style="background: yellow">
+
+
+    <div id="main" class="m-auto mt-5" style="width: 600px;height:400px;"></div>
+</div>
+
+
+
+</body>
+<script type="text/javascript" src="/ida/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/ida/js/ECharts.js"></script>
+<script type="text/javascript" src="/ida/js/Header.js"></script>
+
+<script>
+    var myChart = echarts.init(document.getElementById('main'));
+
+    function fetchData(cb) {
+        $.ajax({
+            url: "/ida/scholar/findpublisharticlecountbyscholarname?scholarName="+getQueryVariable("scholarName"),
+            dataType: "json",
+            type: "get",
+            success: function (data) {
+                var year=[]
+                var count=[]
+                for(var i=0;i<data.length;i++){
+                    year.push(data[i].year)
+                    count.push(data[i].count)
+                }
+                cb({
+                    year: year,
+                    count: count
+                });
+            }
+        })
+    }
+
+    // 初始 option
+    option = {
+        title: {
+            text: decodeURI(getQueryVariable("scholarName"))+" 发表论文数量分析"
+        },
+        tooltip: {},
+        legend: {
+            data:['发表数量']
+        },
+        xAxis: {
+            data: []
+        },
+        yAxis: {},
+        series: [{
+            name: '发表数量',
+            type: 'line',
+            data: []
+        }]
+    };
+
+    myChart.showLoading();
+
+    fetchData(function (data) {
+        myChart.hideLoading();
+        myChart.setOption({
+            xAxis: {
+                data: data.year
+            },
+            series: [{
+                // 根据名字对应到相应的系列
+                name: '发表数量',
+                data: data.count
+            }]
+        });
+    });
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+
+    function getQueryVariable(variable){
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+            var pair = vars[i].split("=");
+            if(pair[0] == variable){return pair[1];}
+        }
+        return(false);
+    }
+
+</script>
+</html>

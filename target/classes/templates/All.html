@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/ida/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+<div th:include="Header::commonHeader"></div>
+
+<div class="container" >
+    <div class="mt-5" th:if="${all.scholarList.size()}eq 0" >
+        <div th:if="${all.articleList.size()} eq 0">
+            <div th:if="${all.verticalProjectList.size()} eq 0"> 
+                <div th:if="${all.horizontalProjectList.size()} eq 0">
+                    <div th:if="${all.patentList.size()} eq 0">
+                        无相关数据，请重新查询。<br/>
+                        <a class="btn btn-danger" th:href="@{'/'}">返回</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-1 pt-1" style="background: #f9f9f9"  >
+    <!--导航条-->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link disabled" style="background: #0081ff;color: #ffffff">查询结果</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" id="scholarInfo" onclick="getListCount(0)" data-toggle="tab" href="#scholarInfoContent">教师</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="articleInfo" onclick="getListCount(1)" data-toggle="tab" href="#articleInfoContent">论文</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="verticalProjectInfo" onclick="getListCount(2)" data-toggle="tab" href="#verticalProjectInfoContent">纵向项目</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="horizontalProjectInfo" onclick="getListCount(3)" data-toggle="tab" href="#horizontalProjectInfoContent">横向项目</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="patentInfo" onclick="getListCount(4)" data-toggle="tab" href="#patentInfoContent">专利</a>
+        </li>
+    </ul>
+
+<div class="tab-content">
+    <!--学者信息列表-->
+    <div  id="scholarInfoContent" th:if="${all.scholarList} ne null" class="container tab-pane active">
+        <h5><small style="font-size: 70%">查询结果包含 “<i><span class="words"></span></i> ” ( [[${all.scholarList.size()}]] 结果)</small></h5>
+        <div class="container-fluid card mt-2" style="height: 100%" th:each="scholar:${all.scholarList}">
+            <div class="media">
+                <div class="media-body p-2">
+                    <!--点击学者姓名后，跳转到详情页-->
+                    <p><h5><a th:href="@{'/scholar/findscholarsbynamelike?scholarName='+${scholar.name}}"><span>[[${scholar.name}]]</span></a>
+                    &emsp;<small style="font-size: 60%;">[[${scholar.title}?${scholar.title}:_]]</small>
+                    &emsp;<small style="font-size: 60%;">[[${scholar.tutorType}?${scholar.tutorType}:_]]</small>
+                </h5></p>
+                    <p><span class="badge badge-pill badge-primary">学&emsp;院</span><span>&emsp;[[${scholar.organization}?${scholar.organization}:_]]</span><br></p>
+                    <p><span class="badge badge-pill badge-success">研究所</span><span>&emsp;[[${scholar.subOrganization}?${scholar.subOrganization}:_]]</span><br></p>
+                    <p><span class="badge badge-pill badge-info">方&emsp;向</span><span>&emsp;[[${scholar.studySpeciality}?${scholar.studySpeciality}:_]]</span><br></p>
+                    <p><span class="badge badge-pill badge-warning">Email&nbsp;</span><span>&emsp;[[${scholar.email}?${scholar.email}:_]]</span><br></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--论文信息列表-->
+    <div id="articleInfoContent" th:if="${all.articleList} ne null" class="container tab-pane fade">
+        <h5><small style="font-size: 70%">查询结果包含 “<i><span class="words"></span></i> ” ( [[${all.articleList.size()}]] 结果)</small></h5>
+        <div class="container-fluid card mt-2" style="height: 100%" th:each="article:${all.articleList}">
+            <div class="media px-2 py-2">
+                <div class="media-body p-3" style="font-size: 90%;">
+                    <div class="row">
+                        <h5>
+                            <a href="#" style="font-size: 80%;overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:1;">
+                                [[${article.title}]]
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <span style="color:green;">
+                            <span th:each="partner,partnerStat:${article.partner.split(',')}">
+                                <a th:href="@{/scholar/findscholarsbynamelike(scholarName=${partner})}" style="color: green;" >
+                                [[${partner}]]
+                                </a>
+                                <span th:if="(${partnerStat.index}+1) ne ${partnerStat.size}">、</span>
+                            </span>
+                        </span>
+                        <h5 class="ml-auto"><span class="ml-auto text-right">[[${article.year}]]</span></h5>
+                    </div>
+
+                    <div class="row">
+                        <span>
+                        [[${article.journal.name}]]
+                        </span>
+                    </div>
+
+
+                    <div class="row">
+                        <span style="overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:1; ">
+                            <span th:if="${article.keyWord} ne null">
+                                <span th:each="keyWord,keyWordStat:${article.keyWord.split(',')}">
+                                    [[${keyWord}]]<span th:if="(${keyWordStat.index}+1) ne ${keyWordStat.size}">、</span>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="row">
+                            引用量：[[${article.citeCount}]]
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--纵向项目信息列表-->
+    <div id="verticalProjectInfoContent" th:if="${all.verticalProjectList} ne null" class="container tab-pane fade">
+        <h5><small style="font-size: 70%">查询结果包含 “<i><span class="words"></span></i> ” ( [[${all.verticalProjectList.size()}]] 结果)</small></h5>
+        <div class="container-fluid card mt-2" style="height: 100%" th:each="verticalProject:${all.verticalProjectList}">
+            <div class="media px-2 py-2">
+                <div class="media-body p-3" style="font-size:90%;">
+                    <div class="row">
+                        <h5>
+                            <a href="#" style="font-size:80%;overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:1;">
+                                [[${verticalProject.name}]]
+                            </a>
+                        </h5>
+                        <span class="ml-auto">
+                            [[${verticalProject.startDate}]]-[[${verticalProject.endDate}]]
+                        </span>
+                    </div>
+
+                    <div class="row">
+                        <span>
+                            <a th:href="@{/scholar/findscholarsbynamelike(scholarName=${verticalProject.leader})}">
+                                [[${verticalProject.leader}]]
+                            </a>
+                            <span class="badge badge-pill badge-success">
+                                [[${verticalProject.level}]]
+                            </span>
+                            <span class="badge badge-pill badge-info" >
+                                [[${verticalProject.state}]]
+                            </span>
+                        </span>
+                        <h5 class="ml-auto">
+                            <span class="ml-auto text-right">
+                                [[${verticalProject.planedMoney}]]万
+                            </span>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                            [[${verticalProject.source}]]
+                        <span class="ml-auto">
+                            [[${verticalProject.organization}]]
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--横向项目信息列表-->
+    <div id="horizontalProjectInfoContent" th:if="${all.horizontalProjectList} ne null" class="container tab-pane fade">
+        <h5><small style="font-size: 70%">查询结果包含 “<i><span class="words"></span></i> ” ( [[${all.horizontalProjectList.size()}]] 结果)</small></h5>
+        <div class="container-fluid card mt-2" style="height: 100%" th:each="horizontalProject:${all.horizontalProjectList}">
+            <div class="media px-2 py-2">
+                <div class="media-body p-3" style="font-size:90%;">
+                    <div class="row">
+                        <h5>
+                            <a href="#" style="font-size:80%;overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:1;">
+                                [[${horizontalProject.name}]]
+                            </a>
+                        </h5>
+                        <span class="ml-auto">
+                            [[${horizontalProject.startDate}]]-[[${horizontalProject.endDate}]]
+                        </span>
+                    </div>
+
+                    <div class="row">
+                        <span>
+                            <a th:href="@{/scholar/findscholarsbynamelike(scholarName=${horizontalProject.leader})}">
+                                [[${horizontalProject.leader}]]
+                            </a>
+                            <span class="badge badge-pill badge-success">
+                                [[${horizontalProject.nature}]]
+                            </span>
+                            <span class="badge badge-pill badge-info" >
+                                [[${horizontalProject.area}]]
+                            </span>
+                        </span>
+                        <h5 class="ml-auto">
+                            <span class="ml-auto text-right">
+                                [[${horizontalProject.planedMoney}]]万
+                            </span>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                            [[${horizontalProject.boss}]]
+                        <span class="ml-auto">
+                            [[${horizontalProject.organization}]]
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--专利信息列表-->
+    <div id="patentInfoContent" th:if="${all.patentList} ne null" class="container tab-pane fade">
+        <h5><small style="font-size: 70%">查询结果包含 “<i><span class="words"></span></i> ” ( [[${all.patentList.size()}]] 结果)</small></h5>
+        <div class="container-fluid card mt-2" style="height: 100%" th:each="patent:${all.patentList}">
+            <div class="media px-2 py-2">
+                <div class="media-body p-3" style="font-size:90%;">
+                    <div class="row">
+                        <h5>
+                            <a href="#" style="font-size:80%;overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:1;">
+                                [[${patent.name}]]
+                            </a>
+                        </h5>
+                        <span class="ml-auto">
+                            [[${patent.applyDate}]]
+                        </span>
+                    </div>
+
+                    <div class="row">
+                        <span>
+                            <a th:href="@{/scholar/findscholarsbynamelike(scholarName=${patent.firstInventor})}">
+                                [[${patent.firstInventor}]]
+                            </a>
+                            <span class="badge badge-pill badge-success">
+                                [[${patent.type}]]
+                            </span>
+                            <span class="badge badge-pill badge-info" >
+                                [[${patent.state}]]
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="row">
+                            [[${patent.applicant}]]
+                        <span class="ml-auto">
+                            [[${patent.organization}]]
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+</div>
+</body>
+<script type="text/javascript" src="/ida/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/ida/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/ida/js/popper.min.js"></script>
+<script type="text/javascript" src="/ida/js/Header.js"></script>
+<script type="text/javascript">
+
+    //从网址上截取搜索关键字
+    function getQueryVariable(variable){
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+            var pair = vars[i].split("=");
+            if(pair[0] == variable){return pair[1];}
+        }
+        return(false);
+    }
+
+    //网页加载时，默认加载学者栏
+    $(document).ready(function () {
+        getListCount(0)
+    })
+
+
+    //点击导航栏时，改变不同的信息
+    function getListCount(index){
+        document.getElementsByClassName("words")[index].innerHTML=decodeURI(getQueryVariable("words"));
+    }
+
+</script>
+
+</html>

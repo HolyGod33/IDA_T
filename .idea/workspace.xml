@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ida:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0e4211db-a649-4688-9820-64dbdeac8035" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>publishArticleCountList</find>
+      <find>activ</find>
+      <find>child</find>
+      <find>Partner1</find>
+      <find>Set</find>
+      <find>yearChart</find>
+      <find>cb</find>
+      <find>silent</find>
+      <find>findKeyWordsByScholarName</find>
+      <find>String</find>
+      <find>mychart</find>
+      <find>scholarName</find>
+      <find>findPartnersByScholarNameForCount</find>
+      <find>set</find>
+      <find>drawScholarsGraph</find>
+      <find>showLoading</find>
+      <find>legend</find>
+      <find>Search</find>
+      <find>findscholarsbynamelike</find>
+      <find>search</find>
+      <find>showPartnerRelationDetail</find>
+      <find>findallbyanywords</find>
+      <find>PartnerShipContent</find>
+      <find>scholarInfoOrganization</find>
+      <find>toolbox</find>
+      <find>findKeyWordsByScholarName1</find>
+      <find>findscholarsbynamelike1</find>
+      <find>loading</find>
+      <find>echart</find>
+      <find>idaTitle</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Casterx" />
+      </list>
+    </option>
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\MAVEN_localRepository" />
+        <option name="mavenHome" value="D:\IDE\Maven\apache-maven-3.6.1-bin\apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\IDE\Maven\apache-maven-3.6.1-bin\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hfhOuU1Xzd6WDr6mdXqznN8xnL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\ProgrameTest\ProjectTest\IDA_T\src\main\resources\static\img" />
+      <recent name="E:\ProgrameTest\ProjectTest\IDA_T\src\main\resources\templates" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zjut.ida.entity" />
+      <recent name="com.zjut.ida.dao" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ProgrameTest\ProjectTest\IDA_T\src\main\resources\static\img" />
+      <recent name="E:\ProgrameTest\ProjectTest\IDA_T\src\main\resources\static\js" />
+      <recent name="E:\ProgrameTest\ProjectTest\IDA_T\src\main\resources\templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.IdaApplication (1)">
+    <configuration name="ScholarServiceTest.a" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ida" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zjut.ida.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zjut.ida.service" />
+      <option name="MAIN_CLASS_NAME" value="com.zjut.ida.service.ScholarServiceTest" />
+      <option name="METHOD_NAME" value="a" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScholarServiceTest.findAchievementByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ida" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zjut.ida.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zjut.ida.service" />
+      <option name="MAIN_CLASS_NAME" value="com.zjut.ida.service.ScholarServiceTest" />
+      <option name="METHOD_NAME" value="findAchievementByName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScholarServiceTest.findPartnersByScholarNameForCountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ida" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zjut.ida.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zjut.ida.service" />
+      <option name="MAIN_CLASS_NAME" value="com.zjut.ida.service.ScholarServiceTest" />
+      <option name="METHOD_NAME" value="findPartnersByScholarNameForCountTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScholarServiceTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ida" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zjut.ida.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zjut.ida.service" />
+      <option name="MAIN_CLASS_NAME" value="com.zjut.ida.service.ScholarServiceTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Community.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://39.106.214.20/src/main/resources/templates/Community.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="IdaApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="IDA_T" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zjut.ida.IdaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IdaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ida" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zjut.ida.IdaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.Community.html" />
+        <item itemvalue="JUnit.ScholarServiceTest.test1" />
+        <item itemvalue="JUnit.ScholarServiceTest.findAchievementByName" />
+        <item itemvalue="JUnit.ScholarServiceTest.findPartnersByScholarNameForCountTest" />
+        <item itemvalue="JUnit.ScholarServiceTest.a" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0e4211db-a649-4688-9820-64dbdeac8035" name="Default Changelist" comment="" />
+      <created>1574231035051</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574231035051</updated>
+      <workItem from="1574231040252" duration="8045000" />
+      <workItem from="1574407516832" duration="5700000" />
+      <workItem from="1574475561370" duration="4770000" />
+      <workItem from="1574747889605" duration="3008000" />
+      <workItem from="1574754578012" duration="1951000" />
+      <workItem from="1575349508744" duration="340000" />
+      <workItem from="1575351398365" duration="1342000" />
+      <workItem from="1584243434222" duration="2328000" />
+      <workItem from="1584409548696" duration="588000" />
+      <workItem from="1584497477965" duration="640000" />
+      <workItem from="1584848984503" duration="988000" />
+      <workItem from="1585532848752" duration="4599000" />
+      <workItem from="1585559314686" duration="2513000" />
+      <workItem from="1585737697300" duration="1825000" />
+      <workItem from="1585749699205" duration="1211000" />
+      <workItem from="1589267623912" duration="1319000" />
+      <workItem from="1590559318451" duration="1843000" />
+      <workItem from="1590641510123" duration="2062000" />
+      <workItem from="1590715376051" duration="1824000" />
+      <workItem from="1590731207168" duration="122000" />
+      <workItem from="1592102490993" duration="995000" />
+      <workItem from="1592371180037" duration="485000" />
+      <workItem from="1594020693983" duration="4512000" />
+      <workItem from="1594083079749" duration="16832000" />
+      <workItem from="1594171485065" duration="585000" />
+      <workItem from="1594204890234" duration="751000" />
+      <workItem from="1594255011620" duration="1272000" />
+      <workItem from="1594260057259" duration="4457000" />
+      <workItem from="1594289021208" duration="12752000" />
+      <workItem from="1594365303436" duration="695000" />
+      <workItem from="1594601749537" duration="6467000" />
+      <workItem from="1594690228760" duration="8654000" />
+      <workItem from="1594948623470" duration="793000" />
+      <workItem from="1594963745204" duration="11077000" />
+      <workItem from="1595120749290" duration="4228000" />
+      <workItem from="1595204310565" duration="634000" />
+      <workItem from="1595379602759" duration="3379000" />
+      <workItem from="1595417019897" duration="12510000" />
+      <workItem from="1595808095789" duration="2292000" />
+      <workItem from="1598227852252" duration="1122000" />
+      <workItem from="1598239718283" duration="1913000" />
+      <workItem from="1600408031291" duration="3777000" />
+      <workItem from="1600413054938" duration="4642000" />
+      <workItem from="1600602469709" duration="9219000" />
+      <workItem from="1601012508626" duration="45000" />
+      <workItem from="1601012752748" duration="753000" />
+      <workItem from="1601107702237" duration="1435000" />
+      <workItem from="1601216177061" duration="3792000" />
+      <workItem from="1602816648016" duration="69000" />
+      <workItem from="1602943806705" duration="403000" />
+      <workItem from="1602990970391" duration="782000" />
+      <workItem from="1603005969448" duration="100818000" />
+      <workItem from="1604385577246" duration="30310000" />
+      <workItem from="1605098520018" duration="4901000" />
+      <workItem from="1605110471196" duration="7147000" />
+      <workItem from="1605177450738" duration="126000" />
+      <workItem from="1605764190040" duration="402000" />
+      <workItem from="1605764985977" duration="402000" />
+      <workItem from="1606807459417" duration="516000" />
+      <workItem from="1606895366530" duration="99000" />
+      <workItem from="1606895695500" duration="288000" />
+      <workItem from="1606917843730" duration="90000" />
+      <workItem from="1607056069035" duration="431000" />
+      <workItem from="1607497079482" duration="88000" />
+      <workItem from="1608725741791" duration="470000" />
+      <workItem from="1609138331815" duration="991000" />
+      <workItem from="1610113303049" duration="2175000" />
+      <workItem from="1611305366623" duration="24000" />
+      <workItem from="1616503756126" duration="1026000" />
+      <workItem from="1616553963521" duration="200000" />
+      <workItem from="1617184403869" duration="214000" />
+      <workItem from="1617932854331" duration="143000" />
+      <workItem from="1618400129983" duration="105000" />
+      <workItem from="1618468173000" duration="1243000" />
+      <workItem from="1619076164891" duration="584000" />
+      <workItem from="1619076766618" duration="3859000" />
+      <workItem from="1619138046465" duration="643000" />
+      <workItem from="1619585291206" duration="35268000" />
+      <workItem from="1620190726807" duration="226000" />
+      <workItem from="1620275124539" duration="1636000" />
+      <workItem from="1620277866718" duration="237000" />
+      <workItem from="1620786127191" duration="159000" />
+      <workItem from="1620786319679" duration="26000" />
+      <workItem from="1620786877712" duration="276000" />
+      <workItem from="1620787223415" duration="465000" />
+      <workItem from="1620960334169" duration="377000" />
+      <workItem from="1621573622412" duration="1525000" />
+      <workItem from="1621575224118" duration="2310000" />
+      <workItem from="1621577686840" duration="2387000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="修改静态资源访问路径，并设置为服务器模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改静态资源访问路径，并设置为服务器模式" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+</project>

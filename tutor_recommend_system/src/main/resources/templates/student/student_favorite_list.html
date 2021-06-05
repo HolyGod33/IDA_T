@@ -1,0 +1,119 @@
+<div th:if="${pageInfo.pages == 0}"
+     class="text-center">
+    暂无数据
+</div>
+<div class="tutor-item"
+     th:if="${pageInfo.pages > 0}"
+     th:each="tutor, iterStat: ${pageInfo.list}"
+     th:id="'delete'+${tutor.id}">
+    <!--点击学者姓名后，跳转到详情页-->
+    <p>
+        <a th:href="'http://10.12.45.59:8080/ida/scholar/findscholarsbynamelike?scholarName='+${tutor.name}"
+           target="_blank"
+           style="font-size: x-large"
+           th:text="${tutor.name}">
+        </a>
+        <small style="font-size: 60%;"
+               th:text="${'&nbsp;&nbsp;'+tutor.title+'&nbsp;&nbsp;'}">
+        </small>
+        <small style="font-size: 60%;"
+               th:text="${tutor.tutorType}">
+        </small>
+        <a href="javascript:void(0);"
+           th:onclick="'deleteFavorite('+${tutor.id}+')'">
+            <svg viewBox="0 0 1024 1024"
+                 xmlns="http://www.w3.org/2000/svg"
+                 width="20"
+                 height="20"
+                 class="ml-2">
+                <path d="M929.002904 334.572008c-22.626323-53.497425-55.014988-101.537558-96.260367-142.78396-41.247426-41.247426-89.285512-73.634044-142.782937-96.261391-55.403844-23.433712-114.238834-35.31532-174.871773-35.31532-60.654428 0-119.489418 11.881608-174.894286 35.31532-53.496401 22.627347-101.537558 55.014988-142.78396 96.261391s-73.634044 89.285512-96.260367 142.78396c-23.433712 55.403844-35.31532 114.237811-35.31532 174.87075 0 60.622706 11.881608 119.457696 35.31532 174.86154 22.627347 53.497425 55.014988 101.538581 96.260367 142.782937 41.247426 41.24845 89.285512 73.634044 142.78396 96.261391 55.404867 23.431665 114.238834 35.31532 174.894286 35.31532 60.632939 0 119.467929-11.881608 174.871773-35.31532 53.497425-22.627347 101.537558-55.014988 142.782937-96.261391 41.247426-41.246403 73.634044-89.285512 96.260367-142.782937 23.432689-55.403844 35.316344-114.238834 35.316344-174.86154C964.318224 448.810842 952.436616 389.975852 929.002904 334.572008zM710.147384 705.516412c-11.223622 11.222599-28.904307 11.736299-39.496549 1.147126L512.016885 548.029588 353.360422 706.664561c-10.590196 10.589173-28.271904 10.075473-39.495526-1.147126-11.222599-11.223622-11.736299-28.90533-1.147126-39.496549l158.63395-158.62474L312.716746 348.762195c-10.588149-10.588149-10.075473-28.271904 1.14815-39.494503 11.222599-11.223622 28.904307-11.737322 39.493479-1.14815L512.016885 466.753493l158.63395-158.635997c10.589173-10.588149 28.271904-10.07445 39.494503 1.14815 11.224646 11.223622 11.737322 28.906353 1.14815 39.495526L552.659537 507.396145l158.63395 158.62474C721.883683 676.611082 721.369983 694.293813 710.147384 705.516412z" fill="#d81e06">
+                </path>
+            </svg>
+        </a>
+        <span class="float-right mr-2 mt-2"
+              style="color: grey"
+              th:text="${#temporals.format(tutor.createTime, 'yyyy年MM月dd日 HH:mm:ss')}">
+        </span>
+    </p>
+    <div class="row">
+        <!--学院-->
+        <p class="col">
+            <span class="badge badge-pill badge-primary custom-badge mr-2">
+                学院
+            </span>
+            <span th:text="${tutor.organization}"
+                  th:if="${!#strings.isEmpty(tutor.organization)}">
+            </span>
+            <span style="color: #acacac;"
+                  th:if="${#strings.isEmpty(tutor.organization)}">
+                暂无数据
+            </span>
+            <br>
+        </p>
+        <!--研究所-->
+        <p class="col">
+            <span class="badge badge-pill badge-success custom-badge mr-2">
+                研究所
+            </span>
+            <span th:text="${tutor.subOrganization}"
+                      th:if="${!#strings.isEmpty(tutor.subOrganization)}">
+            </span>
+            <span style="color: #acacac;"
+                  th:if="${#strings.isEmpty(tutor.subOrganization)}">
+                暂无数据
+            </span>
+            <br>
+        </p>
+    </div>
+    <div class="row">
+        <!--方向-->
+        <p class="col">
+            <span class="badge badge-pill badge-info custom-badge mr-2">
+                方向
+            </span>
+            <span th:text="${tutor.studySpeciality}"
+                  th:if="${!#strings.isEmpty(tutor.studySpeciality)}">
+            </span>
+            <span style="color: #acacac;"
+                  th:if="${#strings.isEmpty(tutor.studySpeciality)}">
+                暂无数据
+            </span>
+            <br>
+        </p>
+        <!--邮箱-->
+        <p class="col">
+            <span class="badge badge-pill badge-warning custom-badge mr-2">
+                邮箱
+            </span>
+                <span th:text="${tutor.email}" th:if="${!#strings.isEmpty(tutor.email)}">
+            </span>
+            <span style="color: #acacac;"
+                  th:if="${#strings.isEmpty(tutor.email)}">
+                暂无数据
+            </span>
+            <br>
+        </p>
+    </div>
+</div>
+<nav th:if="${pageInfo.pages > 0}"
+     aria-label="Page navigation" class="mt-5">
+    <ul class="pagination justify-content-center">
+        <li th:class="${pageInfo.pageNum == 1}? 'page-item disabled' : 'page-item'">
+            <a th:name="'page_'+${pageInfo.pageNum-1}"
+               class="page-link"
+               tabindex="-1"
+               th:aria-disabled="${pageInfo.pageNum == 1}">上一页</a>
+        </li>
+        <li class="page-item"
+            th:each="count: ${#numbers.sequence(1, pageInfo.pages)}">
+            <a th:name="'page_'+${count}"
+               th:class="${count == pageInfo.pageNum}? 'page-link curr-link' : 'text-dark page-link'"
+               th:text="${count}"></a>
+        </li>
+        <li th:class="${pageInfo.pageNum == pageInfo.pages}? 'page-item disabled' : 'page-item'">
+            <a th:name="'page_'+${pageInfo.pageNum+1}"
+               class="page-link"
+               th:aria-disabled="${pageInfo.pageNum == pageInfo.pages}">下一页</a>
+        </li>
+    </ul>
+</nav>

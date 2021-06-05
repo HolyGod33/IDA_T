@@ -1,0 +1,104 @@
+server:
+  port: 8080
+
+logging:
+  file:
+    path: logs
+
+mybatis-plus:
+  type-aliases-package: com.zjut.ida.recommend.tutor.core.entity
+
+spring:
+  datasource:
+    name: service_platform
+    url: jdbc:mysql://localhost:3306/graduation_design?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+
+      #############
+      # 连接池配置 #
+      #############
+
+      # 最大连接池数量
+      max-active: 200
+      # 最小连接池数量
+      min-idle: 3
+      # 初始化时建立物理连接的个数
+      initial-size: 10
+      # 异步初始化策略
+      async-init: true
+      # 获取连接时最大等待时间，单位毫秒
+      max-wait: 60000
+      # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+      time-between-eviction-runs-millis: 120000
+      # 配置一个连接在池中最小生存的时间，单位是毫秒
+      min-evictable-idle-time-millis: 300000
+      # 测试连接是否可用的SQL语句
+      validation-query: select 1
+      # 申请连接的时候检测，如果空闲时间大于timeBetweenEvictionRunsMillis，执行validationQuery检测连接是否有效
+      test-while-idle: true
+      # 申请连接时执行validationQuery检测连接是否有效
+      test-on-borrow: false
+      # 归还连接时执行validationQuery检测连接是否有效
+      test-on-return: false
+      # 是否缓存preparedStatement
+      pool-prepared-statements: false
+      # 数据库服务宕机自动重连机制
+      break-after-acquire-failure: true
+      # 连接出错后重试时间间隔
+      time-between-connect-error-millis: 300000
+      # 连接出错后再尝试连接次数
+      connection-error-retry-attempts: 3
+
+      ###########
+      # 监控配置 #
+      ###########
+
+      # 使用 WallFilter 监控SQL语句
+      filters: stat, wall
+      filter:
+        wall:
+          enabled: true
+          db-type: mysql
+          config:
+            # 禁止删表语句
+            drop-table-allow: false
+            # 禁止修改表结构
+            alter-table-allow: false
+        config:
+          enabled: true
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 3000
+    database: 0
+    jedis:
+      pool:
+        # 连接池最大连接数（使用负值表示没有限制） 默认 8
+        max-active: 8
+        # 连接池最大阻塞等待时间（使用负值表示没有限制） 默认 -1
+        max-wait: -1
+        # 连接池中的最大空闲连接 默认 8
+        max-idle: 8
+        # 连接池中的最小空闲连接 默认 0
+        min-idle: 0
+  neo4j:
+    uri: bolt://localhost:7687
+    authentication:
+      username: neo4j
+      password: 123456
+    pool:
+      max-connection-pool-size: 20
+      max-connection-lifetime: 1h
+      connection-acquisition-timeout: 30s
+    connection-timeout: 60s
+
+model:
+  host: localhost
+  port: 8085
+  version: v1
+  model-name: kgat
+  signature-name: serving_default

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+  <meta charset="UTF-8">
+  <title>主页</title>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+
+<!--头部-->
+<div th:replace="component/header::header"></div>
+
+<!--主体-->
+<div class="container">
+  <img alt="404"
+       class="mt-5"
+       src="img/404.png"
+       style="width: 55%;left: 20%;position: relative;">
+</div>
+
+<!--尾部-->
+<div th:replace="component/footer::footer"></div>
+
+</body>
+</html>

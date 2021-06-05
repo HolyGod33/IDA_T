@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zjut.ida.recommend.tutor.dao.ModelTutorMapMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zjut.ida.recommend.tutor.core.entity.ModelTutorMap">
+        <id column="tutor_id" property="tutorId" />
+        <result column="neo4j_id" property="neo4jId" />
+        <result column="tutor_name" property="tutorName" />
+    </resultMap>
+
+    <select id="findNeo4jIdsByRemapIds" resultType="long">
+        select neo4j_id
+        from model_tutor_map
+        where tutor_id in
+        <foreach collection="remapIdList" item="remapId" index="i" open="(" separator="," close=")">
+            #{remapId}
+        </foreach>
+    </select>
+
+    <select id="findNeo4jIdByRemapId" resultType="long" parameterType="long">
+        select neo4j_id
+        from model_tutor_map
+        where tutor_id = #{remapId}
+    </select>
+
+    <select id="findRemapIdByNeo4jId" resultType="long" parameterType="long">
+        select tutor_id
+        from model_tutor_map
+        where neo4j_id = #{tutorNeo4jId}
+    </select>
+</mapper>

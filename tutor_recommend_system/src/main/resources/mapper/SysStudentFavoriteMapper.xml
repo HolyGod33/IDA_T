@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zjut.ida.recommend.tutor.dao.SysStudentFavoriteMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zjut.ida.recommend.tutor.core.entity.SysStudentFavorite">
+        <id column="favorite_id" property="favoriteId" />
+        <result column="student_id" property="studentId" />
+        <result column="student_remap_id" property="studentRemapId" />
+        <result column="tutor_neo4j_id" property="tutorNeo4jId" />
+        <result column="tutor_remap_id" property="tutorRemapId" />
+        <result column="del_flag" property="delFlag" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <select id="exist" resultType="boolean">
+        select COUNT(favorite_id) > 0
+        from sys_student_favorite
+        where del_flag = 0
+        and student_id = #{studentId}
+        and tutor_neo4j_id = #{tutorNeo4jId}
+    </select>
+</mapper>

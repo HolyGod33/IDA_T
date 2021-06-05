@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zjut.ida.recommend.tutor.dao.SysCFMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zjut.ida.recommend.tutor.core.entity.SysCF">
+        <id column="cf_id" property="cfId" />
+        <result column="student_id" property="studentId" />
+        <result column="student_remap_id" property="studentRemapId" />
+        <result column="tutor_neo4j_id" property="tutorNeo4jId" />
+        <result column="tutor_remap_id" property="tutorRemapId" />
+        <result column="del_flag" property="delFlag" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <select id="findTutorRemapIdListByStudentId" parameterType="string" resultType="int">
+        select tutor_remap_id
+        from sys_cf
+        where del_flag = 0
+        and student_id = #{studentId}
+<!--        and create_time > DATE_SUB(NOW(), INTERVAL 30 DAY)-->
+    </select>
+
+    <select id="findTutorNeo4jIdListByStudentId" parameterType="string" resultType="long">
+        select tutor_neo4j_id
+        from sys_cf
+        where del_flag = 0
+        and student_id = #{studentId}
+    </select>
+
+    <select id="hasEnoughHistory" resultType="boolean">
+        select COUNT(cf_id) > 10
+        from sys_cf
+        where student_id = #{studentId}
+    </select>
+</mapper>

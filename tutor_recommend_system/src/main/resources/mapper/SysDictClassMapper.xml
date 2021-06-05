@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zjut.ida.recommend.tutor.dao.SysDictClassMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zjut.ida.recommend.tutor.core.entity.SysDictClass">
+        <id column="class_id" property="classId" />
+        <result column="class_name" property="className" />
+        <result column="admission_year" property="admissionYear" />
+    </resultMap>
+
+    <select id="findUniqueAdmissionYearList" resultType="int">
+        select distinct admission_year
+        from sys_dict_class
+        order by admission_year desc
+    </select>
+
+    <select id="findCollegeNameList" resultType="string">
+        select college_name
+        from sys_dict_college
+    </select>
+</mapper>

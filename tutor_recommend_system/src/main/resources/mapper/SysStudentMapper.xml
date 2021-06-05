@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zjut.ida.recommend.tutor.dao.SysStudentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zjut.ida.recommend.tutor.core.entity.SysStudent">
+        <id column="student_id" property="studentId" />
+        <result column="student_name" property="studentName" />
+        <result column="student_class" property="studentClass" />
+        <result column="student_gender" property="studentGender" />
+        <result column="admission_year" property="admissionYear" />
+    </resultMap>
+
+    <select id="findStudentRemapIdByStudentId" parameterType="string" resultType="long">
+        select model_student_map.student_id
+        from sys_student, model_student_map
+        where sys_student.del_flag = 0
+        and sys_student.student_id = #{studentId}
+        and sys_student.student_name = model_student_map.student_name
+    </select>
+
+</mapper>

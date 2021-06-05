@@ -1,0 +1,98 @@
+#header {
+    margin-top: -10px;
+    background: #0b1222;
+}
+
+#recommend-tutor-list,
+#relative-tutor-list {
+    margin: 0 20px 20px;
+}
+
+#square {
+    margin: 0 20px 20px;
+}
+
+#original-tutor {
+    padding: 20px;
+    box-shadow: 0 0 10px 3px rgba(120, 120, 120, 0.1);
+}
+
+.custom-alert {
+    width: 30%;
+    left: 35%;
+    top: 3.5%;
+    display: none;
+    z-index: 100;
+}
+
+.toggle-icon {
+    padding: 3px !important;
+    border-radius: 5px;
+}
+
+.custom-badge {
+    text-align-last: justify;
+    width: 13%
+}
+
+.recommend-tutor {
+    margin: 16px;
+    padding: 10px 20px;
+    width: 30%;
+    display: none;
+    /*border-radius: 20px;*/
+    box-shadow: 0 0 10px 3px rgba(120, 120, 120, 0.1);
+    position: relative;
+}
+
+.relative-tutor {
+    margin: 16px;
+    padding: 10px 20px;
+    width: 30%;
+    display: none;
+    /*border-radius: 20px;*/
+    box-shadow: 0 0 10px 3px rgba(120, 120, 120, 0.1);
+    position: relative;
+    background-color: white;
+}
+
+.relative-btn {
+    width: 100px;
+    bottom: 12px;
+}
+
+.square-rank {
+    margin: 16px;
+    display: inline-block;
+    box-shadow: 0 0 10px 3px rgba(120, 120, 120, 0.1);
+    padding: 10px 20px !important;
+}
+
+.square-rank h4 {
+    border-bottom: 2px solid #e6e6e6;
+}
+
+.dashboard-block {
+    /*border-radius: 20px;*/
+    box-shadow: 0 0 10px 3px rgba(120, 120, 120, 0.1);
+}
+
+.tutor-item {
+    margin: 16px 0;
+    padding: 10px 20px;
+    /*border-radius: 10px;*/
+    box-shadow: 0 0 10px 3px rgba(120, 120, 120, 0.1);
+}
+
+.curr-link {
+    background-color: #ecf0f1 !important;
+}
+
+.pagination li a,
+nav a {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}

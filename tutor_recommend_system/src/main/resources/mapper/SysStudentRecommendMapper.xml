@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zjut.ida.recommend.tutor.dao.SysStudentRecommendMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zjut.ida.recommend.tutor.core.entity.SysStudentRecommend">
+        <id column="recommend_id" property="recommendId" />
+        <result column="student_id" property="studentId" />
+        <result column="tutor_neo4j_id" property="tutorNeo4jId" />
+        <result column="del_flag" property="delFlag" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <select id="getTutorNeo4jIdListByStudentId" resultType="long">
+        select tutor_neo4j_id
+        from sys_student_recommend
+        where del_flag = 0
+        and student_id = #{studentId}
+        <if test="studySpeciality != null and studySpeciality != ''">
+            and tutor_study_speciality = #{studySpeciality}
+        </if>
+        order by recommend_order
+    </select>
+
+    <select id="existStudent" resultType="boolean" parameterType="string">
+        select COUNT(student_id) > 0
+        from sys_student_recommend
+        where del_flag = 0
+        and student_id = #{studentId}
+    </select>
+</mapper>

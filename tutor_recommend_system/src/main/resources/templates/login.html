@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body style="background-image: url(img/loginBackground.png)">
+
+<!--头部-->
+<div th:replace="component/header::header"></div>
+
+<!--alert-->
+<div class="alert alert-warning text-center position-absolute custom-alert"
+     role="alert">
+    <strong></strong>
+</div>
+
+<!--主体-->
+<div class="container mt-4 ml-5">
+    <div class="row">
+        <img class="col-8"
+             src="img/socialNetwork.png"
+             alt="网络图">
+        <form id="login-form"
+              class="h-100 bg-white rounded-lg col-4"
+              style="padding: 20px 30px;box-shadow: 0 0 10px 5px rgba(120, 120, 120, 0.1);top: 150px;left: 10%;">
+            <p class="text-center"
+               style="font-size: x-large;">
+                智能数据分析平台
+            </p>
+            <!--校内和校外-->
+            <nav class="nav mb-3">
+                <a class="nav-link active" id="school" style="border-bottom: 3px solid;">
+                    <strong>校内</strong>
+                </a>
+                <a class="nav-link text-dark" id="nonSchool">
+                    <strong>校外</strong>
+                </a>
+            </nav>
+            <!--校内和校外表单-->
+            <div id="school-form">
+                <input id="studentId"
+                       class="form-control mt-1 mb-3"
+                       placeholder="学号"/>
+                <input id="school-password"
+                       class="form-control mb-3"
+                       type="password"
+                       placeholder="密码"/>
+            </div>
+            <div id="non-school-form" style="display: none">
+                <input id="email"
+                       class="form-control mt-1 mb-3"
+                       placeholder="邮箱"/>
+                <input id="non-school-password"
+                       class="form-control mb-3"
+                       type="password"
+                       placeholder="密码"/>
+            </div>
+
+            <button id="loginButton"
+                    class="btn btn-primary"
+                    style="width: 100%"
+                    type="button">
+                登录
+            </button>
+            <a class="btn btn-sm float-left text-primary pl-0 d-inline-block"
+               href="/register">
+                忘记密码
+            </a>
+            <a class="btn btn-sm float-right text-primary pr-0"
+               href="/register">
+                立即注册
+            </a>
+        </form>
+    </div>
+</div>
+
+<!--尾部-->
+<div th:replace="component/footer::footer"></div>
+
+<script type="text/javascript">
+    let activeNavLinkIndex = 0
+
+    function getSchoolLoginData() {
+        return {
+            "studentId": $("#studentId").val(),
+            "password": $("#school-password").val()
+        }
+    }
+
+    $(document).ready(function () {
+        // alert
+        const alertComp = $(".alert")
+        const msgComp = $(".alert strong")
+        const redirectMsg = "[[${redirectMsg}]]"
+
+        if (!isEmpty(redirectMsg)) {
+            alertMsg(alertComp, msgComp, redirectMsg)
+        }
+
+        // 导航条
+        $(".nav .nav-link").click(function () {
+            let navLinkList = $(".nav .nav-link")
+            const currNavLinkIndex = navLinkList.index(this)
+            if (activeNavLinkIndex !== currNavLinkIndex) {
+                navLinkList.eq(activeNavLinkIndex)
+                    .removeClass("active")
+                    .addClass("text-dark")
+                    .css("borderBottom", "")
+                navLinkList.eq(currNavLinkIndex)
+                    .removeClass("text-dark")
+                    .addClass("active")
+                    .css("borderBottom", "3px solid")
+                activeNavLinkIndex = currNavLinkIndex
+
+                if (activeNavLinkIndex === 0) {
+                    $("#school-form").css("display", "")
+                    $("#non-school-form").css("display", "none")
+                } else {
+                    $("#school-form").css("display", "none")
+                    $("#non-school-form").css("display", "")
+                }
+            }
+        })
+
+        // 登录
+        $("#loginButton").click(function () {
+            $(this).attr("disabled", "true")
+                   .html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>' +
+                         '<span class="sr-only">Loading...</span>')
+            $.ajax({
+                contentType: 'application/json',
+                type: 'POST',
+                url: BASE_URL+"student/login",
+                dataType: "json",
+                data: JSON.stringify(getSchoolLoginData()),
+                success: res => {
+                    if (res.result_code === 0) {
+                        setToken(res.data.token)
+                        $(location).attr("href", BASE_URL+"index")
+                    } else {
+                        alertMsg(alertComp, msgComp, res.result_msg)
+                    }
+                },
+                error: res => {
+                    alertMsg(alertComp, msgComp, res)
+                }
+            })
+        })
+    })
+</script>
+</body>
+</html>

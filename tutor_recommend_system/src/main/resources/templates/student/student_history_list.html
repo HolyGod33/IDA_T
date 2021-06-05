@@ -1,0 +1,107 @@
+<div th:if="${pageInfo.pages == 0}"
+     class="text-center">
+    暂无数据
+</div>
+<div class="tutor-item"
+     th:if="${pageInfo.pages > 0}"
+     th:each="tutor, iterStat: ${pageInfo.list}">
+    <!--点击学者姓名后，跳转到详情页-->
+    <p>
+        <a th:href="'http://10.12.45.59:8080/ida/scholar/findscholarsbynamelike?scholarName='+${tutor.name}"
+           target="_blank"
+           style="font-size: x-large"
+           th:text="${tutor.name}">
+        </a>
+        <small style="font-size: 60%;"
+               th:text="${'&nbsp;&nbsp;'+tutor.title+'&nbsp;&nbsp;'}">
+        </small>
+        <small style="font-size: 60%;"
+               th:text="${tutor.tutorType}">
+        </small>
+        <span class="float-right mr-2 mt-2"
+              style="color: grey"
+              th:text="${#temporals.format(tutor.createTime, 'yyyy年MM月dd日 HH:mm:ss')}">
+        </span>
+    </p>
+    <div class="row">
+        <!--学院-->
+        <p class="col">
+            <span class="badge badge-pill badge-primary custom-badge mr-2">
+                学院
+            </span>
+            <span th:text="${tutor.organization}"
+                  th:if="${!#strings.isEmpty(tutor.organization)}">
+            </span>
+            <span style="color: #acacac;"
+                  th:if="${#strings.isEmpty(tutor.organization)}">
+                暂无数据
+            </span>
+            <br>
+        </p>
+        <!--研究所-->
+        <p class="col">
+            <span class="badge badge-pill badge-success custom-badge mr-2">
+                研究所
+            </span>
+            <span th:text="${tutor.subOrganization}"
+                      th:if="${!#strings.isEmpty(tutor.subOrganization)}">
+            </span>
+            <span style="color: #acacac;"
+                  th:if="${#strings.isEmpty(tutor.subOrganization)}">
+                暂无数据
+            </span>
+            <br>
+        </p>
+    </div>
+    <div class="row">
+        <!--方向-->
+        <p class="col">
+            <span class="badge badge-pill badge-info custom-badge mr-2">
+                方向
+            </span>
+            <span th:text="${tutor.studySpeciality}"
+                  th:if="${!#strings.isEmpty(tutor.studySpeciality)}">
+            </span>
+            <span style="color: #acacac;"
+                  th:if="${#strings.isEmpty(tutor.studySpeciality)}">
+                暂无数据
+            </span>
+            <br>
+        </p>
+        <!--邮箱-->
+        <p class="col">
+            <span class="badge badge-pill badge-warning custom-badge mr-2">
+                邮箱
+            </span>
+                <span th:text="${tutor.email}" th:if="${!#strings.isEmpty(tutor.email)}">
+            </span>
+            <span style="color: #acacac;"
+                  th:if="${#strings.isEmpty(tutor.email)}">
+                暂无数据
+            </span>
+            <br>
+        </p>
+    </div>
+</div>
+<nav th:if="${pageInfo.pages > 0}"
+     aria-label="Page navigation" class="mt-5">
+    <ul class="pagination justify-content-center">
+        <li th:class="${pageInfo.pageNum == 1}? 'page-item disabled' : 'page-item'">
+            <a th:name="'page_'+${pageInfo.pageNum-1}"
+               class="page-link"
+               tabindex="-1"
+               th:aria-disabled="${pageInfo.pageNum == 1}">上一页</a>
+        </li>
+        <li class="page-item"
+            th:each="count: ${#numbers.sequence(1, pageInfo.pages)}">
+            <a th:name="'page_'+${count}"
+               th:class="${count == pageInfo.pageNum}? 'page-link curr-link' : 'text-dark page-link'"
+               th:text="${count}"></a>
+        </li>
+        <li th:class="${pageInfo.pageNum == pageInfo.pages}? 'page-item disabled' : 'page-item'">
+            <a th:name="'page_'+${pageInfo.pageNum+1}"
+               class="page-link"
+               th:aria-disabled="${pageInfo.pageNum == pageInfo.pages}">下一页</a>
+        </li>
+    </ul>
+</nav>

@@ -1,7 +1,5 @@
-package com.zjut.ida.recommend.tutor.module.home.controller;
+package com.zjut.ida.controller;
 
-import com.zjut.ida.recommend.tutor.core.annotation.Privilege;
-import com.zjut.ida.recommend.tutor.utils.enums.PrivilegeEnum;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -41,30 +39,8 @@ public class RootController {
     }
 
     /**
-     * 主页
-     */
-    @Privilege(PrivilegeEnum.LoginPriv)
-    @GetMapping("index")
-    public String index() {
-        return "index";
-    }
-
-    @Privilege(PrivilegeEnum.LoginPriv)
-    @GetMapping("")
-    public String root() {
-        return "redirect:index";
-    }
-
-    @Privilege(PrivilegeEnum.LoginPriv)
-    @GetMapping("index.html")
-    public String html() {
-        return "redirect:index";
-    }
-
-    /**
      * 个人中心
      */
-    @Privilege(PrivilegeEnum.LoginPriv)
     @GetMapping("dashboard")
     public String dashboard() {
         return "dashboard";

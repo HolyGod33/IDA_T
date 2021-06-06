@@ -437,7 +437,7 @@
                     $("#changeSelfInfoModal").modal("hide")
                     getStudentInfo()
                     alertMsg(alertComp, msgComp, "信息修改成功")
-                    confirmChangeBtn.attr("disabled", "false").html("确认修改")
+                    confirmChangeBtn.html("确认修改").removeAttr("disabled")
                 },
                 error: res => {
                     console.error(res)
@@ -463,7 +463,7 @@
                     $("#categoryModal").modal("hide")
                     getStudentInfo()
                     alertMsg(alertComp, msgComp, "信息修改成功")
-                    changeDoMainBtn.attr("disabled", "false").html("确认")
+                    changeDoMainBtn.html("确认").removeAttr("disabled")
                 },
                 error: res => {
                     console.error(res)

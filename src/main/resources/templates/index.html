@@ -211,7 +211,7 @@
             }
         })
 
-        // 模式切换按钮
+        // 导师推荐系统 —— 模式切换按钮
         let blockPattern = $("#block-pattern")
         let itemPattern = $("#item-pattern")
 
@@ -219,13 +219,7 @@
             .css("boxShadow", "0 0 4px 0px #6b6b6b")
         itemPattern.css("fill", "#6b6b6b")
 
-        // 获取推荐列表
-        getRecommendList()
-
-        // 获取推荐列表的标签
-        getTutorStudySpecialityList()
-
-        // 模式切换
+        // 导师推荐系统 —— 模式切换
         blockPattern.click(function () {
             if (isBlock) {
                 return
@@ -279,7 +273,13 @@
             $("#nextRecommendPageButton").css("width", "97%")
         })
 
-        // 销毁关系图
+        // 导师推荐系统 —— 获取推荐列表
+        getRecommendList()
+
+        // 导师推荐系统 —— 获取推荐列表的标签
+        getTutorStudySpecialityList()
+
+        // 导师推荐系统 —— 销毁关系图
         $("[name='closeModalBtn']").click(function () {
             if (!isEmpty(myChart) && !myChart.isDisposed()) {
                 myChart.dispose()
@@ -289,7 +289,7 @@
     function jump(){
         window.location.href="Community/";
     }
-    // 获取推荐列表
+    // 导师推荐系统 —— 获取推荐列表
     function getRecommendList() {
         $.ajax({
             type: 'GET',
@@ -320,7 +320,7 @@
         })
     }
 
-    // 获取导师研究方向标签列表
+    // 导师推荐系统 —— 获取导师研究方向标签列表
     function getTutorStudySpecialityList() {
         $.ajax({
             type: 'GET',
@@ -396,7 +396,7 @@
         })
     }
 
-    // 收藏
+    // 导师推荐系统 —— 添加历史记录
     function addCF(tutorNeo4jId) {
         if (hasToken()) {
             $.ajax({
@@ -415,7 +415,7 @@
         }
     }
 
-    // 收藏
+    // 导师推荐系统 —— 收藏
     function addFavorite(tutorNeo4jId) {
         // alert
         const alertComp = $(".alert")
@@ -443,7 +443,7 @@
         })
     }
 
-    // 取消收藏
+    // 导师推荐系统 —— 取消收藏
     function deleteFavorite(tutorNeo4jId) {
         // alert
         const alertComp = $(".alert")
@@ -471,7 +471,7 @@
         })
     }
 
-    // 推荐理由
+    // 导师推荐系统 —— 推荐理由
     function getRecommendReason(tutorNeo4jId) {
         $.ajax({
             type: 'GET',
@@ -509,7 +509,7 @@
         })
     }
 
-    // 绘制图结构
+    // 导师推荐系统 —— 绘制图结构
     function drawGraph(data, links) {
         if (!isEmpty(myChart) && !myChart.isDisposed()) {
             //销毁
@@ -572,7 +572,7 @@
         option && myChart.setOption(option)
     }
 
-    // 发现更多
+    // 导师推荐系统 —— 发现更多
     function nextRecommendPage() {
         let studySpeciality = ""
         if (activeBtnIndex !== 0) {

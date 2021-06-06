@@ -24,7 +24,7 @@
             <img alt="为什么推荐?"
                  src="img/question.svg"
                  title="为什么推荐?"
-                 style="width: 20px">
+                 style="width: 20px;cursor: pointer">
         </button>
         <a th:if="${tutor.favorite != null}"
            th:id="'add'+${tutor.id}"
@@ -202,7 +202,7 @@
 
 <button id="nextRecommendPageButton"
         style="width: 10%;"
-        class="btn btn-outline-primary ml-3"
+        class="btn btn-outline-primary"
         onclick="nextRecommendPage()"
         th:if="${pageInfo.pages != pageInfo.pageNum}">
     发现更多

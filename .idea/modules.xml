@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/IDA_T.iml" filepath="$PROJECT_DIR$/.idea/IDA_T.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tutor_recommend_system/tutor_recommend_system.iml" filepath="$PROJECT_DIR$/tutor_recommend_system/tutor_recommend_system.iml" />
     </modules>
   </component>
 </project>

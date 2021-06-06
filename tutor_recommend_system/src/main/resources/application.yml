@@ -11,7 +11,7 @@ mybatis-plus:
 spring:
   datasource:
     name: service_platform
-    url: jdbc:mysql://localhost:3306/graduation_design?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://localhost:3306/tutor_recommend_system?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver

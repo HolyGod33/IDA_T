@@ -5,10 +5,11 @@ import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.zjut.ida.recommend.tutor.config.SysStudentHolder;
 import com.zjut.ida.recommend.tutor.core.entity.ModelStudentMap;
 import com.zjut.ida.recommend.tutor.core.entity.SysStudent;
+import com.zjut.ida.recommend.tutor.core.entity.SysTutorRelative;
 import com.zjut.ida.recommend.tutor.core.page.SimplePageInfo;
 import com.zjut.ida.recommend.tutor.dao.ModelStudentMapMapper;
 import com.zjut.ida.recommend.tutor.dao.SysCFMapper;
-import com.zjut.ida.recommend.tutor.dao.SysTutorBucketMapper;
+import com.zjut.ida.recommend.tutor.dao.SysTutorRelativeMapper;
 import com.zjut.ida.recommend.tutor.module.home.service.combine.TreeRich;
 import com.zjut.ida.recommend.tutor.module.home.service.combine.engine.IEngine;
 import com.zjut.ida.recommend.tutor.module.home.service.combine.engine.impl.TreeEngineHandle;
@@ -28,6 +29,7 @@ import org.springframework.util.CollectionUtils;
 
 import java.util.*;
 import java.util.concurrent.ExecutionException;
+import java.util.stream.Collectors;
 
 /**
  * @author wly
@@ -45,7 +47,7 @@ public class RecommendService {
     @Autowired
     private ModelStudentMapMapper studentMapMapper;
     @Autowired
-    private SysTutorBucketMapper bucketMapper;
+    private SysTutorRelativeMapper relativeMapper;
 
     @Autowired
     private TutorService tutorService;
@@ -185,10 +187,11 @@ public class RecommendService {
      * @return VO 列表
      */
     public List<TutorVO> getRelativeList(Long tutorNeo4jId) {
-        // 获取所在 LSH 桶
         Long remapId = tutorService.getRemapIdByNeo4jId(tutorNeo4jId);
-        // 获取相关导师的重映射id
-        List relativeRemapIdList = redisTemplate.opsForList().range("lsh_" + remapId, 0, -1);
+        SysTutorRelative relative = relativeMapper.selectOne(Wrappers.<SysTutorRelative>lambdaQuery()
+                .eq(SysTutorRelative::getTutorRemapId, remapId));
+        List<String> relativeRemapIdList = Arrays.stream(relative.getTutorRelativeIdList().split(","))
+                .collect(Collectors.toList());
 
         if (CollectionUtils.isEmpty(relativeRemapIdList)) {
             return null;
@@ -196,38 +199,7 @@ public class RecommendService {
 
         List<TutorVO> relativeList = new ArrayList<>();
         relativeRemapIdList.parallelStream().forEach(relativeRemapId -> {
-            Long neo4jId = tutorService.getNeo4jIdByRemapId(Long.parseLong(relativeRemapId.toString()));
-            try {
-                relativeList.add(kgatModelStrategy.constructTutorFuture(neo4jId).get());
-            } catch (InterruptedException | ExecutionException e) {
-                e.printStackTrace();
-            }
-        });
-
-        return relativeList;
-    }
-
-    /**
-     * 从桶中获取相似导师信息
-     *
-     * @param tutorNeo4jId 导师 neo4j id
-     * @return VO 列表
-     */
-    @Deprecated
-    public List<TutorVO> getRelativeListByBucket(Long tutorNeo4jId) {
-        // 获取所在 LSH 桶
-        Integer bucket = bucketMapper.findBucketByNeo4jId(tutorNeo4jId);
-        // 获取相关导师的重映射id
-        List relativeRemapIdList = redisTemplate.opsForList().range("lsh_" + bucket, 0, -1);
-
-        if (CollectionUtils.isEmpty(relativeRemapIdList)) {
-            return null;
-        }
-
-        String studentId = studentHolder.getStudent().getStudentId();
-        List<TutorVO> relativeList = new ArrayList<>();
-        relativeRemapIdList.parallelStream().forEach(remapId -> {
-            Long neo4jId = tutorService.getNeo4jIdByRemapId(Long.parseLong(remapId.toString()));
+            Long neo4jId = tutorService.getNeo4jIdByRemapId(Long.parseLong(relativeRemapId));
             try {
                 relativeList.add(kgatModelStrategy.constructTutorFuture(neo4jId).get());
             } catch (InterruptedException | ExecutionException e) {

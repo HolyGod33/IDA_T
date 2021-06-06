@@ -216,16 +216,39 @@
     </div>
 </div>
 
+<!--确认退出登录-->
+<div id="logoutModal" class="modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">退出登录</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>是否退出登录？</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                <button id="logoutBtn" type="button" class="btn btn-primary">确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!--主体-->
 <div class="row m-4">
     <!--学生信息-->
-    <div id="student-info" class="col-3 mr-5 pl-3 pr-3 pt-4 pb-4 dashboard-block" style="height: fit-content">
-        <div class="text-center mt-2">
-            <h3 class="spinner-border text-primary"
-                role="status"
-                style="width: 4rem;height: 4rem;">
-                <span class="sr-only">Loading...</span>
-            </h3>
+    <div class="col-3 mr-5 p-0">
+        <div id="student-info" class="pl-3 pr-3 pt-4 pb-4 dashboard-block" style="height: fit-content">
+            <div class="text-center mt-2">
+                <h3 class="spinner-border text-primary"
+                    role="status"
+                    style="width: 4rem;height: 4rem;">
+                    <span class="sr-only">Loading...</span>
+                </h3>
+            </div>
         </div>
     </div>
     <!--历史记录/收藏夹/修改密码-->
@@ -299,6 +322,7 @@
         // btn
         let confirmChangeBtn = $("#confirmChangeBtn")
         let changeDoMainBtn = $("#changeDoMainBtn")
+        let logoutBtn = $("#logoutBtn")
         // alert
         const alertComp = $(".alert")
         const msgComp = $(".alert strong")
@@ -320,7 +344,18 @@
                         removeToken()
                         window.location.href="login?redirectMsg=" + res.result_msg
                     } catch (e) {
-                        $("#student-info").html(res)
+                        $("#student-info")
+                            .html(res)
+                            .parent()
+                            .append('<button id="logout" class="btn btn-outline-danger w-100 mt-4">退出登录</button>')
+                        // 退出登录
+                        $("#logout").click(function () {
+                            $("#logoutModal").modal("show")
+                        })
+                        logoutBtn.click(function () {
+                            removeToken()
+                            window.location.href="login"
+                        })
                         // 模态框填入学生学号
                         $("#changeSelfInfoBtn").click(function () {
                             $("#student-id").attr("value", $("#studentId span").eq(1).text())

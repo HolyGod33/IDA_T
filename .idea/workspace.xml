@@ -10,145 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e4211db-a649-4688-9820-64dbdeac8035" name="Default Changelist" comment="bug fix">
+      <change beforePath="$PROJECT_DIR$/.idea/IDA_T.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IDA_T.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/WMI4Java-1.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/asm-6.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/asm-analysis-6.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/asm-tree-6.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/asm-util-6.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/attoparser-2.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/bcpkix-jdk15on-1.60.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/bcprov-jdk15on-1.60.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/caffeine-2.6.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/classmate-1.4.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/commons-compress-1.16.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/commons-lang3-3.8.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/commons-text-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/concurrentlinkedhashmap-lru-1.4.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/fast-classpath-scanner-2.18.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/hibernate-validator-6.0.17.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/ida.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/jPowerShell-1.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/jProcesses-1.6.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/jackson-annotations-2.9.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/jackson-core-2.9.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/jackson-databind-2.9.9.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/jackson-datatype-jdk8-2.9.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/jackson-datatype-jsr310-2.9.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/jackson-module-parameter-names-2.9.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/javassist-3.20.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/javax.annotation-api-1.3.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/jboss-logging-3.3.3.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/jul-to-slf4j-1.7.28.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/log4j-api-2.11.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/log4j-to-slf4j-2.11.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/logback-classic-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/logback-core-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/lombok-1.18.10.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/lucene-analyzers-common-5.5.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/lucene-codecs-5.5.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/lucene-core-5.5.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/lucene-queryparser-5.5.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-codegen-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-collections-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-command-line-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-common-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-configuration-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-consistency-check-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-csv-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-cypher-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-cypher-compiler-2.3-2.3.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-cypher-compiler-3.1-3.1.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-cypher-compiler-3.3-3.3.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-cypher-expression-3.4-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-cypher-frontend-2.3-2.3.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-cypher-frontend-3.1-3.1.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-cypher-frontend-3.3-3.3.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-cypher-interpreted-runtime-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-cypher-ir-3.3-3.3.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-cypher-ir-3.4-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-cypher-logical-plans-3.3-3.3.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-cypher-logical-plans-3.4-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-cypher-planner-3.4-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-cypher-planner-spi-3.4-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-cypher-runtime-util-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-cypher-util-3.4-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-dbms-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-graph-algo-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-graph-matching-3.1.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-graphdb-api-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-import-tool-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-index-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-io-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-java-driver-1.6.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-jmx-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-kernel-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-kernel-api-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-logging-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-lucene-index-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-lucene-upgrade-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-ogm-api-3.1.14.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-ogm-bolt-driver-3.1.14.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-ogm-core-3.1.14.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-primitive-collections-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-procedure-api-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-resource-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-spatial-index-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-ssl-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-udc-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-unsafe-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/neo4j-values-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/netty-all-4.1.39.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/ognl-3.1.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/openCypher-frontend-1-3.4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/opencsv-2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/parboiled-core-1.1.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/parboiled-scala_2.11-1.1.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/scala-library-2.11.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/scala-reflect-2.11.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/slf4j-api-1.7.28.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/snakeyaml-1.23.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/spring-aop-5.1.10.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/spring-beans-5.1.10.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/spring-boot-2.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/spring-boot-autoconfigure-2.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/spring-boot-devtools-2.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/spring-boot-starter-2.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/spring-boot-starter-data-neo4j-2.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/spring-boot-starter-json-2.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/spring-boot-starter-logging-2.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/spring-boot-starter-thymeleaf-2.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/spring-boot-starter-tomcat-2.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/spring-boot-starter-web-2.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/spring-context-5.1.10.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/spring-core-5.1.10.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/spring-data-commons-2.1.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/spring-data-neo4j-5.1.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/spring-expression-5.1.10.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/spring-jcl-5.1.10.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/spring-tx-5.1.10.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/spring-web-5.1.10.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/spring-webmvc-5.1.10.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/thymeleaf-3.0.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/thymeleaf-extras-java8time-3.0.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/thymeleaf-spring5-3.0.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/tomcat-embed-core-9.0.26.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/tomcat-embed-el-9.0.26.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/tomcat-embed-websocket-9.0.26.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/tools.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/unbescape-1.1.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/validation-api-2.0.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/tutor-recommend-system/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/tutor-recommend-system/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/relative.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/relative.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/zjut/ida/service/ScholarServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zjut/ida/service/ScholarServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zjut/ida/IdaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zjut/ida/IdaApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/resources/templates/student/student_recommend_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/main/resources/templates/student/student_recommend_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/resources/templates/tutor/tutor_relative_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/main/resources/templates/tutor/tutor_relative_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,7 +171,7 @@
       <recent name="com.zjut.ida.recommend.tutor.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.IdaApplication">
+  <component name="RunManager" selected="Application.IdaApplication">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -311,6 +179,19 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IdaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zjut.ida.IdaApplication" />
+      <module name="IDA_T" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zjut.ida.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -341,14 +222,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.Community.html" />
-      <item itemvalue="Spring Boot.IdaApplication" />
-      <item itemvalue="Spring Boot.TutorRecommendSystemApplication" />
+      <item itemvalue="Application.IdaApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.TutorRecommendSystemApplication" />
-        <item itemvalue="JavaScript Debug.Community.html" />
+        <item itemvalue="Application.IdaApplication" />
       </list>
     </recent_temporary>
   </component>

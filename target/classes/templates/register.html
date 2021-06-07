@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" th:href="@{css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{css/tutor-recommend-system/index.css}">
+</head>
+<body style="background-image: url(img/loginBackground.png)">
+
+<!--头部-->
+<div class="pt-0" style="margin-top: -10px;background: #0b1222;">
+    <img src="img/idaLogo1.png" alt="logosa112132122" style="width:10%" class="rounded-circle ml-3"/>
+    <img src="img/idaTitle.png" alt="logosa112132122" style="width:15%;height:15%;" class="mt-3"/>
+    <a id="avatar" class="position-absolute" style="left: 92%;top: 5%;color: white;" href="dashboard" target="_blank">个人中心</a>
+</div>
+
+<!--alert-->
+<div class="alert text-center position-fixed custom-alert"
+     role="alert">
+    <strong></strong>
+</div>
+
+<!--研究方向模态框-->
+<div id="categoryModal"
+     class="modal fade"
+     tabindex="-1"
+     aria-labelledby="categoryModal"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"
+                    id="exampleModalLabel">
+                    选择你感兴趣的研究方向
+                </h5>
+                <button name="closeModalBtn"
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button id="missDoMain"
+                        type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal">
+                    跳过
+                </button>
+                <button id="addDoMain"
+                        type="button"
+                        class="btn btn-primary"
+                        data-dismiss="modal">
+                    确认
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--主体-->
+<div class="container mt-4 ml-5">
+    <div class="row"
+         style="display: flex;align-items: center;">
+        <img class="col-8"
+             src="img/socialNetwork.png"
+             alt="网络图">
+        <div class="h-100 bg-white rounded-lg col-4"
+             style="padding: 20px 30px;box-shadow: 0 0 10px 5px rgba(120, 120, 120, 0.1);left: 10%;">
+            <p class="text-center"
+               style="font-size: x-large;">
+                智能数据分析平台
+            </p>
+            <!--校内和校外-->
+            <nav class="nav mb-3">
+                <a class="nav-link active" id="school" style="border-bottom: 3px solid;" href="javascript:void(0)">
+                    <strong>校内</strong>
+                </a>
+                <a class="nav-link text-dark" id="nonSchool" href="javascript:void(0)">
+                    <strong>校外</strong>
+                </a>
+            </nav>
+            <!--校内表单-->
+            <form id="school-form"
+                  class="needs-validation"
+                  novalidate>
+                <!--学号-->
+                <div class="input-group mb-3 has-validation">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"
+                              id="student-id-label">
+                            学号
+                        </span>
+                    </div>
+                    <input id="student-id"
+                           type="text"
+                           class="form-control"
+                           aria-label="student-id"
+                           aria-describedby="student-id-label"
+                           required>
+                    <div class="invalid-feedback">
+                        请输入学号
+                    </div>
+                </div>
+                <!--姓名-->
+                <div class="input-group mb-3 has-validation">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"
+                              id="student-name-label">
+                            姓名
+                        </span>
+                    </div>
+                    <input id="student-name"
+                           type="text"
+                           class="form-control"
+                           aria-label="student-name"
+                           aria-describedby="student-name-label"
+                           required>
+                    <div class="invalid-feedback">
+                        请输入姓名
+                    </div>
+                </div>
+                <!--性别-->
+                <div class="input-group mb-3 has-validation">
+                    <div class="input-group-prepend">
+                <span class="input-group-text"
+                      id="school-gender-label">性别</span>
+                    </div>
+                    <select id="school-gender"
+                            class="form-control"
+                            style="background-position-x: 90%;"
+                            aria-label="school-gender"
+                            aria-describedby="school-gender-label"
+                            required>
+                        <option class="text-black-50" value="" selected disabled>请选择</option>
+                        <option value="0">男</option>
+                        <option value="1">女</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        请选择性别
+                    </div>
+                </div>
+                <!--密码-->
+                <div class="input-group mb-3 has-validation">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"
+                              id="school-password-label">
+                            密码
+                        </span>
+                    </div>
+                    <input id="school-password"
+                           type="password"
+                           class="form-control"
+                           aria-label="school-password"
+                           aria-describedby="school-password-label"
+                           required>
+                    <div class="invalid-feedback">
+                        请输入密码
+                    </div>
+                </div>
+                <!--学院-->
+                <div class="input-group mb-3 has-validation">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"
+                              id="college-label">
+                            学院
+                        </span>
+                    </div>
+                    <select id="college"
+                            class="form-control"
+                            style="background-position-x: 90%;"
+                            aria-label="college"
+                            aria-describedby="college-label"
+                            required>
+                        <option class="text-black-50" value="" selected disabled>请选择</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        请选择学院
+                    </div>
+                </div>
+                <!--入学年份-->
+                <div class="input-group mb-3 has-validation">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"
+                              id="admission-year-label">
+                            入学
+                        </span>
+                    </div>
+                    <select id="admission-year"
+                            class="form-control"
+                            style="background-position-x: 90%;"
+                            aria-label="admission-year"
+                            aria-describedby="admission-year-label"
+                            required>
+                        <option class="text-black-50" value="" selected disabled>请选择</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        请选择入学时间
+                    </div>
+                </div>
+                <!--班级-->
+                <div class="input-group mb-3 has-validation">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"
+                              id="student-class-label">
+                            班级
+                        </span>
+                    </div>
+                    <select id="student-class"
+                            class="form-control"
+                            style="background-position-x: 90%;"
+                            aria-label="student-class"
+                            aria-describedby="student-class-label"
+                            required>
+                        <option class="text-black-50" value="" selected disabled>请先选择学院和入学年份</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        请选择班级
+                    </div>
+                </div>
+
+                <button name="registerBtn"
+                        class="btn btn-primary"
+                        style="width: 100%"
+                        type="submit">
+                    注册
+                </button>
+            </form>
+
+            <!--校外表单-->
+            <form id="non-school-form"
+                  class="needs-validation"
+                  style="display: none"
+                  novalidate>
+                <!--学号-->
+                <div class="input-group mb-3 has-validation">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"
+                              id="email-label">
+                            邮箱
+                        </span>
+                    </div>
+                    <input id="email"
+                           type="text"
+                           class="form-control"
+                           aria-label="email"
+                           aria-describedby="email-label"
+                           required>
+                    <div class="invalid-feedback">
+                        请输入邮箱
+                    </div>
+                </div>
+                <!--姓名-->
+                <div class="input-group mb-3 has-validation">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"
+                              id="username-label">
+                            姓名
+                        </span>
+                    </div>
+                    <input id="username"
+                           type="text"
+                           class="form-control"
+                           aria-label="username"
+                           aria-describedby="username-label"
+                           required>
+                    <div class="invalid-feedback">
+                        请输入姓名
+                    </div>
+                </div>
+                <!--性别-->
+                <div class="input-group mb-3 has-validation">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"
+                              id="non-school-gender-label">
+                            性别
+                        </span>
+                    </div>
+                    <select id="non-school-gender"
+                            class="form-control"
+                            style="background-position-x: 90%;"
+                            aria-label="non-school-gender"
+                            aria-describedby="non-school-gender-label"
+                            required>
+                        <option class="text-black-50" value="" selected disabled>请选择</option>
+                        <option value="0">男</option>
+                        <option value="1">女</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        请选择性别
+                    </div>
+                </div>
+                <!--密码-->
+                <div class="input-group mb-3 has-validation">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"
+                              id="password-label">
+                            密码
+                        </span>
+                    </div>
+                    <input id="password"
+                           type="password"
+                           class="form-control"
+                           aria-label="password"
+                           aria-describedby="password-label"
+                           required>
+                    <div class="invalid-feedback">
+                        请输入密码
+                    </div>
+                </div>
+
+                <button name="registerBtn"
+                        class="btn btn-primary"
+                        style="width: 100%"
+                        type="submit">
+                    注册
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--尾部-->
+<script type="text/javascript" th:src="@{js/jquery-3.2.1.min.js}"></script>
+<script type="text/javascript" th:src="@{js/bootstrap.min.js}"></script>
+<script type="text/javascript" th:src="@{js/tutor-recommend-system/jquery.animate-shadow-min.js}"></script>
+<script type="text/javascript" th:src="@{js/tutor-recommend-system/constants.js}"></script>
+<script type="text/javascript" th:src="@{js/tutor-recommend-system/utils.js}"></script>
+
+<script type="text/javascript">
+    // 添加表单验证监听器
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            let forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            let validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    if (form.checkValidity() === true) {
+                        // 打开模态框
+                        $("#categoryModal div .modal-body").html(
+                            '<div class="text-center">' +
+                            '<h3 class="spinner-border text-primary" role="status" style="width: 4rem;height: 4rem;">' +
+                            '<span class="sr-only">Loading...</span>' +
+                            '</h3>' +
+                            '</div>')
+                        $("#categoryModal").modal()
+                        // 获取该学院教师研究方向
+                        $.ajax({
+                            type: "GET",
+                            url: BASE_URL + "tutor/studySpeciality/search?collegeName="
+                                + $("#college option:selected").text(),
+                            dataType: "html",
+                            success: res => {
+                                try {
+                                    res = JSON.parse(res)
+                                    console.error(res)
+                                } catch (e) {
+                                    $(".modal-body").html(res)
+                                    $(".modal-body button").addClass("mb-3")
+                                        .click(function () {
+                                            if ($(this).hasClass("active")) {
+                                                $(this).removeClass("active")
+                                            } else {
+                                                $(this).addClass("active")
+                                            }
+                                        })
+                                }
+                            },
+                            error: res => {
+                                console.error(res)
+                            }
+                        })
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })()
+
+    let activeNavLinkIndex = 0
+    // 获取校内注册表单数据
+    function getSchoolRegisterData(doMain) {
+        let registerData = {
+            "studentId": $("#student-id").val(),
+            "studentName": $("#student-name").val(),
+            "studentGender": $("#school-gender option:selected").attr("value"),
+            "password": $("#school-password").val(),
+            "collegeName": $("#college option:selected").text(),
+            "admissionYear": $("#admission-year option:selected").text(),
+            "studentClass": $("#student-class option:selected").text()
+        }
+        if (doMain) {
+            let tempList = []
+            $(".modal-body button[class~='active']").each(function () { tempList.push($(this).text()) })
+            registerData["studySpecialityList"] = tempList
+        }
+        return registerData
+    }
+
+    $(document).ready(function () {
+        let college = $("#college")
+        let admissionYear = $("#admission-year")
+        let studentClass = $("#student-class")
+
+        const alertComp = $(".alert")
+        const msgComp = $(".alert strong")
+        let registerBtn = $("[name='registerBtn']")
+        let categoryModal = $("#categoryModal")
+
+        // 导航条
+        $(".nav .nav-link").click(function () {
+            let navLinkList = $(".nav .nav-link")
+            const currNavLinkIndex = navLinkList.index(this)
+            if (activeNavLinkIndex !== currNavLinkIndex) {
+                navLinkList.eq(activeNavLinkIndex)
+                    .removeClass("active")
+                    .addClass("text-dark")
+                    .css("borderBottom", "")
+                navLinkList.eq(currNavLinkIndex)
+                    .removeClass("text-dark")
+                    .addClass("active")
+                    .css("borderBottom", "3px solid")
+                activeNavLinkIndex = currNavLinkIndex
+
+                if (activeNavLinkIndex === 0) {
+                    $("#school-form").css("display", "")
+                    $("#non-school-form").css("display", "none")
+                } else {
+                    $("#school-form").css("display", "none")
+                    $("#non-school-form").css("display", "")
+                }
+            }
+        })
+
+        // 学院下拉列表
+        $.ajax({
+            type: "GET",
+            url: BASE_URL + "dict/college/list",
+            dataType: "json",
+            success: res => {
+                for (let i = 0; i < res.data.length; i++) {
+                    college.append(`<option value="${i}">${res.data[i]}</option>`)
+                }
+                college.change(function () {
+                    getClassNameList()
+                })
+            },
+            error: res => {
+                console.error(res)
+            }
+        })
+
+        // 入学年份下拉列表
+        $.ajax({
+            type: "GET",
+            url: BASE_URL + "dict/admission/list",
+            dataType: "json",
+            success: res => {
+                for (let i = 0; i < res.data.length; i++) {
+                    admissionYear.append(`<option value="${i}">${res.data[i]}</option>`)
+                }
+                admissionYear.change(function () {
+                    getClassNameList()
+                })
+            },
+            error: res => {
+                console.error(res)
+            }
+        })
+
+        // 注册（跳过研究领域选择）
+        $("#missDoMain").click(function () {
+            registerBtn.attr("disabled", "true")
+                .html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>' +
+                    '<span class="sr-only">Loading...</span>')
+            $.ajax({
+                contentType: "application/json",
+                type: "POST",
+                url: BASE_URL + "student/register",
+                dataType: "json",
+                data: JSON.stringify(getSchoolRegisterData(false)),
+                success: res => {
+                    if (res.result_code !== 0) {
+                        alertComp.removeClass("alert-success").addClass("alert-warning")
+                        alertMsg(alertComp, msgComp, res.result_msg)
+                    }
+
+                    alertComp.removeClass("alert-warning").addClass("alert-success")
+                    alertMsg(alertComp, msgComp, "注册成功，正在跳转登录...")
+                    setTimeout(() => {
+                        window.location.href = 'login'
+                    }, 1000)
+                },
+                error: res => {
+                    console.error(res)
+                }
+            })
+        })
+
+        // 注册（添加研究领域）
+        $("#addDoMain").click(function () {
+            registerBtn.attr("disabled", "true")
+                .html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>' +
+                    '<span class="sr-only">Loading...</span>')
+            $.ajax({
+                contentType: "application/json",
+                type: "POST",
+                url: BASE_URL + "student/register",
+                dataType: "json",
+                data: JSON.stringify(getSchoolRegisterData(true)),
+                success: res => {
+                    if (res.result_code !== 0) {
+                        alertComp.removeClass("alert-success").addClass("alert-warning")
+                        alertMsg(alertComp, msgComp, res.result_msg)
+                    }
+
+                    alertComp.removeClass("alert-warning").addClass("alert-success")
+                    alertMsg(alertComp, msgComp, "注册成功，正在跳转登录...")
+                    setTimeout(() => {
+                        window.location.href = 'login'
+                    }, 1000)
+                },
+                error: res => {
+                    console.error(res)
+                }
+            })
+        })
+
+        // 获取班级列表
+        function getClassNameList() {
+            const selectedAdmissionYear = $("#admission-year option:selected").text()
+            const selectedCollege = $("#college option:selected").text()
+
+            if (isEmpty(selectedAdmissionYear) || selectedAdmissionYear === "请选择") {
+                return
+            }
+            if (isEmpty(selectedCollege) || selectedCollege === "请选择") {
+                return
+            }
+
+            $.ajax({
+                type: "GET",
+                url: `${BASE_URL}dict/class/search?admissionYear=${selectedAdmissionYear}&collegeName=${selectedCollege}`,
+                dataType: "json",
+                success: res => {
+                    studentClass.html(`<option class="text-black-50" value="" selected disabled>请选择</option>`)
+                    for (let i = 0; i < res.data.length; i++) {
+                        studentClass.append(`<option value="${i}">${res.data[i]}</option>`)
+                    }
+                },
+                error: res => {
+                    console.error(res)
+                }
+            })
+        }
+    })
+</script>
+</body>
+</html>

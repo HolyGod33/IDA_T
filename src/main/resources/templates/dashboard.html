@@ -569,30 +569,32 @@
             })
         }
 
-        // 取消收藏
-        function deleteFavorite(tutorNeo4jId) {
-            $.ajax({
-                contentType: 'application/json',
-                type: 'DELETE',
-                url: BASE_URL+"favorite/delete",
-                dataType: "json",
-                headers: getToken(),
-                data: JSON.stringify(tutorNeo4jId),
-                success: res => {
-                    if (res.result_code === 0) {
-                        alertMsg(alertComp, msgComp, "取消收藏成功")
-                        $("#delete"+tutorNeo4jId).fadeOut()
-                    }
-                    else {
-                        alertMsg(alertComp, msgComp, "取消收藏失败")
-                    }
-                },
-                error: res => {
+    })
+    // 取消收藏
+    function deleteFavorite(tutorNeo4jId) {
+        const alertComp = $(".alert")
+        const msgComp = $(".alert strong")
+        $.ajax({
+            contentType: 'application/json',
+            type: 'DELETE',
+            url: BASE_URL+"favorite/delete",
+            dataType: "json",
+            headers: getToken(),
+            data: JSON.stringify(tutorNeo4jId),
+            success: res => {
+                if (res.result_code === 0) {
+                    alertMsg(alertComp, msgComp, "取消收藏成功")
+                    $("#delete"+tutorNeo4jId).fadeOut()
+                }
+                else {
                     alertMsg(alertComp, msgComp, "取消收藏失败")
                 }
-            })
-        }
-    })
+            },
+            error: res => {
+                alertMsg(alertComp, msgComp, "取消收藏失败")
+            }
+        })
+    }
 </script>
 </body>
 </html>

@@ -240,8 +240,8 @@
 <!--主体-->
 <div class="row m-4">
     <!--学生信息-->
-    <div class="col-3 mr-5 p-0">
-        <div id="student-info" class="pl-3 pr-3 pt-4 pb-4 dashboard-block" style="height: fit-content">
+    <div id="student-info" class="col-3 mr-5 p-0">
+        <div class="pl-3 pr-3 pt-4 pb-4 dashboard-block" style="height: fit-content">
             <div class="text-center mt-2">
                 <h3 class="spinner-border text-primary"
                     role="status"
@@ -328,7 +328,7 @@
         const msgComp = $(".alert strong")
 
         // 阴影动画
-        shadowAnimation($(".row div"))
+        shadowAnimation($("#student-browse-list"))
 
         // 获取学生信息
         let getStudentInfo = function() {
@@ -344,10 +344,9 @@
                         removeToken()
                         window.location.href="login?redirectMsg=" + res.result_msg
                     } catch (e) {
-                        $("#student-info")
-                            .html(res)
-                            .parent()
-                            .append('<button id="logout" class="btn btn-outline-danger w-100 mt-4">退出登录</button>')
+                        $("#student-info").html(res)
+                        // 阴影动画
+                        shadowAnimation($("#student-info div[class~='dashboard-block']"))
                         // 退出登录
                         $("#logout").click(function () {
                             $("#logoutModal").modal("show")

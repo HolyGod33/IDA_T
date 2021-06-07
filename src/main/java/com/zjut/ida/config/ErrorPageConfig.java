@@ -1,4 +1,4 @@
-package com.zjut.ida.recommend.tutor.config;
+package com.zjut.ida.config;
 
 import org.springframework.boot.web.server.ErrorPage;
 import org.springframework.boot.web.server.ErrorPageRegistrar;

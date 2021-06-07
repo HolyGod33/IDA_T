@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author wly
@@ -29,6 +30,7 @@ public class RankingHistoryRecommendStrategy extends BaseRecommendStrategy {
     @Override
     public SimplePageInfo<TutorVO> recommendStrategy(Integer pageNum, Integer pageSize, String studySpeciality) {
         List<String> studySpecialityList = labelStrategy.labelStrategy();
+        studySpecialityList = studySpecialityList.stream().map(ele -> "'" + ele + "'").collect(Collectors.toList());
         List<Long> neo4jIdList;
         try (Session session = driver.session()) {
             String cypher = "match (t:Teacher)--(a:Article)--(:ZJUT_TOP100) " +

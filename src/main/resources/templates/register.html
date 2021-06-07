@@ -17,7 +17,7 @@
 </div>
 
 <!--alert-->
-<div class="alert alert-warning text-center position-fixed custom-alert"
+<div class="alert text-center position-fixed custom-alert"
      role="alert">
     <strong></strong>
 </div>
@@ -78,10 +78,10 @@
             </p>
             <!--校内和校外-->
             <nav class="nav mb-3">
-                <a class="nav-link active" id="school" style="border-bottom: 3px solid;">
+                <a class="nav-link active" id="school" style="border-bottom: 3px solid;" href="javascript:void(0)">
                     <strong>校内</strong>
                 </a>
-                <a class="nav-link text-dark" id="nonSchool">
+                <a class="nav-link text-dark" id="nonSchool" href="javascript:void(0)">
                     <strong>校外</strong>
                 </a>
             </nav>
@@ -490,15 +490,15 @@
                 data: JSON.stringify(getSchoolRegisterData(false)),
                 success: res => {
                     if (res.result_code !== 0) {
+                        alertComp.removeClass("alert-success").addClass("alert-warning")
                         alertMsg(alertComp, msgComp, res.result_msg)
                     }
-                    console.log(res)
-                    // if (res.result_code === 0) {
-                    //     setToken(res.data.token)
-                    //     $(location).attr("href", BASE_URL+"index")
-                    // } else {
-                    //     alertMsg(alertComp, msgComp, res.result_msg)
-                    // }
+
+                    alertComp.removeClass("alert-warning").addClass("alert-success")
+                    alertMsg(alertComp, msgComp, "注册成功，正在跳转登录...")
+                    setTimeout(() => {
+                        window.location.href = 'login'
+                    }, 1000)
                 },
                 error: res => {
                     console.error(res)
@@ -519,15 +519,15 @@
                 data: JSON.stringify(getSchoolRegisterData(true)),
                 success: res => {
                     if (res.result_code !== 0) {
+                        alertComp.removeClass("alert-success").addClass("alert-warning")
                         alertMsg(alertComp, msgComp, res.result_msg)
                     }
-                    console.log(res)
-                    // if (res.result_code === 0) {
-                    //     setToken(res.data.token)
-                    //     $(location).attr("href", BASE_URL+"index")
-                    // } else {
-                    //     alertMsg(alertComp, msgComp, res.result_msg)
-                    // }
+
+                    alertComp.removeClass("alert-warning").addClass("alert-success")
+                    alertMsg(alertComp, msgComp, "注册成功，正在跳转登录...")
+                    setTimeout(() => {
+                        window.location.href = 'login'
+                    }, 1000)
                 },
                 error: res => {
                     console.error(res)

@@ -25,11 +25,11 @@
 
 <!--原始导师信息-->
 <div id="original-tutor"
-     style="background-color: white">
+     style="padding: 20px;box-shadow: 0 0 10px 3px rgba(120, 120, 120, 0.1);background-color: white">
 </div>
 
-<div style="margin-left: 36px;">
-    <h3 class="d-inline-block pt-4">
+<div>
+    <h3 class="d-inline-block pt-4 ml-5">
         相似导师推荐
     </h3>
 
@@ -63,7 +63,7 @@
 </div>
 
 <!--相似列表-->
-<div id="relative-tutor-list" class="float-left w-100">
+<div id="relative-tutor-list" class="ml-5 mb-4">
     <div class="text-center">
         <h3 class="spinner-border text-primary"
             role="status"
@@ -128,7 +128,7 @@
                     // 显示header的头像
                     $("#avatar").css("display", "")
 
-                    let itemList = $(".relative-tutor")
+                    let itemList = $(".recommend-tutor")
                     // 淡入
                     itemListFadeIn(itemList, {"display": "inline-block"})
                     // 阴影动画
@@ -155,8 +155,8 @@
 
             $("#relative-tutor-list .badge").addClass("custom-badge")
 
-            let itemList = $(".relative-tutor")
-            itemList.css({"width": "30%", "display": "none"})
+            let itemList = $(".recommend-tutor")
+            itemList.css({"width": "30.7%", "display": "none"})
             itemList.each(function() {
                 $("p:gt(0):lt(4)", this).css("display", "")
                     .removeClass("mr-5")
@@ -164,8 +164,6 @@
             })
             // 淡入
             itemListFadeIn(itemList, {"display": "inline-block"})
-            // 发现更多按钮
-            $("#nextRecommendPageButton").css("width", "10%")
         })
         itemPattern.click(function () {
             if (!isBlock) {
@@ -181,8 +179,8 @@
 
             $("#relative-tutor-list .badge").removeClass("custom-badge")
 
-            let itemList = $(".relative-tutor")
-            itemList.css({"width": "95%", "display": "none"})
+            let itemList = $(".recommend-tutor")
+            itemList.css({"width": "97%", "display": "none"})
             itemList.each(function() {
                 $("p:gt(0):lt(4)", this).css("display", "inline-block")
                     .addClass("mr-5")
@@ -190,8 +188,6 @@
             })
             // 淡入
             itemListFadeIn(itemList, {"display": "inline-block"})
-            // 发现更多按钮
-            $("#nextRecommendPageButton").css("width", "95%")
         })
     })
 

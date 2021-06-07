@@ -9,8 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e4211db-a649-4688-9820-64dbdeac8035" name="Default Changelist" comment="整合首页导师推荐模块">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="0e4211db-a649-4688-9820-64dbdeac8035" name="Default Changelist" comment="bug fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/WMI4Java-1.6.1.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/asm-6.2.jar" beforeDir="false" />
@@ -142,17 +141,14 @@
       <change beforePath="$PROJECT_DIR$/classes/artifacts/ida_jar/validation-api-2.0.1.Final.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/tutor-recommend-system/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/tutor-recommend-system/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/relative.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/relative.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/com/zjut/ida/service/ScholarServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zjut/ida/service/ScholarServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zjut/ida/IdaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zjut/ida/IdaApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/module/home/controller/RootController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/controller/RootController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/resources/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/resources/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/resources/templates/relative.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/relative.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/resources/templates/student/student_recommend_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/main/resources/templates/student/student_recommend_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/resources/templates/tutor/tutor_relative_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/main/resources/templates/tutor/tutor_relative_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,6 +173,7 @@
         <option value="Interface" />
         <option value="HTML File" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -267,7 +264,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -285,37 +282,35 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\这里是工大的东东\毕业设计\项目\IDA_T" />
+      <recent name="H:\这里是工大的东东\毕业设计\项目\IDA_T\tutor_recommend_system\src\main\java\com\zjut\ida\recommend\tutor\dao" />
       <recent name="H:\这里是工大的东东\毕业设计\项目\IDA_T\src\main\resources\templates" />
       <recent name="H:\这里是工大的东东\毕业设计\项目\IDA_T\src\main\java\com\zjut\ida\config" />
       <recent name="H:\这里是工大的东东\毕业设计\项目\IDA_T\src\main\resources\static\img\tutor-recommend-system" />
-      <recent name="H:\这里是工大的东东\毕业设计\项目\IDA_T\src\main\resources\static\css" />
-      <recent name="H:\这里是工大的东东\毕业设计\项目\IDA_T\src\main\resources\static\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\这里是工大的东东\毕业设计\项目\IDA_T\tutor_recommend_system\src\main\resources\mapper" />
       <recent name="H:\这里是工大的东东\毕业设计\项目\IDA_T\src\main\resources\static\img" />
       <recent name="H:\这里是工大的东东\毕业设计\项目\IDA_T\src\main\resources\static\css\tutor-recommend-system" />
       <recent name="H:\这里是工大的东东\毕业设计\项目\IDA_T\src\main\resources\static\js\tutor-recommend-system" />
       <recent name="H:\这里是工大的东东\毕业设计\项目\IDA_T\src\test\java" />
-      <recent name="E:\ProgrameTest\ProjectTest\IDA_T\src\main\resources\static\img" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zjut.ida.recommend.tutor.core.entity" />
       <recent name="com.zjut.ida.controller" />
       <recent name="com.zjut.ida.recommend.tutor.module.dashboard.controller" />
       <recent name="com.zjut.ida.recommend.tutor.module.dashboard.service" />
       <recent name="com.zjut.ida.recommend.tutor.dao" />
-      <recent name="com.zjut.ida.recommend.tutor.core.entity" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.IdaApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -463,7 +458,8 @@
       <workItem from="1622889572559" duration="10124000" />
       <workItem from="1622900033425" duration="1097000" />
       <workItem from="1622902023361" duration="488000" />
-      <workItem from="1622958232269" duration="10413000" />
+      <workItem from="1622958232269" duration="16321000" />
+      <workItem from="1623029940810" duration="4330000" />
     </task>
     <task id="LOCAL-00001" summary="添加导师推荐系统子项目">
       <created>1622897204218</created>
@@ -479,7 +475,49 @@
       <option name="project" value="LOCAL" />
       <updated>1622965740722</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="整合其他页面">
+      <created>1622969305906</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1622969305906</updated>
+    </task>
+    <task id="LOCAL-00004" summary="修改相关导师推荐功能实现">
+      <created>1622983508308</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622983508308</updated>
+    </task>
+    <task id="LOCAL-00005" summary="bug fix">
+      <created>1622984442719</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1622984442719</updated>
+    </task>
+    <task id="LOCAL-00006" summary="添加退出登录功能 / 上传sql文件">
+      <created>1622986799761</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1622986799761</updated>
+    </task>
+    <task id="LOCAL-00007" summary="删除无用文件">
+      <created>1623033010096</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1623033010096</updated>
+    </task>
+    <task id="LOCAL-00008" summary="bug fix">
+      <created>1623033285339</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1623033285339</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +542,12 @@
     <MESSAGE value="修改静态资源访问路径，并设置为服务器模式" />
     <MESSAGE value="添加导师推荐系统子项目" />
     <MESSAGE value="整合首页导师推荐模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="整合首页导师推荐模块" />
+    <MESSAGE value="整合其他页面" />
+    <MESSAGE value="修改相关导师推荐功能实现" />
+    <MESSAGE value="添加退出登录功能 / 上传sql文件" />
+    <MESSAGE value="删除无用文件" />
+    <MESSAGE value="bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

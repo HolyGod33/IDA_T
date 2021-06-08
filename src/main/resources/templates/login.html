@@ -53,6 +53,12 @@
                        class="form-control mb-3"
                        type="password"
                        placeholder="密码"/>
+                <button id="school-login-Btn"
+                        class="btn btn-primary"
+                        style="width: 100%"
+                        type="button">
+                    登录
+                </button>
             </div>
             <div id="non-school-form" style="display: none">
                 <input id="email"
@@ -62,14 +68,13 @@
                        class="form-control mb-3"
                        type="password"
                        placeholder="密码"/>
+                <button id="non-school-login-Btn"
+                        class="btn btn-primary"
+                        style="width: 100%"
+                        type="button">
+                    登录
+                </button>
             </div>
-
-            <button id="loginButton"
-                    class="btn btn-primary"
-                    style="width: 100%"
-                    type="button">
-                登录
-            </button>
             <a class="btn btn-sm float-left text-primary pl-0 d-inline-block"
                href="#">
                 忘记密码
@@ -135,7 +140,7 @@
         })
 
         // 登录
-        $("#loginButton").click(function () {
+        $("#school-login-Btn").click(function () {
             $(this).attr("disabled", "true")
                    .html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>' +
                          '<span class="sr-only">Loading...</span>')

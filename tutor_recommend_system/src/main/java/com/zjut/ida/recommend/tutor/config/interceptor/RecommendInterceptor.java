@@ -10,10 +10,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.AsyncHandlerInterceptor;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -31,8 +29,7 @@ public class RecommendInterceptor implements AsyncHandlerInterceptor {
     private SysStudentMapper studentMapper;
 
     @Override
-    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
-            throws IOException, ServletException {
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
         if (!(handler instanceof HandlerMethod)) {
             return false;
         }
@@ -40,6 +37,7 @@ public class RecommendInterceptor implements AsyncHandlerInterceptor {
         // 获取 token
         String token = request.getHeader("token");
         if (token == null) {
+            clear();
             return true;
         }
 
@@ -47,14 +45,21 @@ public class RecommendInterceptor implements AsyncHandlerInterceptor {
         Object tokenObject = redisTemplate.opsForValue().get("token" + token);
         // 登录过期
         if (!(tokenObject instanceof SysStudent)) {
+            clear();
             return true;
         }
 
         // 设置ThreadLocal
-        stuHolder.setUser(studentMapper.selectById(((SysStudent) tokenObject).getStudentId()));
+        stuHolder.setStudent(studentMapper.selectById(((SysStudent) tokenObject).getStudentId()));
         // token 1小时有效
         redisTemplate.expire("token" + token, 1, TimeUnit.HOURS);
 
         return true;
+    }
+
+    private void clear() {
+        if (stuHolder.exist()) {
+            stuHolder.clear();
+        }
     }
 }

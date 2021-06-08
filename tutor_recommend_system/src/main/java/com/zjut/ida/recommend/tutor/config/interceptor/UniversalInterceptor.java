@@ -60,6 +60,7 @@ public class UniversalInterceptor implements AsyncHandlerInterceptor {
 
         // 访问的方法对所有人可见
         if (privilege == null || privilege.value() == PrivilegeEnum.AllPriv) {
+            clear();
             return true;
         }
 
@@ -77,10 +78,16 @@ public class UniversalInterceptor implements AsyncHandlerInterceptor {
         }
 
         // 设置ThreadLocal
-        stuHolder.setUser(studentMapper.selectById(((SysStudent) tokenObject).getStudentId()));
+        stuHolder.setStudent(studentMapper.selectById(((SysStudent) tokenObject).getStudentId()));
         // token 1小时有效
         redisTemplate.expire("token" + token, 1, TimeUnit.HOURS);
 
         return true;
+    }
+
+    private void clear() {
+        if (stuHolder.exist()) {
+            stuHolder.clear();
+        }
     }
 }

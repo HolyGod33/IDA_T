@@ -14,6 +14,7 @@ import com.zjut.ida.recommend.tutor.module.home.service.combine.TreeRich;
 import com.zjut.ida.recommend.tutor.module.home.service.combine.engine.IEngine;
 import com.zjut.ida.recommend.tutor.module.home.service.combine.engine.impl.TreeEngineHandle;
 import com.zjut.ida.recommend.tutor.module.home.service.combine.tree.EngineResult;
+import com.zjut.ida.recommend.tutor.module.home.service.factory.combine.IDecisionTreeFactory;
 import com.zjut.ida.recommend.tutor.module.home.service.factory.combine.impl.RecommendDecisionTreeFactory;
 import com.zjut.ida.recommend.tutor.module.home.service.factory.strategy.impl.LabelStrategyFactory;
 import com.zjut.ida.recommend.tutor.module.home.service.factory.strategy.impl.RecommendReasonStrategyFactory;
@@ -23,7 +24,6 @@ import com.zjut.ida.recommend.tutor.module.home.vo.TutorVO;
 import com.zjut.ida.recommend.tutor.utils.enums.RuleKeyType;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
@@ -37,9 +37,6 @@ import java.util.stream.Collectors;
  */
 @Service
 public class RecommendService {
-    @Autowired
-    private RedisTemplate redisTemplate;
-
     @Autowired
     private SysStudentHolder studentHolder;
     @Autowired

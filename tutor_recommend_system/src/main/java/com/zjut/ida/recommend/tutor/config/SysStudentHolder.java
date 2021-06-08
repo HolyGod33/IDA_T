@@ -13,7 +13,7 @@ import java.util.Optional;
 public class SysStudentHolder {
     private static final ThreadLocal<SysStudent> THREAD_STUDENT = new ThreadLocal<>();
 
-    public void setUser(SysStudent student){
+    public void setStudent(SysStudent student){
         THREAD_STUDENT.set(student);
     }
 

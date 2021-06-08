@@ -8,6 +8,12 @@
         <version>2.1.9.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
+    <!--    声明子模块-->
+    <!--    <modules>-->
+    <!--        <module>tutor_recommend_system</module>-->
+    <!--    </modules>-->
+
     <groupId>com.zjut</groupId>
     <artifactId>ida</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -45,12 +51,13 @@
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
-            <version>RELEASE</version>
+            <version>4.1.1</version>
         </dependency>
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
-            <version>RELEASE</version>
+            <version>4.1.1</version>
+
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

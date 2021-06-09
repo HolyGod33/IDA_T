@@ -1,0 +1,7889 @@
+{
+    "data": [
+        {
+            "name": "黎忠恒",
+            "des": "黎忠恒",
+            "symbolSize": 10,
+            "category": 0
+        },
+        {
+            "name": "王安忠",
+            "des": "王安忠",
+            "symbolSize": 10,
+            "category": 0
+        },
+        {
+            "name": "米丽琴",
+            "des": "米丽琴",
+            "symbolSize": 10,
+            "category": 0
+        },
+        {
+            "name": "张少君",
+            "des": "张少君",
+            "symbolSize": 10,
+            "category": 0
+        },
+        {
+            "name": "张泽南",
+            "des": "张泽南",
+            "symbolSize": 10,
+            "category": 1
+        },
+        {
+            "name": "周寒青",
+            "des": "周寒青",
+            "symbolSize": 10,
+            "category": 1
+        },
+        {
+            "name": "施建青",
+            "des": "施建青",
+            "symbolSize": 10,
+            "category": 2
+        },
+        {
+            "name": "武强",
+            "des": "武强",
+            "symbolSize": 10,
+            "category": 2
+        },
+        {
+            "name": "徐志君",
+            "des": "徐志君",
+            "symbolSize": 10,
+            "category": 2
+        },
+        {
+            "name": "林国成",
+            "des": "林国成",
+            "symbolSize": 10,
+            "category": 2
+        },
+        {
+            "name": "朱涛",
+            "des": "朱涛",
+            "symbolSize": 10,
+            "category": 2
+        },
+        {
+            "name": "付明磊",
+            "des": "付明磊",
+            "symbolSize": 10,
+            "category": 3
+        },
+        {
+            "name": "全必胜",
+            "des": "全必胜",
+            "symbolSize": 10,
+            "category": 3
+        },
+        {
+            "name": "王俊杰",
+            "des": "王俊杰",
+            "symbolSize": 10,
+            "category": 3
+        },
+        {
+            "name": "沈小燕",
+            "des": "沈小燕",
+            "symbolSize": 10,
+            "category": 3
+        },
+        {
+            "name": "杜颖",
+            "des": "杜颖",
+            "symbolSize": 10,
+            "category": 4
+        },
+        {
+            "name": "邹俊",
+            "des": "邹俊",
+            "symbolSize": 10,
+            "category": 4
+        },
+        {
+            "name": "徐智君",
+            "des": "徐智君",
+            "symbolSize": 10,
+            "category": 4
+        },
+        {
+            "name": "金建国",
+            "des": "金建国",
+            "symbolSize": 10,
+            "category": 5
+        },
+        {
+            "name": "潘永娟",
+            "des": "潘永娟",
+            "symbolSize": 10,
+            "category": 5
+        },
+        {
+            "name": "成敏",
+            "des": "成敏",
+            "symbolSize": 10,
+            "category": 5
+        },
+        {
+            "name": "徐军",
+            "des": "徐军",
+            "symbolSize": 10,
+            "category": 6
+        },
+        {
+            "name": "张航",
+            "des": "张航",
+            "symbolSize": 10,
+            "category": 6
+        },
+        {
+            "name": "张庆彬",
+            "des": "张庆彬",
+            "symbolSize": 10,
+            "category": 6
+        },
+        {
+            "name": "聂青苗",
+            "des": "聂青苗",
+            "symbolSize": 10,
+            "category": 6
+        },
+        {
+            "name": "杨扬",
+            "des": "杨扬",
+            "symbolSize": 10,
+            "category": 6
+        },
+        {
+            "name": "马德伟",
+            "des": "马德伟",
+            "symbolSize": 10,
+            "category": 6
+        },
+        {
+            "name": "严金华",
+            "des": "严金华",
+            "symbolSize": 10,
+            "category": 6
+        },
+        {
+            "name": "周凯",
+            "des": "周凯",
+            "symbolSize": 10,
+            "category": 6
+        },
+        {
+            "name": "王嘉维",
+            "des": "王嘉维",
+            "symbolSize": 10,
+            "category": 6
+        },
+        {
+            "name": "邓爱珍",
+            "des": "邓爱珍",
+            "symbolSize": 10,
+            "category": 7
+        },
+        {
+            "name": "王理同",
+            "des": "王理同",
+            "symbolSize": 10,
+            "category": 7
+        },
+        {
+            "name": "原俊青",
+            "des": "原俊青",
+            "symbolSize": 10,
+            "category": 7
+        },
+        {
+            "name": "谢聪聪",
+            "des": "谢聪聪",
+            "symbolSize": 10,
+            "category": 7
+        },
+        {
+            "name": "张素红",
+            "des": "张素红",
+            "symbolSize": 10,
+            "category": 7
+        },
+        {
+            "name": "马青",
+            "des": "马青",
+            "symbolSize": 10,
+            "category": 7
+        },
+        {
+            "name": "刘震",
+            "des": "刘震",
+            "symbolSize": 10,
+            "category": 7
+        },
+        {
+            "name": "丁晓东",
+            "des": "丁晓东",
+            "symbolSize": 10,
+            "category": 7
+        },
+        {
+            "name": "周晶",
+            "des": "周晶",
+            "symbolSize": 10,
+            "category": 7
+        },
+        {
+            "name": "邬学军",
+            "des": "邬学军",
+            "symbolSize": 10,
+            "category": 8
+        },
+        {
+            "name": "陆建芳",
+            "des": "陆建芳",
+            "symbolSize": 10,
+            "category": 8
+        },
+        {
+            "name": "孟莉",
+            "des": "孟莉",
+            "symbolSize": 10,
+            "category": 8
+        },
+        {
+            "name": "朱海燕",
+            "des": "朱海燕",
+            "symbolSize": 10,
+            "category": 8
+        },
+        {
+            "name": "练晓鹏",
+            "des": "练晓鹏",
+            "symbolSize": 10,
+            "category": 8
+        },
+        {
+            "name": "陆成刚",
+            "des": "陆成刚",
+            "symbolSize": 10,
+            "category": 8
+        },
+        {
+            "name": "徐利光",
+            "des": "徐利光",
+            "symbolSize": 10,
+            "category": 8
+        },
+        {
+            "name": "程善",
+            "des": "程善",
+            "symbolSize": 10,
+            "category": 8
+        },
+        {
+            "name": "王时铭",
+            "des": "王时铭",
+            "symbolSize": 10,
+            "category": 8
+        },
+        {
+            "name": "蔡萍根",
+            "des": "蔡萍根",
+            "symbolSize": 10,
+            "category": 9
+        },
+        {
+            "name": "刘玉玲",
+            "des": "刘玉玲",
+            "symbolSize": 10,
+            "category": 9
+        },
+        {
+            "name": "鄢波",
+            "des": "鄢波",
+            "symbolSize": 10,
+            "category": 9
+        },
+        {
+            "name": "吕斌",
+            "des": "吕斌",
+            "symbolSize": 10,
+            "category": 9
+        },
+        {
+            "name": "卢忠",
+            "des": "卢忠",
+            "symbolSize": 10,
+            "category": 9
+        },
+        {
+            "name": "单莉丽",
+            "des": "单莉丽",
+            "symbolSize": 10,
+            "category": 9
+        },
+        {
+            "name": "金永阳",
+            "des": "金永阳",
+            "symbolSize": 10,
+            "category": 10
+        },
+        {
+            "name": "宋军全",
+            "des": "宋军全",
+            "symbolSize": 10,
+            "category": 10
+        },
+        {
+            "name": "沈守枫",
+            "des": "沈守枫",
+            "symbolSize": 10,
+            "category": 10
+        },
+        {
+            "name": "赵松林",
+            "des": "赵松林",
+            "symbolSize": 10,
+            "category": 10
+        },
+        {
+            "name": "胡娟",
+            "des": "胡娟",
+            "symbolSize": 10,
+            "category": 10
+        },
+        {
+            "name": "胡晓瑞",
+            "des": "胡晓瑞",
+            "symbolSize": 10,
+            "category": 10
+        },
+        {
+            "name": "姜丽亚",
+            "des": "姜丽亚",
+            "symbolSize": 10,
+            "category": 10
+        },
+        {
+            "name": "吴玉荣",
+            "des": "吴玉荣",
+            "symbolSize": 10,
+            "category": 10
+        },
+        {
+            "name": "夏治南",
+            "des": "夏治南",
+            "symbolSize": 10,
+            "category": 10
+        },
+        {
+            "name": "熊恒娜",
+            "des": "熊恒娜",
+            "symbolSize": 10,
+            "category": 11
+        },
+        {
+            "name": "孙李真",
+            "des": "孙李真",
+            "symbolSize": 10,
+            "category": 11
+        },
+        {
+            "name": "张冬梅",
+            "des": "张冬梅",
+            "symbolSize": 10,
+            "category": 12
+        },
+        {
+            "name": "朱佳惠",
+            "des": "朱佳惠",
+            "symbolSize": 10,
+            "category": 12
+        },
+        {
+            "name": "李欣",
+            "des": "李欣",
+            "symbolSize": 10,
+            "category": 13
+        },
+        {
+            "name": "陈芝花",
+            "des": "陈芝花",
+            "symbolSize": 10,
+            "category": 13
+        },
+        {
+            "name": "丁盈",
+            "des": "丁盈",
+            "symbolSize": 10,
+            "category": 13
+        },
+        {
+            "name": "王为民",
+            "des": "王为民",
+            "symbolSize": 10,
+            "category": 13
+        },
+        {
+            "name": "周佳立",
+            "des": "周佳立",
+            "symbolSize": 10,
+            "category": 13
+        },
+        {
+            "name": "方兴",
+            "des": "方兴",
+            "symbolSize": 10,
+            "category": 13
+        },
+        {
+            "name": "童建平",
+            "des": "童建平",
+            "symbolSize": 10,
+            "category": 14
+        },
+        {
+            "name": "徐丹阳",
+            "des": "徐丹阳",
+            "symbolSize": 10,
+            "category": 14
+        },
+        {
+            "name": "唐轶峻",
+            "des": "唐轶峻",
+            "symbolSize": 10,
+            "category": 14
+        },
+        {
+            "name": "庄德文",
+            "des": "庄德文",
+            "symbolSize": 10,
+            "category": 14
+        },
+        {
+            "name": "周一东",
+            "des": "周一东",
+            "symbolSize": 10,
+            "category": 14
+        },
+        {
+            "name": "吴彬",
+            "des": "吴彬",
+            "symbolSize": 10,
+            "category": 15
+        },
+        {
+            "name": "吴乐园",
+            "des": "吴乐园",
+            "symbolSize": 10,
+            "category": 15
+        },
+        {
+            "name": "王河林",
+            "des": "王河林",
+            "symbolSize": 10,
+            "category": 15
+        },
+        {
+            "name": "王肖隆",
+            "des": "王肖隆",
+            "symbolSize": 10,
+            "category": 15
+        },
+        {
+            "name": "程冰",
+            "des": "程冰",
+            "symbolSize": 10,
+            "category": 15
+        },
+        {
+            "name": "彭树萍",
+            "des": "彭树萍",
+            "symbolSize": 10,
+            "category": 15
+        },
+        {
+            "name": "郑沾",
+            "des": "郑沾",
+            "symbolSize": 10,
+            "category": 15
+        },
+        {
+            "name": "李德钊",
+            "des": "李德钊",
+            "symbolSize": 10,
+            "category": 15
+        },
+        {
+            "name": "郑文强",
+            "des": "郑文强",
+            "symbolSize": 10,
+            "category": 16
+        },
+        {
+            "name": "胡正珲",
+            "des": "胡正珲",
+            "symbolSize": 10,
+            "category": 16
+        },
+        {
+            "name": "阮乂",
+            "des": "阮乂",
+            "symbolSize": 10,
+            "category": 16
+        },
+        {
+            "name": "杨则金",
+            "des": "杨则金",
+            "symbolSize": 10,
+            "category": 17
+        },
+        {
+            "name": "左咸军",
+            "des": "左咸军",
+            "symbolSize": 10,
+            "category": 17
+        },
+        {
+            "name": "王宪位",
+            "des": "王宪位",
+            "symbolSize": 10,
+            "category": 17
+        },
+        {
+            "name": "何敏勇",
+            "des": "何敏勇",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "顾娟如",
+            "des": "顾娟如",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "詹国平",
+            "des": "詹国平",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "周显潮",
+            "des": "周显潮",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "何良芳",
+            "des": "何良芳",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "张隽",
+            "des": "张隽",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "陈剑利",
+            "des": "陈剑利",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "冯鸣",
+            "des": "冯鸣",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "辛晓天",
+            "des": "辛晓天",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "张夕飞",
+            "des": "张夕飞",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "李婷婷",
+            "des": "李婷婷",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "郑义鑫",
+            "des": "郑义鑫",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "陈曙英",
+            "des": "陈曙英",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "杨爱军",
+            "des": "杨爱军",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "马立媛",
+            "des": "马立媛",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "冯玮",
+            "des": "冯玮",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "刘凡新",
+            "des": "刘凡新",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "唐超军",
+            "des": "唐超军",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "杨新娟",
+            "des": "杨新娟",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "李博",
+            "des": "李博",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "熊宏伟",
+            "des": "熊宏伟",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "刘淑娟",
+            "des": "刘淑娟",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "曹军",
+            "des": "曹军",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "程丽娟",
+            "des": "程丽娟",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "吴超",
+            "des": "吴超",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "陈传强",
+            "des": "陈传强",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "张理评",
+            "des": "张理评",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "白晓迪",
+            "des": "白晓迪",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "高凡",
+            "des": "高凡",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "叶自然",
+            "des": "叶自然",
+            "symbolSize": 10,
+            "category": 18
+        },
+        {
+            "name": "刘海山",
+            "des": "刘海山",
+            "symbolSize": 40,
+            "category": 0
+        },
+        {
+            "name": "陈乃波",
+            "des": "陈乃波",
+            "symbolSize": 40,
+            "category": 1
+        },
+        {
+            "name": "徐东辉",
+            "des": "徐东辉",
+            "symbolSize": 40,
+            "category": 2
+        },
+        {
+            "name": "乐孜纯",
+            "des": "乐孜纯",
+            "symbolSize": 40,
+            "category": 3
+        },
+        {
+            "name": "王昌辉",
+            "des": "王昌辉",
+            "symbolSize": 40,
+            "category": 4
+        },
+        {
+            "name": "寿华好",
+            "des": "寿华好",
+            "symbolSize": 40,
+            "category": 5
+        },
+        {
+            "name": "许周速",
+            "des": "许周速",
+            "symbolSize": 40,
+            "category": 6
+        },
+        {
+            "name": "李素兰",
+            "des": "李素兰",
+            "symbolSize": 40,
+            "category": 7
+        },
+        {
+            "name": "王金华",
+            "des": "王金华",
+            "symbolSize": 40,
+            "category": 8
+        },
+        {
+            "name": "魏高尧",
+            "des": "魏高尧",
+            "symbolSize": 40,
+            "category": 9
+        },
+        {
+            "name": "狄艳媚",
+            "des": "狄艳媚",
+            "symbolSize": 40,
+            "category": 10
+        },
+        {
+            "name": "李海彬",
+            "des": "李海彬",
+            "symbolSize": 40,
+            "category": 11
+        },
+        {
+            "name": "颜于清",
+            "des": "颜于清",
+            "symbolSize": 40,
+            "category": 12
+        },
+        {
+            "name": "王定江",
+            "des": "王定江",
+            "symbolSize": 40,
+            "category": 13
+        },
+        {
+            "name": "高建勋",
+            "des": "高建勋",
+            "symbolSize": 40,
+            "category": 14
+        },
+        {
+            "name": "林强",
+            "des": "林强",
+            "symbolSize": 40,
+            "category": 15
+        },
+        {
+            "name": "李衎",
+            "des": "李衎",
+            "symbolSize": 40,
+            "category": 16
+        },
+        {
+            "name": "唐令",
+            "des": "唐令",
+            "symbolSize": 40,
+            "category": 17
+        }
+    ],
+    "links": [
+        {
+            "source": "蔡萍根",
+            "target": "陈乃波",
+            "name": "合作次数：12",
+            "des": "合作次数：12"
+        },
+        {
+            "source": "蔡萍根",
+            "target": "刘玉玲",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "蔡萍根",
+            "target": "施建青",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "蔡萍根",
+            "target": "童建平",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "蔡萍根",
+            "target": "魏高尧",
+            "name": "合作次数：13",
+            "des": "合作次数：13"
+        },
+        {
+            "source": "蔡萍根",
+            "target": "武强",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "蔡萍根",
+            "target": "徐丹阳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "蔡萍根",
+            "target": "徐军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "蔡萍根",
+            "target": "徐志君",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "蔡萍根",
+            "target": "鄢波",
+            "name": "合作次数：9",
+            "des": "合作次数：9"
+        },
+        {
+            "source": "蔡萍根",
+            "target": "张航",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "蔡萍根",
+            "target": "张泽南",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "蔡萍根",
+            "target": "吕斌",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "蔡萍根",
+            "target": "卢忠",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "蔡萍根",
+            "target": "高凡",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陈剑利",
+            "target": "邓爱珍",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "陈剑利",
+            "target": "金建国",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陈剑利",
+            "target": "金永阳",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "陈剑利",
+            "target": "宋军全",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "陈剑利",
+            "target": "王理同",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陈剑利",
+            "target": "狄艳媚",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "陈剑利",
+            "target": "原俊青",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "陈剑利",
+            "target": "李欣",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陈剑利",
+            "target": "陈芝花",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陈剑利",
+            "target": "冯鸣",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陈乃波",
+            "target": "蔡萍根",
+            "name": "合作次数：12",
+            "des": "合作次数：12"
+        },
+        {
+            "source": "陈乃波",
+            "target": "刘玉玲",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陈乃波",
+            "target": "唐轶峻",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陈乃波",
+            "target": "童建平",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "陈乃波",
+            "target": "魏高尧",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "陈乃波",
+            "target": "徐丹阳",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "陈乃波",
+            "target": "鄢波",
+            "name": "合作次数：9",
+            "des": "合作次数：9"
+        },
+        {
+            "source": "陈乃波",
+            "target": "张泽南",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陈乃波",
+            "target": "周寒青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陈乃波",
+            "target": "高凡",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陈乃波",
+            "target": "吴彬",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陈乃波",
+            "target": "张庆彬",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陈乃波",
+            "target": "聂青苗",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陈乃波",
+            "target": "吴乐园",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "单莉丽",
+            "target": "魏高尧",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "邓爱珍",
+            "target": "陈剑利",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "邓爱珍",
+            "target": "李素兰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "邓爱珍",
+            "target": "邬学军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "邓爱珍",
+            "target": "原俊青",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "邓爱珍",
+            "target": "丁盈",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "付明磊",
+            "target": "乐孜纯",
+            "name": "合作次数：101",
+            "des": "合作次数：101"
+        },
+        {
+            "source": "付明磊",
+            "target": "刘玉玲",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "付明磊",
+            "target": "张冬梅",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "付明磊",
+            "target": "周寒青",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "付明磊",
+            "target": "全必胜",
+            "name": "合作次数：12",
+            "des": "合作次数：12"
+        },
+        {
+            "source": "付明磊",
+            "target": "王俊杰",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "付明磊",
+            "target": "沈小燕",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "付明磊",
+            "target": "王昌辉",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "付明磊",
+            "target": "杜颖",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "何良芳",
+            "target": "刘玉玲",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "何良芳",
+            "target": "徐志君",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "金建国",
+            "target": "陈剑利",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "金建国",
+            "target": "金永阳",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "金建国",
+            "target": "寿华好",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "金建国",
+            "target": "宋军全",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "金建国",
+            "target": "邬学军",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "金建国",
+            "target": "张冬梅",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "金建国",
+            "target": "谢聪聪",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "金建国",
+            "target": "狄艳媚",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "金建国",
+            "target": "潘永娟",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "金建国",
+            "target": "成敏",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "金永阳",
+            "target": "陈剑利",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "金永阳",
+            "target": "金建国",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "金永阳",
+            "target": "李素兰",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "金永阳",
+            "target": "陆建芳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "金永阳",
+            "target": "孟莉",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "金永阳",
+            "target": "沈守枫",
+            "name": "合作次数：13",
+            "des": "合作次数：13"
+        },
+        {
+            "source": "金永阳",
+            "target": "宋军全",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "金永阳",
+            "target": "邬学军",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "金永阳",
+            "target": "杨爱军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "金永阳",
+            "target": "张冬梅",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "金永阳",
+            "target": "张隽",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "金永阳",
+            "target": "张素红",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "金永阳",
+            "target": "赵松林",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "金永阳",
+            "target": "马青",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "金永阳",
+            "target": "刘震",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "金永阳",
+            "target": "胡娟",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "金永阳",
+            "target": "吴超",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "金永阳",
+            "target": "谢聪聪",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "金永阳",
+            "target": "狄艳媚",
+            "name": "合作次数：12",
+            "des": "合作次数：12"
+        },
+        {
+            "source": "金永阳",
+            "target": "胡晓瑞",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "金永阳",
+            "target": "潘永娟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "金永阳",
+            "target": "王为民",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "金永阳",
+            "target": "姜丽亚",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "金永阳",
+            "target": "王金华",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "金永阳",
+            "target": "吴玉荣",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "乐孜纯",
+            "target": "付明磊",
+            "name": "合作次数：101",
+            "des": "合作次数：101"
+        },
+        {
+            "source": "乐孜纯",
+            "target": "李海彬",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "乐孜纯",
+            "target": "刘玉玲",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "乐孜纯",
+            "target": "杨扬",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "乐孜纯",
+            "target": "张冬梅",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "乐孜纯",
+            "target": "周寒青",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "乐孜纯",
+            "target": "全必胜",
+            "name": "合作次数：22",
+            "des": "合作次数：22"
+        },
+        {
+            "source": "乐孜纯",
+            "target": "邹俊",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "乐孜纯",
+            "target": "王俊杰",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "乐孜纯",
+            "target": "沈小燕",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "乐孜纯",
+            "target": "王昌辉",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "乐孜纯",
+            "target": "杜颖",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "李博",
+            "target": "李海彬",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李博",
+            "target": "刘玉玲",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "李博",
+            "target": "马德伟",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "李博",
+            "target": "唐轶峻",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "李博",
+            "target": "鄢波",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李博",
+            "target": "张航",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "李博",
+            "target": "张庆彬",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李海彬",
+            "target": "乐孜纯",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李海彬",
+            "target": "李博",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李海彬",
+            "target": "唐轶峻",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李海彬",
+            "target": "辛晓天",
+            "name": "合作次数：11",
+            "des": "合作次数：11"
+        },
+        {
+            "source": "李海彬",
+            "target": "徐志君",
+            "name": "合作次数：8",
+            "des": "合作次数：8"
+        },
+        {
+            "source": "李海彬",
+            "target": "全必胜",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李海彬",
+            "target": "王昌辉",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "李海彬",
+            "target": "聂青苗",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李海彬",
+            "target": "熊恒娜",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李海彬",
+            "target": "孙李真",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "李海彬",
+            "target": "张夕飞",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "李素兰",
+            "target": "邓爱珍",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李素兰",
+            "target": "金永阳",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "李素兰",
+            "target": "陆建芳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李素兰",
+            "target": "孟莉",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李素兰",
+            "target": "寿华好",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李素兰",
+            "target": "宋军全",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李素兰",
+            "target": "王理同",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李素兰",
+            "target": "邬学军",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "李素兰",
+            "target": "杨爱军",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "李素兰",
+            "target": "张隽",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李素兰",
+            "target": "张素红",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "李素兰",
+            "target": "朱海燕",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李素兰",
+            "target": "马青",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "李素兰",
+            "target": "刘震",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李素兰",
+            "target": "谢聪聪",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "李素兰",
+            "target": "狄艳媚",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "李素兰",
+            "target": "丁晓东",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李素兰",
+            "target": "原俊青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李素兰",
+            "target": "颜于清",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李素兰",
+            "target": "潘永娟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李素兰",
+            "target": "丁盈",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "李素兰",
+            "target": "冯鸣",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李婷婷",
+            "target": "郑义鑫",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "林国成",
+            "target": "施建青",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "林国成",
+            "target": "魏高尧",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "林国成",
+            "target": "徐志君",
+            "name": "合作次数：8",
+            "des": "合作次数：8"
+        },
+        {
+            "source": "林国成",
+            "target": "徐东辉",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "林国成",
+            "target": "陈曙英",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘玉玲",
+            "target": "蔡萍根",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "刘玉玲",
+            "target": "陈乃波",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘玉玲",
+            "target": "付明磊",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "刘玉玲",
+            "target": "何良芳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘玉玲",
+            "target": "乐孜纯",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "刘玉玲",
+            "target": "李博",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "刘玉玲",
+            "target": "童建平",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘玉玲",
+            "target": "王河林",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘玉玲",
+            "target": "魏高尧",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "刘玉玲",
+            "target": "鄢波",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "刘玉玲",
+            "target": "张泽南",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘玉玲",
+            "target": "周寒青",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "刘玉玲",
+            "target": "全必胜",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "刘玉玲",
+            "target": "王俊杰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陆建芳",
+            "target": "金永阳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陆建芳",
+            "target": "李素兰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陆建芳",
+            "target": "寿华好",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陆建芳",
+            "target": "刘震",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陆建芳",
+            "target": "谢聪聪",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陆建芳",
+            "target": "潘永娟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陆建芳",
+            "target": "王为民",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陆建芳",
+            "target": "练晓鹏",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "陆建芳",
+            "target": "王金华",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "马德伟",
+            "target": "李博",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "马德伟",
+            "target": "魏高尧",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "马德伟",
+            "target": "徐军",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "马德伟",
+            "target": "许周速",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "马德伟",
+            "target": "鄢波",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "马德伟",
+            "target": "严金华",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "马德伟",
+            "target": "杨扬",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "马德伟",
+            "target": "张航",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "马德伟",
+            "target": "张庆彬",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "马德伟",
+            "target": "聂青苗",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "孟莉",
+            "target": "金永阳",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "孟莉",
+            "target": "李素兰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "孟莉",
+            "target": "沈守枫",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "孟莉",
+            "target": "宋军全",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "孟莉",
+            "target": "邬学军",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "孟莉",
+            "target": "张素红",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "孟莉",
+            "target": "朱海燕",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "孟莉",
+            "target": "陆成刚",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "孟莉",
+            "target": "狄艳媚",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "孟莉",
+            "target": "姜丽亚",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "孟莉",
+            "target": "练晓鹏",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "孟莉",
+            "target": "王金华",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "孟莉",
+            "target": "徐利光",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "孟莉",
+            "target": "张理评",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "孟莉",
+            "target": "程善",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "沈守枫",
+            "target": "金永阳",
+            "name": "合作次数：13",
+            "des": "合作次数：13"
+        },
+        {
+            "source": "沈守枫",
+            "target": "孟莉",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "沈守枫",
+            "target": "宋军全",
+            "name": "合作次数：12",
+            "des": "合作次数：12"
+        },
+        {
+            "source": "沈守枫",
+            "target": "邬学军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "沈守枫",
+            "target": "张隽",
+            "name": "合作次数：43",
+            "des": "合作次数：43"
+        },
+        {
+            "source": "沈守枫",
+            "target": "赵松林",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "沈守枫",
+            "target": "朱海燕",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "沈守枫",
+            "target": "马青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "沈守枫",
+            "target": "刘震",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "沈守枫",
+            "target": "胡娟",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "沈守枫",
+            "target": "吴超",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "沈守枫",
+            "target": "狄艳媚",
+            "name": "合作次数：10",
+            "des": "合作次数：10"
+        },
+        {
+            "source": "沈守枫",
+            "target": "胡晓瑞",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "沈守枫",
+            "target": "王为民",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "沈守枫",
+            "target": "姜丽亚",
+            "name": "合作次数：8",
+            "des": "合作次数：8"
+        },
+        {
+            "source": "沈守枫",
+            "target": "王金华",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "沈守枫",
+            "target": "何敏勇",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "沈守枫",
+            "target": "丁盈",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "沈守枫",
+            "target": "王定江",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "沈守枫",
+            "target": "冯玮",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "沈守枫",
+            "target": "吴玉荣",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "施建青",
+            "target": "蔡萍根",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "施建青",
+            "target": "林国成",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "施建青",
+            "target": "唐轶峻",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "施建青",
+            "target": "童建平",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "施建青",
+            "target": "王河林",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "施建青",
+            "target": "魏高尧",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "施建青",
+            "target": "武强",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "施建青",
+            "target": "徐丹阳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "施建青",
+            "target": "徐志君",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "施建青",
+            "target": "鄢波",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "施建青",
+            "target": "庄德文",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "施建青",
+            "target": "徐东辉",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "寿华好",
+            "target": "金建国",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "寿华好",
+            "target": "李素兰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "寿华好",
+            "target": "陆建芳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "寿华好",
+            "target": "刘震",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "寿华好",
+            "target": "陆成刚",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "寿华好",
+            "target": "谢聪聪",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "寿华好",
+            "target": "周佳立",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "寿华好",
+            "target": "潘永娟",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "寿华好",
+            "target": "成敏",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "宋军全",
+            "target": "陈剑利",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "宋军全",
+            "target": "金建国",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "宋军全",
+            "target": "金永阳",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "宋军全",
+            "target": "李素兰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "宋军全",
+            "target": "孟莉",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "宋军全",
+            "target": "沈守枫",
+            "name": "合作次数：12",
+            "des": "合作次数：12"
+        },
+        {
+            "source": "宋军全",
+            "target": "邬学军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "宋军全",
+            "target": "张隽",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "宋军全",
+            "target": "张素红",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "宋军全",
+            "target": "赵松林",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "宋军全",
+            "target": "朱海燕",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "宋军全",
+            "target": "马青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "宋军全",
+            "target": "胡娟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "宋军全",
+            "target": "狄艳媚",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "宋军全",
+            "target": "胡晓瑞",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "宋军全",
+            "target": "王为民",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "宋军全",
+            "target": "姜丽亚",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "宋军全",
+            "target": "丁盈",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "宋军全",
+            "target": "王定江",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "宋军全",
+            "target": "夏治南",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "唐轶峻",
+            "target": "陈乃波",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "唐轶峻",
+            "target": "李博",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "唐轶峻",
+            "target": "李海彬",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "唐轶峻",
+            "target": "施建青",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "唐轶峻",
+            "target": "童建平",
+            "name": "合作次数：14",
+            "des": "合作次数：14"
+        },
+        {
+            "source": "唐轶峻",
+            "target": "王河林",
+            "name": "合作次数：8",
+            "des": "合作次数：8"
+        },
+        {
+            "source": "唐轶峻",
+            "target": "魏高尧",
+            "name": "合作次数：8",
+            "des": "合作次数：8"
+        },
+        {
+            "source": "唐轶峻",
+            "target": "武强",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "唐轶峻",
+            "target": "辛晓天",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "唐轶峻",
+            "target": "徐丹阳",
+            "name": "合作次数：10",
+            "des": "合作次数：10"
+        },
+        {
+            "source": "唐轶峻",
+            "target": "鄢波",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "唐轶峻",
+            "target": "庄德文",
+            "name": "合作次数：12",
+            "des": "合作次数：12"
+        },
+        {
+            "source": "唐轶峻",
+            "target": "高建勋",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "童建平",
+            "target": "蔡萍根",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "童建平",
+            "target": "陈乃波",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "童建平",
+            "target": "刘玉玲",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "童建平",
+            "target": "施建青",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "童建平",
+            "target": "唐轶峻",
+            "name": "合作次数：14",
+            "des": "合作次数：14"
+        },
+        {
+            "source": "童建平",
+            "target": "王河林",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "童建平",
+            "target": "魏高尧",
+            "name": "合作次数：21",
+            "des": "合作次数：21"
+        },
+        {
+            "source": "童建平",
+            "target": "辛晓天",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "童建平",
+            "target": "徐丹阳",
+            "name": "合作次数：21",
+            "des": "合作次数：21"
+        },
+        {
+            "source": "童建平",
+            "target": "许周速",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "童建平",
+            "target": "张航",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "童建平",
+            "target": "张泽南",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "童建平",
+            "target": "庄德文",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "童建平",
+            "target": "高建勋",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "童建平",
+            "target": "王肖隆",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "童建平",
+            "target": "郑文强",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "童建平",
+            "target": "李衎",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "童建平",
+            "target": "吴彬",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "童建平",
+            "target": "林强",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "童建平",
+            "target": "聂青苗",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "童建平",
+            "target": "程冰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "童建平",
+            "target": "吴乐园",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王河林",
+            "target": "刘玉玲",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王河林",
+            "target": "施建青",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "王河林",
+            "target": "唐轶峻",
+            "name": "合作次数：8",
+            "des": "合作次数：8"
+        },
+        {
+            "source": "王河林",
+            "target": "童建平",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王河林",
+            "target": "魏高尧",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "王河林",
+            "target": "武强",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "王河林",
+            "target": "鄢波",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王河林",
+            "target": "杨爱军",
+            "name": "合作次数：21",
+            "des": "合作次数：21"
+        },
+        {
+            "source": "王河林",
+            "target": "庄德文",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "王河林",
+            "target": "王肖隆",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "王河林",
+            "target": "吴彬",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "王河林",
+            "target": "林强",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "王河林",
+            "target": "唐令",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王河林",
+            "target": "程冰",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "王河林",
+            "target": "彭树萍",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "王理同",
+            "target": "陈剑利",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王理同",
+            "target": "李素兰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王理同",
+            "target": "杨爱军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王理同",
+            "target": "张隽",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王理同",
+            "target": "张素红",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王理同",
+            "target": "马青",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "王理同",
+            "target": "刘震",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "王理同",
+            "target": "丁晓东",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王理同",
+            "target": "原俊青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王理同",
+            "target": "胡晓瑞",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王理同",
+            "target": "丁盈",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "魏高尧",
+            "target": "蔡萍根",
+            "name": "合作次数：13",
+            "des": "合作次数：13"
+        },
+        {
+            "source": "魏高尧",
+            "target": "陈乃波",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "魏高尧",
+            "target": "单莉丽",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "魏高尧",
+            "target": "林国成",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "魏高尧",
+            "target": "刘玉玲",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "魏高尧",
+            "target": "马德伟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "魏高尧",
+            "target": "施建青",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "魏高尧",
+            "target": "唐轶峻",
+            "name": "合作次数：8",
+            "des": "合作次数：8"
+        },
+        {
+            "source": "魏高尧",
+            "target": "童建平",
+            "name": "合作次数：21",
+            "des": "合作次数：21"
+        },
+        {
+            "source": "魏高尧",
+            "target": "王河林",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "魏高尧",
+            "target": "武强",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "魏高尧",
+            "target": "辛晓天",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "魏高尧",
+            "target": "徐丹阳",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "魏高尧",
+            "target": "徐志君",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "魏高尧",
+            "target": "鄢波",
+            "name": "合作次数：12",
+            "des": "合作次数：12"
+        },
+        {
+            "source": "魏高尧",
+            "target": "张泽南",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "魏高尧",
+            "target": "周寒青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "魏高尧",
+            "target": "庄德文",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "魏高尧",
+            "target": "高建勋",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "魏高尧",
+            "target": "吕斌",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "魏高尧",
+            "target": "卢忠",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "魏高尧",
+            "target": "王肖隆",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "魏高尧",
+            "target": "徐东辉",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "魏高尧",
+            "target": "陈曙英",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "魏高尧",
+            "target": "刘凡新",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "邬学军",
+            "target": "邓爱珍",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "邬学军",
+            "target": "金建国",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "邬学军",
+            "target": "金永阳",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "邬学军",
+            "target": "李素兰",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "邬学军",
+            "target": "孟莉",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "邬学军",
+            "target": "沈守枫",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "邬学军",
+            "target": "宋军全",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "邬学军",
+            "target": "张隽",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "邬学军",
+            "target": "马青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "邬学军",
+            "target": "狄艳媚",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "邬学军",
+            "target": "王时铭",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "邬学军",
+            "target": "王金华",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "邬学军",
+            "target": "丁盈",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "邬学军",
+            "target": "王定江",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "邬学军",
+            "target": "冯鸣",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "武强",
+            "target": "蔡萍根",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "武强",
+            "target": "施建青",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "武强",
+            "target": "唐轶峻",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "武强",
+            "target": "王河林",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "武强",
+            "target": "魏高尧",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "武强",
+            "target": "辛晓天",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "武强",
+            "target": "徐军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "武强",
+            "target": "徐志君",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "武强",
+            "target": "张泽南",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "武强",
+            "target": "庄德文",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "武强",
+            "target": "朱涛",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "武强",
+            "target": "徐东辉",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "武强",
+            "target": "刘海山",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "武强",
+            "target": "杨新娟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "武强",
+            "target": "张夕飞",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "辛晓天",
+            "target": "李海彬",
+            "name": "合作次数：11",
+            "des": "合作次数：11"
+        },
+        {
+            "source": "辛晓天",
+            "target": "唐轶峻",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "辛晓天",
+            "target": "童建平",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "辛晓天",
+            "target": "魏高尧",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "辛晓天",
+            "target": "武强",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "辛晓天",
+            "target": "徐志君",
+            "name": "合作次数：8",
+            "des": "合作次数：8"
+        },
+        {
+            "source": "辛晓天",
+            "target": "许周速",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "辛晓天",
+            "target": "周寒青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "辛晓天",
+            "target": "聂青苗",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "辛晓天",
+            "target": "张夕飞",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "徐丹阳",
+            "target": "蔡萍根",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "徐丹阳",
+            "target": "陈乃波",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "徐丹阳",
+            "target": "施建青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "徐丹阳",
+            "target": "唐轶峻",
+            "name": "合作次数：10",
+            "des": "合作次数：10"
+        },
+        {
+            "source": "徐丹阳",
+            "target": "童建平",
+            "name": "合作次数：21",
+            "des": "合作次数：21"
+        },
+        {
+            "source": "徐丹阳",
+            "target": "魏高尧",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "徐丹阳",
+            "target": "鄢波",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "徐丹阳",
+            "target": "庄德文",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "徐丹阳",
+            "target": "高建勋",
+            "name": "合作次数：8",
+            "des": "合作次数：8"
+        },
+        {
+            "source": "徐丹阳",
+            "target": "卢忠",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "徐军",
+            "target": "蔡萍根",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "徐军",
+            "target": "马德伟",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "徐军",
+            "target": "武强",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "徐军",
+            "target": "徐志君",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "徐军",
+            "target": "许周速",
+            "name": "合作次数：8",
+            "des": "合作次数：8"
+        },
+        {
+            "source": "徐军",
+            "target": "严金华",
+            "name": "合作次数：10",
+            "des": "合作次数：10"
+        },
+        {
+            "source": "徐军",
+            "target": "杨扬",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "徐军",
+            "target": "张航",
+            "name": "合作次数：8",
+            "des": "合作次数：8"
+        },
+        {
+            "source": "徐军",
+            "target": "张泽南",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "徐军",
+            "target": "庄德文",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "徐志君",
+            "target": "蔡萍根",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "徐志君",
+            "target": "何良芳",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "徐志君",
+            "target": "李海彬",
+            "name": "合作次数：8",
+            "des": "合作次数：8"
+        },
+        {
+            "source": "徐志君",
+            "target": "林国成",
+            "name": "合作次数：8",
+            "des": "合作次数：8"
+        },
+        {
+            "source": "徐志君",
+            "target": "施建青",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "徐志君",
+            "target": "魏高尧",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "徐志君",
+            "target": "武强",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "徐志君",
+            "target": "辛晓天",
+            "name": "合作次数：8",
+            "des": "合作次数：8"
+        },
+        {
+            "source": "徐志君",
+            "target": "徐军",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "徐志君",
+            "target": "张泽南",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "徐志君",
+            "target": "周寒青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "徐志君",
+            "target": "杨则金",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "徐志君",
+            "target": "熊宏伟",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "徐志君",
+            "target": "徐东辉",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "徐志君",
+            "target": "聂青苗",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "徐志君",
+            "target": "唐令",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "徐志君",
+            "target": "左咸军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "徐志君",
+            "target": "刘淑娟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "徐志君",
+            "target": "张夕飞",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "许周速",
+            "target": "马德伟",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "许周速",
+            "target": "童建平",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "许周速",
+            "target": "辛晓天",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "许周速",
+            "target": "徐军",
+            "name": "合作次数：8",
+            "des": "合作次数：8"
+        },
+        {
+            "source": "许周速",
+            "target": "严金华",
+            "name": "合作次数：14",
+            "des": "合作次数：14"
+        },
+        {
+            "source": "许周速",
+            "target": "杨扬",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "许周速",
+            "target": "张航",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "许周速",
+            "target": "周寒青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "许周速",
+            "target": "周凯",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "许周速",
+            "target": "张庆彬",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "许周速",
+            "target": "聂青苗",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "许周速",
+            "target": "王嘉维",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "许周速",
+            "target": "王宪位",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "鄢波",
+            "target": "蔡萍根",
+            "name": "合作次数：9",
+            "des": "合作次数：9"
+        },
+        {
+            "source": "鄢波",
+            "target": "陈乃波",
+            "name": "合作次数：9",
+            "des": "合作次数：9"
+        },
+        {
+            "source": "鄢波",
+            "target": "李博",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "鄢波",
+            "target": "刘玉玲",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "鄢波",
+            "target": "马德伟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "鄢波",
+            "target": "施建青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "鄢波",
+            "target": "唐轶峻",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "鄢波",
+            "target": "王河林",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "鄢波",
+            "target": "魏高尧",
+            "name": "合作次数：12",
+            "des": "合作次数：12"
+        },
+        {
+            "source": "鄢波",
+            "target": "徐丹阳",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "鄢波",
+            "target": "庄德文",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "鄢波",
+            "target": "吕斌",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "鄢波",
+            "target": "卢忠",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "鄢波",
+            "target": "高凡",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "鄢波",
+            "target": "刘凡新",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "严金华",
+            "target": "马德伟",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "严金华",
+            "target": "徐军",
+            "name": "合作次数：10",
+            "des": "合作次数：10"
+        },
+        {
+            "source": "严金华",
+            "target": "许周速",
+            "name": "合作次数：14",
+            "des": "合作次数：14"
+        },
+        {
+            "source": "严金华",
+            "target": "杨扬",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "严金华",
+            "target": "张航",
+            "name": "合作次数：19",
+            "des": "合作次数：19"
+        },
+        {
+            "source": "严金华",
+            "target": "王嘉维",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "杨爱军",
+            "target": "金永阳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "杨爱军",
+            "target": "李素兰",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "杨爱军",
+            "target": "王河林",
+            "name": "合作次数：21",
+            "des": "合作次数：21"
+        },
+        {
+            "source": "杨爱军",
+            "target": "王理同",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "杨爱军",
+            "target": "张隽",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "杨爱军",
+            "target": "张素红",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "杨爱军",
+            "target": "赵松林",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "杨爱军",
+            "target": "马青",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "杨爱军",
+            "target": "刘震",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "杨爱军",
+            "target": "谢聪聪",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "杨爱军",
+            "target": "丁晓东",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "杨爱军",
+            "target": "胡晓瑞",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "杨爱军",
+            "target": "王定江",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "杨爱军",
+            "target": "李欣",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "杨爱军",
+            "target": "夏治南",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "杨爱军",
+            "target": "冯玮",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "杨扬",
+            "target": "乐孜纯",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "杨扬",
+            "target": "马德伟",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "杨扬",
+            "target": "徐军",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "杨扬",
+            "target": "许周速",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "杨扬",
+            "target": "严金华",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "杨扬",
+            "target": "全必胜",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "杨扬",
+            "target": "王昌辉",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "杨扬",
+            "target": "熊恒娜",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "张冬梅",
+            "target": "付明磊",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张冬梅",
+            "target": "金建国",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张冬梅",
+            "target": "金永阳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张冬梅",
+            "target": "乐孜纯",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张冬梅",
+            "target": "张素红",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张冬梅",
+            "target": "全必胜",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张冬梅",
+            "target": "颜于清",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张冬梅",
+            "target": "徐利光",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "张冬梅",
+            "target": "程善",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张航",
+            "target": "蔡萍根",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张航",
+            "target": "李博",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "张航",
+            "target": "马德伟",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "张航",
+            "target": "童建平",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "张航",
+            "target": "徐军",
+            "name": "合作次数：8",
+            "des": "合作次数：8"
+        },
+        {
+            "source": "张航",
+            "target": "许周速",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "张航",
+            "target": "严金华",
+            "name": "合作次数：19",
+            "des": "合作次数：19"
+        },
+        {
+            "source": "张航",
+            "target": "庄德文",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张隽",
+            "target": "金永阳",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "张隽",
+            "target": "李素兰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张隽",
+            "target": "沈守枫",
+            "name": "合作次数：43",
+            "des": "合作次数：43"
+        },
+        {
+            "source": "张隽",
+            "target": "宋军全",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "张隽",
+            "target": "王理同",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张隽",
+            "target": "邬学军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张隽",
+            "target": "杨爱军",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "张隽",
+            "target": "张素红",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "张隽",
+            "target": "赵松林",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "张隽",
+            "target": "马青",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "张隽",
+            "target": "刘震",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "张隽",
+            "target": "谢聪聪",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张隽",
+            "target": "方兴",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张隽",
+            "target": "狄艳媚",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "张隽",
+            "target": "丁晓东",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张隽",
+            "target": "胡晓瑞",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张隽",
+            "target": "王为民",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张隽",
+            "target": "姜丽亚",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张隽",
+            "target": "何敏勇",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张隽",
+            "target": "丁盈",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "张隽",
+            "target": "王定江",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "张隽",
+            "target": "冯玮",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "张素红",
+            "target": "金永阳",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "张素红",
+            "target": "李素兰",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "张素红",
+            "target": "孟莉",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "张素红",
+            "target": "宋军全",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "张素红",
+            "target": "王理同",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张素红",
+            "target": "杨爱军",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "张素红",
+            "target": "张冬梅",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张素红",
+            "target": "张隽",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "张素红",
+            "target": "朱海燕",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "张素红",
+            "target": "马青",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "张素红",
+            "target": "刘震",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "张素红",
+            "target": "谢聪聪",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "张素红",
+            "target": "方兴",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张素红",
+            "target": "狄艳媚",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "张素红",
+            "target": "丁晓东",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "张素红",
+            "target": "原俊青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张素红",
+            "target": "颜于清",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "张素红",
+            "target": "胡晓瑞",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张素红",
+            "target": "潘永娟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张素红",
+            "target": "王金华",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张泽南",
+            "target": "蔡萍根",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "张泽南",
+            "target": "陈乃波",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张泽南",
+            "target": "刘玉玲",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张泽南",
+            "target": "童建平",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "张泽南",
+            "target": "魏高尧",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "张泽南",
+            "target": "武强",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张泽南",
+            "target": "徐军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张泽南",
+            "target": "徐志君",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张泽南",
+            "target": "周寒青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张泽南",
+            "target": "陈曙英",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "赵松林",
+            "target": "金永阳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "赵松林",
+            "target": "沈守枫",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "赵松林",
+            "target": "宋军全",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "赵松林",
+            "target": "杨爱军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "赵松林",
+            "target": "张隽",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "赵松林",
+            "target": "胡娟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "赵松林",
+            "target": "狄艳媚",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "赵松林",
+            "target": "胡晓瑞",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "赵松林",
+            "target": "冯玮",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "周寒青",
+            "target": "陈乃波",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "周寒青",
+            "target": "付明磊",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "周寒青",
+            "target": "乐孜纯",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "周寒青",
+            "target": "刘玉玲",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "周寒青",
+            "target": "魏高尧",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "周寒青",
+            "target": "辛晓天",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "周寒青",
+            "target": "徐志君",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "周寒青",
+            "target": "许周速",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "周寒青",
+            "target": "张泽南",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "周寒青",
+            "target": "全必胜",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "周寒青",
+            "target": "王俊杰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "周寒青",
+            "target": "沈小燕",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "周寒青",
+            "target": "陈曙英",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "周寒青",
+            "target": "聂青苗",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "朱海燕",
+            "target": "李素兰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "朱海燕",
+            "target": "孟莉",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "朱海燕",
+            "target": "沈守枫",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "朱海燕",
+            "target": "宋军全",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "朱海燕",
+            "target": "张素红",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "朱海燕",
+            "target": "狄艳媚",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "朱海燕",
+            "target": "王金华",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "朱海燕",
+            "target": "李欣",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "庄德文",
+            "target": "施建青",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "庄德文",
+            "target": "唐轶峻",
+            "name": "合作次数：12",
+            "des": "合作次数：12"
+        },
+        {
+            "source": "庄德文",
+            "target": "童建平",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "庄德文",
+            "target": "王河林",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "庄德文",
+            "target": "魏高尧",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "庄德文",
+            "target": "武强",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "庄德文",
+            "target": "徐丹阳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "庄德文",
+            "target": "徐军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "庄德文",
+            "target": "鄢波",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "庄德文",
+            "target": "张航",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "庄德文",
+            "target": "高建勋",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "庄德文",
+            "target": "周一东",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "马青",
+            "target": "金永阳",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "马青",
+            "target": "李素兰",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "马青",
+            "target": "沈守枫",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "马青",
+            "target": "宋军全",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "马青",
+            "target": "王理同",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "马青",
+            "target": "邬学军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "马青",
+            "target": "杨爱军",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "马青",
+            "target": "张隽",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "马青",
+            "target": "张素红",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "马青",
+            "target": "刘震",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "马青",
+            "target": "曹军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "马青",
+            "target": "谢聪聪",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "马青",
+            "target": "方兴",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "马青",
+            "target": "狄艳媚",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "马青",
+            "target": "丁晓东",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "马青",
+            "target": "胡晓瑞",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "马青",
+            "target": "王金华",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "马青",
+            "target": "丁盈",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "马青",
+            "target": "王定江",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "刘震",
+            "target": "金永阳",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "刘震",
+            "target": "李素兰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘震",
+            "target": "陆建芳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘震",
+            "target": "沈守枫",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘震",
+            "target": "寿华好",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘震",
+            "target": "王理同",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "刘震",
+            "target": "杨爱军",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "刘震",
+            "target": "张隽",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "刘震",
+            "target": "张素红",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "刘震",
+            "target": "马青",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "刘震",
+            "target": "谢聪聪",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘震",
+            "target": "方兴",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘震",
+            "target": "丁晓东",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘震",
+            "target": "胡晓瑞",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘震",
+            "target": "周佳立",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘震",
+            "target": "成敏",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘震",
+            "target": "王为民",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "刘震",
+            "target": "何敏勇",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘震",
+            "target": "丁盈",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "高建勋",
+            "target": "唐轶峻",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "高建勋",
+            "target": "童建平",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "高建勋",
+            "target": "魏高尧",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "高建勋",
+            "target": "徐丹阳",
+            "name": "合作次数：8",
+            "des": "合作次数：8"
+        },
+        {
+            "source": "高建勋",
+            "target": "庄德文",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "高建勋",
+            "target": "周一东",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "全必胜",
+            "target": "付明磊",
+            "name": "合作次数：12",
+            "des": "合作次数：12"
+        },
+        {
+            "source": "全必胜",
+            "target": "乐孜纯",
+            "name": "合作次数：22",
+            "des": "合作次数：22"
+        },
+        {
+            "source": "全必胜",
+            "target": "李海彬",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "全必胜",
+            "target": "刘玉玲",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "全必胜",
+            "target": "杨扬",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "全必胜",
+            "target": "张冬梅",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "全必胜",
+            "target": "周寒青",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "全必胜",
+            "target": "王俊杰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "全必胜",
+            "target": "沈小燕",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "全必胜",
+            "target": "王昌辉",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "全必胜",
+            "target": "杜颖",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "周凯",
+            "target": "许周速",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吕斌",
+            "target": "蔡萍根",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "吕斌",
+            "target": "魏高尧",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吕斌",
+            "target": "鄢波",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吕斌",
+            "target": "卢忠",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吕斌",
+            "target": "高凡",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "卢忠",
+            "target": "蔡萍根",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "卢忠",
+            "target": "魏高尧",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "卢忠",
+            "target": "徐丹阳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "卢忠",
+            "target": "鄢波",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "卢忠",
+            "target": "吕斌",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "卢忠",
+            "target": "高凡",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "卢忠",
+            "target": "刘凡新",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "邹俊",
+            "target": "乐孜纯",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "邹俊",
+            "target": "王昌辉",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "邹俊",
+            "target": "杜颖",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "胡娟",
+            "target": "金永阳",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "胡娟",
+            "target": "沈守枫",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "胡娟",
+            "target": "宋军全",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "胡娟",
+            "target": "赵松林",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "胡娟",
+            "target": "狄艳媚",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "胡娟",
+            "target": "丁晓东",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "胡娟",
+            "target": "胡晓瑞",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "胡娟",
+            "target": "夏治南",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "胡娟",
+            "target": "吴玉荣",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王俊杰",
+            "target": "付明磊",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "王俊杰",
+            "target": "乐孜纯",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "王俊杰",
+            "target": "刘玉玲",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王俊杰",
+            "target": "周寒青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王俊杰",
+            "target": "全必胜",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王俊杰",
+            "target": "沈小燕",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "沈小燕",
+            "target": "付明磊",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "沈小燕",
+            "target": "乐孜纯",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "沈小燕",
+            "target": "周寒青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "沈小燕",
+            "target": "全必胜",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "沈小燕",
+            "target": "王俊杰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "朱涛",
+            "target": "武强",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "朱涛",
+            "target": "徐东辉",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "朱涛",
+            "target": "杨新娟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王昌辉",
+            "target": "付明磊",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "王昌辉",
+            "target": "乐孜纯",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王昌辉",
+            "target": "李海彬",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "王昌辉",
+            "target": "杨扬",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王昌辉",
+            "target": "全必胜",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王昌辉",
+            "target": "邹俊",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王昌辉",
+            "target": "杜颖",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王昌辉",
+            "target": "熊恒娜",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "王昌辉",
+            "target": "孙李真",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "王昌辉",
+            "target": "徐智君",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "杜颖",
+            "target": "付明磊",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "杜颖",
+            "target": "乐孜纯",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "杜颖",
+            "target": "全必胜",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "杜颖",
+            "target": "邹俊",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "杜颖",
+            "target": "王昌辉",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "曹军",
+            "target": "马青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "曹军",
+            "target": "程丽娟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吴超",
+            "target": "金永阳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吴超",
+            "target": "沈守枫",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吴超",
+            "target": "狄艳媚",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吴超",
+            "target": "周佳立",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吴超",
+            "target": "姜丽亚",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吴超",
+            "target": "陈传强",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陆成刚",
+            "target": "孟莉",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陆成刚",
+            "target": "寿华好",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陆成刚",
+            "target": "练晓鹏",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陆成刚",
+            "target": "王金华",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陆成刚",
+            "target": "何敏勇",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "谢聪聪",
+            "target": "金建国",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "谢聪聪",
+            "target": "金永阳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "谢聪聪",
+            "target": "李素兰",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "谢聪聪",
+            "target": "陆建芳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "谢聪聪",
+            "target": "寿华好",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "谢聪聪",
+            "target": "杨爱军",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "谢聪聪",
+            "target": "张隽",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "谢聪聪",
+            "target": "张素红",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "谢聪聪",
+            "target": "马青",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "谢聪聪",
+            "target": "刘震",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "谢聪聪",
+            "target": "丁晓东",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "谢聪聪",
+            "target": "原俊青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "谢聪聪",
+            "target": "颜于清",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "谢聪聪",
+            "target": "潘永娟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "谢聪聪",
+            "target": "成敏",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "谢聪聪",
+            "target": "王为民",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "谢聪聪",
+            "target": "练晓鹏",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "方兴",
+            "target": "张隽",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "方兴",
+            "target": "张素红",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "方兴",
+            "target": "马青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "方兴",
+            "target": "刘震",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "方兴",
+            "target": "周佳立",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "方兴",
+            "target": "王为民",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "方兴",
+            "target": "何敏勇",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "方兴",
+            "target": "丁盈",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "陈剑利",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "金建国",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "金永阳",
+            "name": "合作次数：12",
+            "des": "合作次数：12"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "李素兰",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "孟莉",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "沈守枫",
+            "name": "合作次数：10",
+            "des": "合作次数：10"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "宋军全",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "邬学军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "张隽",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "张素红",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "赵松林",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "朱海燕",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "马青",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "胡娟",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "吴超",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "胡晓瑞",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "潘永娟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "姜丽亚",
+            "name": "合作次数：8",
+            "des": "合作次数：8"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "王金华",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "丁盈",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "王定江",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "夏治南",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "冯玮",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "吴玉荣",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "狄艳媚",
+            "target": "马立媛",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁晓东",
+            "target": "李素兰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁晓东",
+            "target": "王理同",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁晓东",
+            "target": "杨爱军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁晓东",
+            "target": "张隽",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁晓东",
+            "target": "张素红",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "丁晓东",
+            "target": "马青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁晓东",
+            "target": "刘震",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁晓东",
+            "target": "胡娟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁晓东",
+            "target": "谢聪聪",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁晓东",
+            "target": "原俊青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁晓东",
+            "target": "颜于清",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "丁晓东",
+            "target": "胡晓瑞",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁晓东",
+            "target": "白晓迪",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁晓东",
+            "target": "周晶",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "原俊青",
+            "target": "陈剑利",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "原俊青",
+            "target": "邓爱珍",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "原俊青",
+            "target": "李素兰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "原俊青",
+            "target": "王理同",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "原俊青",
+            "target": "张素红",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "原俊青",
+            "target": "谢聪聪",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "原俊青",
+            "target": "丁晓东",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "原俊青",
+            "target": "颜于清",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "原俊青",
+            "target": "丁盈",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "颜于清",
+            "target": "李素兰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "颜于清",
+            "target": "张冬梅",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "颜于清",
+            "target": "张素红",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "颜于清",
+            "target": "谢聪聪",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "颜于清",
+            "target": "丁晓东",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "颜于清",
+            "target": "原俊青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "颜于清",
+            "target": "徐利光",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "颜于清",
+            "target": "丁盈",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "颜于清",
+            "target": "朱佳惠",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "胡晓瑞",
+            "target": "金永阳",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "胡晓瑞",
+            "target": "沈守枫",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "胡晓瑞",
+            "target": "宋军全",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "胡晓瑞",
+            "target": "王理同",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "胡晓瑞",
+            "target": "杨爱军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "胡晓瑞",
+            "target": "张隽",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "胡晓瑞",
+            "target": "张素红",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "胡晓瑞",
+            "target": "赵松林",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "胡晓瑞",
+            "target": "马青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "胡晓瑞",
+            "target": "刘震",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "胡晓瑞",
+            "target": "胡娟",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "胡晓瑞",
+            "target": "狄艳媚",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "胡晓瑞",
+            "target": "丁晓东",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "胡晓瑞",
+            "target": "姜丽亚",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "胡晓瑞",
+            "target": "夏治南",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "胡晓瑞",
+            "target": "吴玉荣",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "胡晓瑞",
+            "target": "程善",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "高凡",
+            "target": "蔡萍根",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "高凡",
+            "target": "陈乃波",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "高凡",
+            "target": "鄢波",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "高凡",
+            "target": "吕斌",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "高凡",
+            "target": "卢忠",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "高凡",
+            "target": "叶自然",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "周佳立",
+            "target": "寿华好",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "周佳立",
+            "target": "刘震",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "周佳立",
+            "target": "吴超",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "周佳立",
+            "target": "方兴",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "王肖隆",
+            "target": "童建平",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "王肖隆",
+            "target": "王河林",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "王肖隆",
+            "target": "魏高尧",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王肖隆",
+            "target": "李衎",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王肖隆",
+            "target": "吴彬",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "王肖隆",
+            "target": "林强",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "王肖隆",
+            "target": "程冰",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "王肖隆",
+            "target": "吴乐园",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王肖隆",
+            "target": "郑沾",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王肖隆",
+            "target": "彭树萍",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "郑文强",
+            "target": "童建平",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "郑文强",
+            "target": "李衎",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "郑文强",
+            "target": "林强",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "郑文强",
+            "target": "胡正珲",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李衎",
+            "target": "童建平",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "李衎",
+            "target": "王肖隆",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李衎",
+            "target": "郑文强",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "李衎",
+            "target": "吴彬",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李衎",
+            "target": "林强",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "李衎",
+            "target": "胡正珲",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李衎",
+            "target": "程冰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李衎",
+            "target": "吴乐园",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李衎",
+            "target": "阮乂",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吴彬",
+            "target": "陈乃波",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吴彬",
+            "target": "童建平",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "吴彬",
+            "target": "王河林",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "吴彬",
+            "target": "王肖隆",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "吴彬",
+            "target": "李衎",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吴彬",
+            "target": "林强",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "吴彬",
+            "target": "程冰",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "吴彬",
+            "target": "吴乐园",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "吴彬",
+            "target": "郑沾",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吴彬",
+            "target": "彭树萍",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "林强",
+            "target": "童建平",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "林强",
+            "target": "王河林",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "林强",
+            "target": "王肖隆",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "林强",
+            "target": "郑文强",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "林强",
+            "target": "李衎",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "林强",
+            "target": "吴彬",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "林强",
+            "target": "胡正珲",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "林强",
+            "target": "李德钊",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "林强",
+            "target": "程冰",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "林强",
+            "target": "吴乐园",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "林强",
+            "target": "郑沾",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "林强",
+            "target": "彭树萍",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "潘永娟",
+            "target": "金建国",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "潘永娟",
+            "target": "金永阳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "潘永娟",
+            "target": "李素兰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "潘永娟",
+            "target": "陆建芳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "潘永娟",
+            "target": "寿华好",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "潘永娟",
+            "target": "张素红",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "潘永娟",
+            "target": "谢聪聪",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "潘永娟",
+            "target": "狄艳媚",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "潘永娟",
+            "target": "成敏",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "胡正珲",
+            "target": "郑文强",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "胡正珲",
+            "target": "李衎",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "胡正珲",
+            "target": "林强",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李德钊",
+            "target": "林强",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王时铭",
+            "target": "邬学军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王时铭",
+            "target": "王金华",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "成敏",
+            "target": "金建国",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "成敏",
+            "target": "寿华好",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "成敏",
+            "target": "刘震",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "成敏",
+            "target": "谢聪聪",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "成敏",
+            "target": "潘永娟",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "王为民",
+            "target": "金永阳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王为民",
+            "target": "陆建芳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王为民",
+            "target": "沈守枫",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王为民",
+            "target": "宋军全",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王为民",
+            "target": "张隽",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王为民",
+            "target": "刘震",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "王为民",
+            "target": "谢聪聪",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王为民",
+            "target": "方兴",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王为民",
+            "target": "练晓鹏",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王为民",
+            "target": "何敏勇",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王为民",
+            "target": "丁盈",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王为民",
+            "target": "王定江",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "杨则金",
+            "target": "徐志君",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "杨则金",
+            "target": "熊宏伟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "杨则金",
+            "target": "唐令",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "杨则金",
+            "target": "左咸军",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "杨则金",
+            "target": "王宪位",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "熊宏伟",
+            "target": "徐志君",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "熊宏伟",
+            "target": "杨则金",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "熊宏伟",
+            "target": "刘淑娟",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "徐东辉",
+            "target": "林国成",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "徐东辉",
+            "target": "施建青",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "徐东辉",
+            "target": "魏高尧",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "徐东辉",
+            "target": "武强",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "徐东辉",
+            "target": "徐志君",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "徐东辉",
+            "target": "朱涛",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "徐东辉",
+            "target": "黎忠恒",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "徐东辉",
+            "target": "王安忠",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "徐东辉",
+            "target": "米丽琴",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "姜丽亚",
+            "target": "金永阳",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "姜丽亚",
+            "target": "孟莉",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "姜丽亚",
+            "target": "沈守枫",
+            "name": "合作次数：8",
+            "des": "合作次数：8"
+        },
+        {
+            "source": "姜丽亚",
+            "target": "宋军全",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "姜丽亚",
+            "target": "张隽",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "姜丽亚",
+            "target": "吴超",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "姜丽亚",
+            "target": "狄艳媚",
+            "name": "合作次数：8",
+            "des": "合作次数：8"
+        },
+        {
+            "source": "姜丽亚",
+            "target": "胡晓瑞",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "姜丽亚",
+            "target": "夏治南",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "练晓鹏",
+            "target": "陆建芳",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "练晓鹏",
+            "target": "孟莉",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "练晓鹏",
+            "target": "陆成刚",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "练晓鹏",
+            "target": "谢聪聪",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "练晓鹏",
+            "target": "王为民",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "练晓鹏",
+            "target": "王金华",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "练晓鹏",
+            "target": "徐利光",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "练晓鹏",
+            "target": "张理评",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "练晓鹏",
+            "target": "程善",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王金华",
+            "target": "金永阳",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "王金华",
+            "target": "陆建芳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王金华",
+            "target": "孟莉",
+            "name": "合作次数：6",
+            "des": "合作次数：6"
+        },
+        {
+            "source": "王金华",
+            "target": "沈守枫",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王金华",
+            "target": "邬学军",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "王金华",
+            "target": "张素红",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王金华",
+            "target": "朱海燕",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王金华",
+            "target": "马青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王金华",
+            "target": "陆成刚",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王金华",
+            "target": "狄艳媚",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王金华",
+            "target": "王时铭",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王金华",
+            "target": "练晓鹏",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "王金华",
+            "target": "徐利光",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王金华",
+            "target": "张理评",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王金华",
+            "target": "程善",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "徐利光",
+            "target": "孟莉",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "徐利光",
+            "target": "张冬梅",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "徐利光",
+            "target": "颜于清",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "徐利光",
+            "target": "练晓鹏",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "徐利光",
+            "target": "王金华",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "徐利光",
+            "target": "张理评",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "徐利光",
+            "target": "程善",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张理评",
+            "target": "孟莉",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张理评",
+            "target": "练晓鹏",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张理评",
+            "target": "王金华",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张理评",
+            "target": "徐利光",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张理评",
+            "target": "白晓迪",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "张理评",
+            "target": "夏治南",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张理评",
+            "target": "程善",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "何敏勇",
+            "target": "沈守枫",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "何敏勇",
+            "target": "张隽",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "何敏勇",
+            "target": "刘震",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "何敏勇",
+            "target": "陆成刚",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "何敏勇",
+            "target": "方兴",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "何敏勇",
+            "target": "王为民",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "何敏勇",
+            "target": "丁盈",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "何敏勇",
+            "target": "顾娟如",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁盈",
+            "target": "邓爱珍",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁盈",
+            "target": "李素兰",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "丁盈",
+            "target": "沈守枫",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁盈",
+            "target": "宋军全",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁盈",
+            "target": "王理同",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁盈",
+            "target": "邬学军",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "丁盈",
+            "target": "张隽",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "丁盈",
+            "target": "马青",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "丁盈",
+            "target": "刘震",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "丁盈",
+            "target": "方兴",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁盈",
+            "target": "狄艳媚",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁盈",
+            "target": "原俊青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁盈",
+            "target": "颜于清",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁盈",
+            "target": "王为民",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁盈",
+            "target": "何敏勇",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "丁盈",
+            "target": "王定江",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "丁盈",
+            "target": "朱佳惠",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "白晓迪",
+            "target": "丁晓东",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "白晓迪",
+            "target": "张理评",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "白晓迪",
+            "target": "夏治南",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "白晓迪",
+            "target": "詹国平",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陈曙英",
+            "target": "林国成",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陈曙英",
+            "target": "魏高尧",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陈曙英",
+            "target": "张泽南",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陈曙英",
+            "target": "周寒青",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王定江",
+            "target": "沈守枫",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王定江",
+            "target": "宋军全",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "王定江",
+            "target": "邬学军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王定江",
+            "target": "杨爱军",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "王定江",
+            "target": "张隽",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "王定江",
+            "target": "马青",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "王定江",
+            "target": "狄艳媚",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王定江",
+            "target": "王为民",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "王定江",
+            "target": "丁盈",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "王定江",
+            "target": "李欣",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王定江",
+            "target": "夏治南",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘凡新",
+            "target": "魏高尧",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘凡新",
+            "target": "鄢波",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘凡新",
+            "target": "卢忠",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘凡新",
+            "target": "唐超军",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "郑义鑫",
+            "target": "李婷婷",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张庆彬",
+            "target": "陈乃波",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张庆彬",
+            "target": "李博",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张庆彬",
+            "target": "马德伟",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "张庆彬",
+            "target": "许周速",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "朱佳惠",
+            "target": "颜于清",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "朱佳惠",
+            "target": "丁盈",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "黎忠恒",
+            "target": "徐东辉",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "黎忠恒",
+            "target": "王安忠",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "黎忠恒",
+            "target": "刘海山",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "黎忠恒",
+            "target": "杨新娟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "黎忠恒",
+            "target": "米丽琴",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "王安忠",
+            "target": "徐东辉",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "王安忠",
+            "target": "黎忠恒",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "王安忠",
+            "target": "刘海山",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王安忠",
+            "target": "米丽琴",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "刘海山",
+            "target": "武强",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘海山",
+            "target": "黎忠恒",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘海山",
+            "target": "王安忠",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘海山",
+            "target": "杨新娟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘海山",
+            "target": "张少君",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘海山",
+            "target": "米丽琴",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "杨新娟",
+            "target": "武强",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "杨新娟",
+            "target": "朱涛",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "杨新娟",
+            "target": "黎忠恒",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "杨新娟",
+            "target": "刘海山",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "杨新娟",
+            "target": "米丽琴",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "聂青苗",
+            "target": "陈乃波",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "聂青苗",
+            "target": "李海彬",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "聂青苗",
+            "target": "马德伟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "聂青苗",
+            "target": "童建平",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "聂青苗",
+            "target": "辛晓天",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "聂青苗",
+            "target": "徐志君",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "聂青苗",
+            "target": "许周速",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "聂青苗",
+            "target": "周寒青",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "周显潮",
+            "target": "詹国平",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李欣",
+            "target": "陈剑利",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李欣",
+            "target": "杨爱军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李欣",
+            "target": "朱海燕",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李欣",
+            "target": "王定江",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李欣",
+            "target": "陈芝花",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "李欣",
+            "target": "夏治南",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王嘉维",
+            "target": "许周速",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王嘉维",
+            "target": "严金华",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陈芝花",
+            "target": "陈剑利",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陈芝花",
+            "target": "李欣",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "唐令",
+            "target": "王河林",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "唐令",
+            "target": "徐志君",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "唐令",
+            "target": "杨则金",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "唐令",
+            "target": "左咸军",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "唐令",
+            "target": "王宪位",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "程冰",
+            "target": "童建平",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "程冰",
+            "target": "王河林",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "程冰",
+            "target": "王肖隆",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "程冰",
+            "target": "李衎",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "程冰",
+            "target": "吴彬",
+            "name": "合作次数：7",
+            "des": "合作次数：7"
+        },
+        {
+            "source": "程冰",
+            "target": "林强",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "程冰",
+            "target": "吴乐园",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "程冰",
+            "target": "郑沾",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "程冰",
+            "target": "彭树萍",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "左咸军",
+            "target": "徐志君",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "左咸军",
+            "target": "杨则金",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "左咸军",
+            "target": "唐令",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "王宪位",
+            "target": "许周速",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王宪位",
+            "target": "杨则金",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "王宪位",
+            "target": "唐令",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "唐超军",
+            "target": "刘凡新",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "夏治南",
+            "target": "宋军全",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "夏治南",
+            "target": "杨爱军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "夏治南",
+            "target": "胡娟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "夏治南",
+            "target": "狄艳媚",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "夏治南",
+            "target": "胡晓瑞",
+            "name": "合作次数：5",
+            "des": "合作次数：5"
+        },
+        {
+            "source": "夏治南",
+            "target": "姜丽亚",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "夏治南",
+            "target": "张理评",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "夏治南",
+            "target": "白晓迪",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "夏治南",
+            "target": "王定江",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "夏治南",
+            "target": "李欣",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "夏治南",
+            "target": "冯玮",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "夏治南",
+            "target": "程善",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "张少君",
+            "target": "刘海山",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "冯玮",
+            "target": "沈守枫",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "冯玮",
+            "target": "杨爱军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "冯玮",
+            "target": "张隽",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "冯玮",
+            "target": "赵松林",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "冯玮",
+            "target": "狄艳媚",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "冯玮",
+            "target": "夏治南",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "冯玮",
+            "target": "程善",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "熊恒娜",
+            "target": "李海彬",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "熊恒娜",
+            "target": "杨扬",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "熊恒娜",
+            "target": "王昌辉",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "熊恒娜",
+            "target": "孙李真",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "孙李真",
+            "target": "李海彬",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "孙李真",
+            "target": "王昌辉",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "孙李真",
+            "target": "熊恒娜",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吴乐园",
+            "target": "陈乃波",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吴乐园",
+            "target": "童建平",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吴乐园",
+            "target": "王肖隆",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吴乐园",
+            "target": "李衎",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吴乐园",
+            "target": "吴彬",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "吴乐园",
+            "target": "林强",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吴乐园",
+            "target": "程冰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "郑沾",
+            "target": "王肖隆",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "郑沾",
+            "target": "吴彬",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "郑沾",
+            "target": "林强",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "郑沾",
+            "target": "程冰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "彭树萍",
+            "target": "王河林",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "彭树萍",
+            "target": "王肖隆",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "彭树萍",
+            "target": "吴彬",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "彭树萍",
+            "target": "林强",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "彭树萍",
+            "target": "程冰",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "徐智君",
+            "target": "王昌辉",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "詹国平",
+            "target": "白晓迪",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "詹国平",
+            "target": "周显潮",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "程丽娟",
+            "target": "曹军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "周晶",
+            "target": "丁晓东",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "陈传强",
+            "target": "吴超",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "叶自然",
+            "target": "高凡",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "阮乂",
+            "target": "李衎",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘淑娟",
+            "target": "徐志君",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "刘淑娟",
+            "target": "熊宏伟",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "冯鸣",
+            "target": "陈剑利",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "冯鸣",
+            "target": "李素兰",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "冯鸣",
+            "target": "邬学军",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吴玉荣",
+            "target": "金永阳",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吴玉荣",
+            "target": "沈守枫",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吴玉荣",
+            "target": "胡娟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吴玉荣",
+            "target": "狄艳媚",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "吴玉荣",
+            "target": "胡晓瑞",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "程善",
+            "target": "孟莉",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "程善",
+            "target": "张冬梅",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "程善",
+            "target": "胡晓瑞",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "程善",
+            "target": "练晓鹏",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "程善",
+            "target": "王金华",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "程善",
+            "target": "徐利光",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "程善",
+            "target": "张理评",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "程善",
+            "target": "夏治南",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "程善",
+            "target": "冯玮",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "周一东",
+            "target": "庄德文",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "周一东",
+            "target": "高建勋",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张夕飞",
+            "target": "李海彬",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "张夕飞",
+            "target": "武强",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "张夕飞",
+            "target": "辛晓天",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "张夕飞",
+            "target": "徐志君",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "米丽琴",
+            "target": "徐东辉",
+            "name": "合作次数：2",
+            "des": "合作次数：2"
+        },
+        {
+            "source": "米丽琴",
+            "target": "黎忠恒",
+            "name": "合作次数：4",
+            "des": "合作次数：4"
+        },
+        {
+            "source": "米丽琴",
+            "target": "王安忠",
+            "name": "合作次数：3",
+            "des": "合作次数：3"
+        },
+        {
+            "source": "米丽琴",
+            "target": "刘海山",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "米丽琴",
+            "target": "杨新娟",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "马立媛",
+            "target": "狄艳媚",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        },
+        {
+            "source": "顾娟如",
+            "target": "何敏勇",
+            "name": "合作次数：1",
+            "des": "合作次数：1"
+        }
+    ],
+    "categories": [
+        {
+            "name": "刘海山团队"
+        },
+        {
+            "name": "陈乃波团队"
+        },
+        {
+            "name": "徐东辉团队"
+        },
+        {
+            "name": "乐孜纯团队"
+        },
+        {
+            "name": "王昌辉团队"
+        },
+        {
+            "name": "寿华好团队"
+        },
+        {
+            "name": "许周速团队"
+        },
+        {
+            "name": "李素兰团队"
+        },
+        {
+            "name": "王金华团队"
+        },
+        {
+            "name": "魏高尧团队"
+        },
+        {
+            "name": "狄艳媚团队"
+        },
+        {
+            "name": "李海彬团队"
+        },
+        {
+            "name": "颜于清团队"
+        },
+        {
+            "name": "王定江团队"
+        },
+        {
+            "name": "高建勋团队"
+        },
+        {
+            "name": "林强团队"
+        },
+        {
+            "name": "李衎团队"
+        },
+        {
+            "name": "唐令团队"
+        },
+        {
+            "name": "未划分教师"
+        }
+    ]
+}

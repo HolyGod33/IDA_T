@@ -74,6 +74,7 @@
         <img src="img/idaLogo1.png" alt="logosa112132122" style="width:10%" class="rounded-circle ml-3"/>
         <img src="img/idaTitle.png" alt="logosa112132122" style="width:15%;height:15%;" class="mt-3"/>
         <a id="avatar" class="position-absolute" style="left: 92%;top: 5%;color: white;" href="dashboard" target="_blank">个人中心</a>
+        <a class="position-absolute" style="left: 80%;top: 5%;color: white;" href="http://localhost:8080/ida/user/info" target="_blank">个人中心(校外)</a>
     </div>
 
     <!--搜索框模块-->
@@ -186,6 +187,47 @@
             </div>
         </div>
     </div>
+
+    <hr>
+    <br>
+
+    <!--!!!!!科研成果推荐模块-->
+    <div class="container mt-1 pt-1">
+        <div class="tab-content">
+
+            <!--导航条 切换Article/Patent/horizontalProject-->
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link disabled" style="background: #0081ff;color: #ffffff">推荐成果</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="articleInfo" onclick="toArticle()" data-toggle="tab" href="#articleInfoContent">论文</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="patentInfo" onclick="toPatent()" data-toggle="tab" href="#patentInfoContent">专利</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="horizontalProjectInfo" onclick="toProject()" data-toggle="tab" href="#horizontalProjectInfoContent">横向项目</a>
+                </li>
+            </ul>
+
+            <!--论文信息列表-->
+            <div id="articleInfoContent" class="container tab-pane active">
+                <h5><small style="font-size: 70%">推荐您可能感兴趣的top20篇论文</small></h5>
+            </div>
+
+            <!--专利信息列表-->
+            <div id="patentInfoContent" class="container tab-pane fade">
+                <h5><small style="font-size: 70%">推荐您可能感兴趣的top20篇专利</small></h5>
+            </div>
+
+            <!--横向项目信息列表-->
+            <div id="horizontalProjectInfoContent" class="container tab-pane fade">
+                <h5><small style="font-size: 70%">推荐您可能感兴趣的top20横向项目</small></h5>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 <script type="text/javascript" th:src="@{js/jquery-3.2.1.min.js}"></script>
@@ -617,6 +659,185 @@
                 console.error(res)
             }
         })
+    }
+</script>
+<script type="text/javascript">
+    $(function() {
+        $.ajax({
+            url: "http://localhost:8080/ida/recommend/recommendList",
+            type: "post",
+            dataType: "json",
+            traditional: true,
+            // cache: false,
+            async: false,
+            success: function (data) {
+                var str1 =''
+                var str2 =''
+                var str3 =''
+
+                console.log(data);
+                console.log(data[1].title);
+                for(var i = 0; i < data.length; i++) {
+                    if(data.length < 60) {
+
+                    }
+                    console.log(data[i].label);
+                    //Article
+                    if(i < 20) {
+                        if(data[i].title != "") {
+                            str1 += '<div class="container-fluid card mt-2">';
+                            str1 += '<div class="media px-2 py-2">';
+                            str1 += '<div class="media-body p-3" style="font-size: 90%;">';
+                            //标题栏
+                            str1 += '<div class="row">';
+                            str1 += '<h5>';
+                            str1 += '<a href="#" style="font-size: 80%;overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:1;">';
+                            str1 += data[i].title;
+                            str1 += '</a>';
+                            str1 += '</h5>';
+                            str1 += '</div>';
+
+                            //作者
+                            str1 += '<div class="row">';
+                            str1 += '<span style="color:green;">';
+                            str1 += data[i].partner;
+                            str1 += '</span>';
+
+                            //年份
+                            str1 += '<h5 class="ml-auto"><span class="ml-auto text-right">';
+                            str1 += data[i].year;
+                            str1 += '</span></h5>';
+                            str1 += '</div>';
+
+                            //关键词
+                            if(data[i].keyword != null) {
+                                str1 += '<div class="row">';
+                                str1 += '<span style="overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:1;">';;
+                                str1 += data[i].keyword;
+                                str1 += '</span>';
+                                str1 += "</div>";
+                            }
+
+                            //引用量
+                            str1 += '<div class="row">';
+                            str1 += '引用量：' + data[i].citeCount;
+                            str1 += '</div>';
+
+                            str1 += '</div>';
+                            str1 += '</div>';
+                            str1 += '</div>'
+                        }
+                    }
+
+                    //Patent
+                    else if(i>=20 && i <40) {
+                        console.log(data[i].title);
+                        if(data[i].title != "") {
+                            str2 += '<div class="container-fluid card mt-2">';
+                            str2 += '<div class="media px-2 py-2">';
+                            str2 += '<div class="media-body p-3" style="font-size: 90%;">';
+                            //标题栏
+                            str2 += '<div class="row">';
+                            str2 += '<h5>';
+                            str2 += '<a href="#" style="font-size: 80%;overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:1;">';
+                            str2 += data[i].title;
+                            str2 += '</a>';
+                            str2 += '</h5>';
+                            //年份
+                            str2 += '<span class="ml-auto">';
+                            str2 += data[i].year;
+                            str2 += '</span>';
+                            str2 += '</div>';
+
+                            //发明人、类型、状态
+                            str2 += '<div class="row">';
+                            str2 += '<span>' + data[i].partner + '</span>';
+                            str2 += '<span class="badge badge-pill badge-success">' + data[i].type + '</span>';
+                            if(data[i].state != null)
+                                str2 += '<span class="badge badge-pill badge-info">' + data[i].state + '</span>';
+                            str2 += '</div>';
+
+                            //申请者、组织
+                            str2 += '<div class="row">';
+                            str2 += data[i].applicant;
+                            str2 += '<span class="ml-auto">';
+                            str2 += data[i].organization;
+                            str2 += '</span>';
+                            str2 += '</div>';
+
+                            str2 += '</div>';
+                            str2 += '</div>';
+                            str2 += '</div>';
+                        }
+                    }
+
+                    else if(i < 60) {
+                        console.log(data[i].title);
+                        if (data[i].title != null && data[i].title != "") {
+                            str3 += '<div class="container-fluid card mt-2">';
+                            str3 += '<div class="media px-2 py-2">';
+                            str3 += '<div class="media-body p-3" style="font-size: 90%;">';
+
+
+                            //标题、批准日期
+                            str3 += '<div class="row">';
+                            str3 += '<h5>';
+                            // str3 += '<a href="#" style="font-size: 80%;overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:1;">';
+                            str3 += data[i].title;
+                            // str3 += '</a>';
+                            str3 += '</h5>';
+                            str3 += '<span class="ml-auto">' + data[i].year + '</span>';
+                            str3 += '</div>';
+
+                            //领导人、nature、地域、计划经费
+                            str3 += '<div class="row">';
+                            str3 += '<span>' + data[i].partner;
+                            str3 += '<span  class="badge badge-pill badge-success">' + data[i].nature + '</span>';
+                            str3 += '<span class="badge badge-pill badge-info">' + data[i].area + '</span>';
+                            if (data[i].planedMoney != null) {
+                                str3 += '<h5 class="ml-auto">';
+                                str3 += '<span class="ml-auto text-right">' + data[i].planedMoney + '万' + '</span>';
+                                str3 += '</h5>';
+                            }
+                            str3 += '</div>';
+
+                            //老板、机构
+                            str3 += '<div class="row">';
+                            str3 += data[i].boss;
+                            str3 += '<span class="ml-auto">' + data[i].organization + '</span>';
+                            str3 += '</div>';
+
+                            str3 += '</div>';
+                            str3 += '</div>';
+                            str3 += '</div>';
+                        }
+                    }
+                }
+                $("#articleInfoContent").append(str1);
+                $("#patentInfoContent").append(str2);
+                $("#horizontalProjectInfoContent").append(str3);
+            }
+        })
+    })
+
+    // //网页加载时，默认加载论文栏
+
+    function toArticle() {
+        document.getElementById("#patentInfoContent").classList.remove("active");
+        document.getElementById("#horizontalProjectInfoContent").classList.remove("active");
+        document.getElementById("#articleInfoContent").classList.add("active");
+    }
+
+    function toPatent() {
+        document.getElementById("#patentInfoContent").classList.add("active");
+        document.getElementById("#articleInfoContent").classList.remove("active");
+        document.getElementById("#horizontalProjectInfoContent").classList.remove("active");
+    }
+
+    function toProject() {
+        document.getElementById("#horizontalProjectInfoContent").classList.add("active");
+        document.getElementById("#patentInfoContent").classList.remove("active");
+        document.getElementById("#articleInfoContent").classList.remove("active");
     }
 </script>
 </html>

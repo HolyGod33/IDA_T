@@ -9,14 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e4211db-a649-4688-9820-64dbdeac8035" name="Default Changelist" comment="bug fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/tutor-recommend-system/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/tutor-recommend-system/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/tutor-recommend-system/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/tutor-recommend-system/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/Community_wmk.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/Community_wmk.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
-    </list>
+    <list default="true" id="0e4211db-a649-4688-9820-64dbdeac8035" name="Default Changelist" comment="bug fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -333,6 +326,9 @@
       <workItem from="1623029940810" duration="4330000" />
       <workItem from="1623161500315" duration="630000" />
       <workItem from="1623213037495" duration="1538000" />
+      <workItem from="1623215213651" duration="182000" />
+      <workItem from="1623242253651" duration="1009000" />
+      <workItem from="1623302414222" duration="151000" />
     </task>
     <task id="LOCAL-00001" summary="添加导师推荐系统子项目">
       <created>1622897204218</created>

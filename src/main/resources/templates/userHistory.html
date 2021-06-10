@@ -287,7 +287,9 @@
                                 str3 += '<div class="row">';
                                 str3 += '<span>' + data[i].partner;
                                 str3 += '<span  class="badge badge-pill badge-success">' + data[i].nature + '</span>';
-                                str3 += '<span class="badge badge-pill badge-info">' + data[i].area + '</span>';
+                                if(data[i].area != null)
+                                    str3 += '<span class="badge badge-pill badge-info">' + data[i].area + '</span>';
+                                str3 += '</span>';
                                 str3 += '<h5 class="ml-auto">';
                                 str3 += '<span class="ml-auto text-right">' + data[i].planedMoney + '万' + '</span>';
                                 str3 += '</h5>';

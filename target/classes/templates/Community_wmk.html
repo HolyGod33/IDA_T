@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>浙江工业大学|学术团队划分情况</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <style type="text/css">
+        #container{
+            position: relative;
+            width:auto;
+<!--            height:550px-->
+        }
+        #button_container{
+            position: absolute;
+            z-index:100;
+            width: 250px;
+            padding:96px 0px 0px 19px;
+        }
+        #select_container{
+            position: absolute;
+            z-index:100;
+            /*width: 250px;*/
+            padding:58px 0px 0px 19px;
+        }
+        #select{
+            width: 220px;
+            height: 25px;
+            font-size: 10px;
+            margin-right: 10px; 
+        }
+        #ZJUTCommunity{
+            z-index:80;
+            width:1400px;
+            height:650px
+        }
+
+        .btn {
+            -webkit-border-radius: 20;
+            -moz-border-radius: 20;
+            border-radius: 20px;
+            font-family: Arial;
+            /*font-weight: bold;*/
+            color: #708090;
+            font-size: 8px;
+            background: #ffffff;
+            padding: 3px 8px;
+            border: solid #708090 1px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #1E90FF;
+            border: solid #1E90FF 1px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        #btn2{
+            margin-left: 15px;
+            margin-top: 2.5px;
+        }
+        .btn:hover, .btn:focus, .btn:active, .btn:visited {
+            outline: none;
+            box-shadow: none !important;
+        }
+    </style>
+
+</head>
+
+<body style="margin: 0px">
+    <div class="container-fluid" id="loadingDiv"
+         style="position: absolute;z-index: 10;background-color:rgba(255,255,255,0.3);width: 100%;height: 100%;display: none">
+        <img id="gifImg" src="/ida/img/loading-2.gif" class="text-center"
+             style="z-index: 10;position:absolute;top: 52%;left:48%"/>
+    </div>
+
+
+    <div class="row" style="padding-top: 0px;margin-top: -10px;background: #484393;">
+        <img src="/ida/img/idaLogo1.png" alt="logosa112132122" style="cursor: pointer;width:10%" class="rounded-circle ml-3" onclick="window.location='/ida'" />
+        <img src="/ida/img/idaTitle.png" alt="logosa112132122" style="cursor: pointer;width:15%;height:15%;margin-top:2%" onclick="window.location='/ida'"/>
+    </div>
+
+        <div id='container'>
+            <div id='button_container'>
+                <input id="btn1" type="button" class='btn' value='全选' />
+                <input id="btn2" type="button" class='btn' value='取消'/>
+            </div>
+        <div id='select_container'>
+            <select id='select'>
+                <option value ="computer">计算机科学与技术学院、软件学院</option>
+                <option value ="jixie">机械工程学院</option>
+                <option value="yao">药学院</option>
+                <option value="huagong">化学工程学院</option>
+                <option value="cailiao">材料科学与工程学院</option>
+                <option value="sea">海洋学院</option>
+                <option value="info">信息工程学院</option>
+                <option value="jianzhu">建筑工程学院</option>
+                <option value="jiaoyu">教育科学与技术学院</option>
+                <option value="jingmao">经贸管理学院</option>
+                <option value="renwen">人文学院</option>
+                <option value="sheji">设计艺术学院</option>
+                <option value="fa">法学院</option>
+                <option value="zhenzhi">政治与公共管理学院</option>
+                <option value="waiguoyu">外国语学院</option>
+                <option value="huanjing">环境学院</option>
+                <option value="makesi">马克思主义学院</option>
+                <option value="shengwu">生物工程学院</option>
+            </select>
+            <input id="btn3" type="button" class='btn' value='确定'/>
+        </div>
+        <div id="ZJUTCommunity"></div>       
+    </div>
+</body>
+<!--<script type="text/javascript" th:src="@{/js/echarts.js}"></script>-->
+<script type="text/javascript" th:src="@{/js/echarts-wordcloud.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery-3.2.1.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/popper.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/bootstrap-table.js}"></script>
+<script type="text/javascript" th:src="@{/js/bootstrap-table-zh-CN.js}"></script>
+<script th:src="@{/Community_wmk/js/echarts.js}"></script>
+<!--<script th:src="{@{/Community_wmk/js/jquery-latest.js}"></script>-->
+<!--<script th:src="@{/Community_wmk/js/westeros.js}"></script>-->
+
+<script type="text/javascript" th:inline="javascript">
+
+    window.onload = function () {
+        showCommunity();
+    }
+    function showCommunity(path,state) {
+        var communityGraph = echarts.init(document.getElementById('ZJUTCommunity'));
+<!--        communityGraph.showLoading();-->
+        console.log(path)
+        $.ajax({
+            url: path,
+            dataType: "json",
+            type: "get",
+            success: function (data) {
+                console.log(data);
+                draw_echarts(data, communityGraph,state);
+<!--                // 默认刷新一次 否则不会显示selector-->
+<!--                communityGraph.dispatchAction({-->
+<!--                    type: 'restore'-->
+<!--                });-->
+                console.log(communityGraph);
+                console.log(communityGraph.getOption())
+            },
+            error:function (data){
+                console.log('ajax error');
+            }
+        });
+    }
+
+    showCommunity("/ida/Community_wmk/data/computer/zjut-data-echarts.json",false);
+
+    $('#btn3').click(function(){
+        console.log($('#select').val());
+        val = $('#select').val()
+        path = "data/" + val + "/zjut-data-echarts.json"
+        showCommunity(path,false);
+
+    });
+
+    $('#btn1').click(function(){
+        //图例全部选中
+        val = $('#select').val()
+        path = "/ida/Community_wmk/data/" + val + "/zjut-data-echarts.json"
+        showCommunity(path,true);
+    });
+    $('#btn2').click(function(){
+        // 图例全部不选中
+        val = $('#select').val()
+        path = "/ida/Community_wmk/data/" + val + "/zjut-data-echarts.json"
+        showCommunity(path,false);
+    });
+
+    //state 表示图例全部显示或全部不显示
+    function draw_echarts(res, myChart,state) {
+        // 图例的状态（全选or取消）
+        var leader = res['categories'].map(function (a) {return a.name;});
+        var select = {};
+        for (var i=0;i<leader.length;i++){
+            select[leader[i]] = state;
+        }
+
+        colorList = [
+            "#005f73","#0a9396","#94d2bd","#e9d8a6","#ee9b00",
+            "#ca6702","#e07384","#48bfe3","#9b2226","#f72585",
+            "#b5179e","#9337F5","#560bad","#2033E6","#2E9EFF",
+            "#5465ff","#788bff","#9bb1ff","#bfd7ff","#132a13",
+            "#64dfdf","#72efdd","#80ffdb","#6a994e","#a7c957",
+            "#3f37c9","#4361ee","#4895ef","#4cc9f0","#6930c3",
+            "#5e60ce","#5390d9","#4ea8de","#48bfe3","#56cfe1",
+            ]
+        option = {
+            color: colorList,
+            // zoom:0.7,
+            // 图的标题
+            title: {
+                text: '浙江工业大学 | 学术团队',
+                padding: [25,20,0,25],
+                itemGap:10,
+                // subtext:'教师团队',
+                // subtextStyle: {
+                //     fontSize: 15,
+                //     fontWeight: "bold",
+                //     lineHeight: 18,
+                //     fontWeight: "bold",
+                // }
+            },
+            // 提示框的配置
+            tooltip: {
+                formatter: function (x) {
+                    return x.data.des;
+                }
+            },
+            // 工具箱
+            toolbox: {
+                // 显示工具箱
+                show: true,
+                feature: {
+                    mark: {
+                        show: true
+                    },
+                    // 还原
+                    restore: {
+                        show: true
+                    },
+                    // 保存为图片
+                    saveAsImage: {
+                        show: true
+                    },
+                }
+            },
+            // 图例
+            legend: [{
+                // selectedMode: 'single',
+                data: res['categories'].map(function (a) {
+                    return a.name;
+                }),
+                selected: select,   //图例全不选中
+                orient: 'vertical',  //垂直显示
+                y: 'left',    //延Y轴居中
+                x: 'left', //居右显示
+                padding:[145,0,0,20], //上右下左
+                itemHeight: 15,     //高
+                itemGap:20,         //图例的间距
+                type:"scroll",      //图例分页滚动
+                fontSize: 12,
+    <!--            selector:true,      //全选、反选框-->
+    <!--            selectorLabel: {-->
+    <!--                // fontWeight: "bold",-->
+    <!--                fontSize: 12,-->
+    <!--                padding: [5,8],-->
+    <!--            },-->
+    <!--            selectorButtonGap:25,    //选择器按钮与图例组件之间的间隔。-->
+    <!--            selectorItemGap:20,       //选择器按钮之间的间隔-->
+            }],
+            series: [{
+                type: 'graph', // 类型:关系图
+                layout: 'force', //图的布局，类型为力导图
+                roam: true, // 是否开启鼠标缩放和平移漫游。默认不开启。如果只想要开启缩放或者平移,可以设置成 'scale' 或者 'move'。设置成 true 为都开启
+                // edgeSymbol: ['circle', 'arrow'],
+                // edgeSymbolSize: [2, 10],
+                edgeLabel: {
+                    normal: {
+                        textStyle: {
+                            fontSize: 5
+                        }
+                    }
+                },
+                force: {
+                    repulsion: 800,
+                    // edgeLength: [10,50] //连线的长度
+                    edgeLength: 150//连线的长度
+
+                },
+                draggable: true,
+                lineStyle: {
+                    // color: 'source',
+                    // normal: {
+                    //     width: 1,
+                    //     color: '#4b565b',
+                    // }
+                },
+                labelLayout: {
+                        hideOverlap: true
+                    },
+                edgeLabel: { // 边的标签
+                    normal: {
+                        show: false,
+                        formatter: function (x) {
+                            return x.data.name;
+                        }
+                    }
+                },
+                label: {
+                    normal: {
+                        show: true,
+                        fontSize:12,
+                        position: 'right',
+                        textStyle: {}
+                    }
+                },
+                focusNodeAdjacency: true,
+                // 数据
+                data: res['data'],
+                links: res['links'],
+                categories: res['categories'],
+            }]
+    };
+
+    myChart.setOption(option);
+
+}
+
+/*]]>*/
+</script>
+</html>

@@ -690,13 +690,15 @@
                 var str1 =''
                 var str2 =''
                 var str3 =''
+                var str = ''
 
                 console.log(data);
-                console.log(data[1].title);
+                console.log(data.length);
+                if(data.length == 1) {
+                    str += '<h5 style="text-align: center">' + "还没有检测到你的喜爱哦！请先注册或登录！" + '</h5>';
+                    str += '<div  style="margin-left: 50%">' + '<button onclick="jumpToLogin() " class="btn btn-outline-primary ml-2">' + "登录/注册" + '</button>' + '</div>';
+                }
                 for(var i = 0; i < data.length; i++) {
-                    if(data.length < 60) {
-
-                    }
                     console.log(data[i].label);
                     //Article
                     if(i < 20) {
@@ -716,7 +718,7 @@
                             //作者
                             str1 += '<div class="row">';
                             str1 += '<span style="color:green;">';
-                            str1 += data[i].partner;
+                            str1 += '作者：' + data[i].partner;
                             str1 += '</span>';
 
                             //年份
@@ -729,7 +731,7 @@
                             if(data[i].keyword != null) {
                                 str1 += '<div class="row">';
                                 str1 += '<span style="overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:1;">';;
-                                str1 += data[i].keyword;
+                                str1 += '关键词：' + data[i].keyword;
                                 str1 += '</span>';
                                 str1 += "</div>";
                             }
@@ -767,15 +769,15 @@
 
                             //发明人、类型、状态
                             str2 += '<div class="row">';
-                            str2 += '<span>' + data[i].partner + '</span>';
+                            str2 += '<span>' + '发明人：' + data[i].partner + '</span>';
                             str2 += '<span class="badge badge-pill badge-success">' + data[i].type + '</span>';
                             if(data[i].state != null)
                                 str2 += '<span class="badge badge-pill badge-info">' + data[i].state + '</span>';
                             str2 += '</div>';
 
-                            //申请者、组织
+                            //专利权人
                             str2 += '<div class="row">';
-                            str2 += data[i].applicant;
+                            str2 += '专利权人：' + data[i].applicant;
                             str2 += '<span class="ml-auto">';
                             str2 += data[i].organization;
                             str2 += '</span>';
@@ -798,28 +800,29 @@
                             //标题、批准日期
                             str3 += '<div class="row">';
                             str3 += '<h5>';
-                            // str3 += '<a href="#" style="font-size: 80%;overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:1;">';
+                            str3 += '<a href="#" style="font-size: 80%;overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:1;">';
                             str3 += data[i].title;
-                            // str3 += '</a>';
+                            str3 += '</a>';
                             str3 += '</h5>';
                             str3 += '<span class="ml-auto">' + data[i].year + '</span>';
                             str3 += '</div>';
 
                             //领导人、nature、地域、计划经费
                             str3 += '<div class="row">';
-                            str3 += '<span>' + data[i].partner;
+                            str3 += '<span>' + '项目负责人：' + data[i].partner;
                             str3 += '<span  class="badge badge-pill badge-success">' + data[i].nature + '</span>';
                             str3 += '<span class="badge badge-pill badge-info">' + data[i].area + '</span>';
+                            str3 += '</span>';
                             if (data[i].planedMoney != null) {
                                 str3 += '<h5 class="ml-auto">';
-                                str3 += '<span class="ml-auto text-right">' + data[i].planedMoney + '万' + '</span>';
+                                str3 += '<span class="ml-auto text-right">' + '项目经费：' + data[i].planedMoney + '万' + '</span>';
                                 str3 += '</h5>';
                             }
                             str3 += '</div>';
 
                             //老板、机构
                             str3 += '<div class="row">';
-                            str3 += data[i].boss;
+                            str3 += '项目来源：' + data[i].boss;
                             str3 += '<span class="ml-auto">' + data[i].organization + '</span>';
                             str3 += '</div>';
 
@@ -829,6 +832,7 @@
                         }
                     }
                 }
+                $("#articleInfoContent").append(str);
                 $("#articleInfoContent").append(str1);
                 $("#patentInfoContent").append(str2);
                 $("#horizontalProjectInfoContent").append(str3);

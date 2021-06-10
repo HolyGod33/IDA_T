@@ -538,13 +538,13 @@
                     if (res.result_code !== 0) {
                         alertComp.removeClass("alert-success").addClass("alert-warning")
                         alertMsg(alertComp, msgComp, res.result_msg)
+                    } else {
+                        alertComp.removeClass("alert-warning").addClass("alert-success")
+                        alertMsg(alertComp, msgComp, "注册成功，正在跳转登录...")
+                        setTimeout(() => {
+                            window.location.href = 'login'
+                        }, 1000)
                     }
-
-                    alertComp.removeClass("alert-warning").addClass("alert-success")
-                    alertMsg(alertComp, msgComp, "注册成功，正在跳转登录...")
-                    setTimeout(() => {
-                        window.location.href = 'login'
-                    }, 1000)
                 },
                 error: res => {
                     console.error(res)
@@ -567,13 +567,13 @@
                     if (res.result_code !== 0) {
                         alertComp.removeClass("alert-success").addClass("alert-warning")
                         alertMsg(alertComp, msgComp, res.result_msg)
+                    } else {
+                        alertComp.removeClass("alert-warning").addClass("alert-success")
+                        alertMsg(alertComp, msgComp, "注册成功，正在跳转登录...")
+                        setTimeout(() => {
+                            window.location.href = 'login'
+                        }, 1000)
                     }
-
-                    alertComp.removeClass("alert-warning").addClass("alert-success")
-                    alertMsg(alertComp, msgComp, "注册成功，正在跳转登录...")
-                    setTimeout(() => {
-                        window.location.href = 'login'
-                    }, 1000)
                 },
                 error: res => {
                     console.error(res)

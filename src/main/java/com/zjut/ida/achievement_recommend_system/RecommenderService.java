@@ -14,10 +14,17 @@ import static org.neo4j.driver.v1.Values.parameters;
 
 public class RecommenderService {
 
-    private final static String NEO4JURL="bolt://10.12.45.59:7687";
-    private final static String NEO4JNAME="neo4j";
+
+    private final static String NEO4JBASEURI="bolt://10.12.45.49";
+
+    private final static String NEO4JURL=NEO4JBASEURI+":7687";
+
+    private  final static String NEO4JNAME="neo4j";
     private final static String NEO4JPWD="neo4j";
 
+    private final static String JDBCURL="jdbc:mysql://10.12.45.49:3307/achievement_recommend_system?serverTimezone=GMT%2B8";
+    private final static String MYSQLNAME="root";
+    private final static String MYSQLPWD="root";
 
     //返回推荐信息列表
     public static List<ArticleBean> AllList(int userid) throws Exception {
@@ -38,7 +45,7 @@ public class RecommenderService {
         try {
             // 加载驱动
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://10.12.45.59:3307/achievement_recommend_system?serverTimezone=GMT%2B8", "root", "root");
+            connection = DriverManager.getConnection(JDBCURL, MYSQLNAME, MYSQLPWD);
 //            本地连接
 //            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/user?serverTimezone=GMT%2B8", "root", "52547wzdhappy.");
 
@@ -67,7 +74,8 @@ public class RecommenderService {
                             projectList.add(rs.getInt("project_id"));
                         }
                     }
-                } else if ((rs2.getString("user_likes")).equals("人工智能")) {
+                }
+                else if ((rs2.getString("user_likes")).equals("人工智能")) {
                     articleList.add(434138);
                     articleList.add(431561);
                     articleList.add(420207);
@@ -93,7 +101,8 @@ public class RecommenderService {
                     for (int i = 7; i < 20; i++) {
                         projectList.add(null);
                     }
-                } else if (rs2.getString("user_likes").equals("计算机")) {
+                }
+                else if (rs2.getString("user_likes").equals("计算机")) {
                     articleList.add(440341);
                     articleList.add(440131);
                     articleList.add(408105);
@@ -196,7 +205,8 @@ public class RecommenderService {
                     for (int i = 2; i < 20; i++) {
                         projectList.add(null);
                     }
-                } else if (rs2.getString("user_likes").equals("物理")) {
+                }
+                else if (rs2.getString("user_likes").equals("物理")) {
                     articleList.add(421582);
                     articleList.add(418174);
                     articleList.add(417553);
@@ -248,7 +258,6 @@ public class RecommenderService {
                         projectList.add(null);
                     }
                 }
-
                 else if ((rs2.getString("user_likes")).equals("经济")) {
                     articleList.add(417784);
                     articleList.add(413294);
@@ -772,7 +781,7 @@ public class RecommenderService {
         }
 
         //连接neo4j
-        Driver driver = GraphDatabase.driver(NEO4JURL, AuthTokens.basic(NEO4JNAME, NEO4JPWD));
+        Driver driver = GraphDatabase.driver(NEO4JBASEURI+":7687", AuthTokens.basic(NEO4JNAME, NEO4JPWD));
         Session session = driver.session();
         String sql1 = "MATCH (a:Article) WHERE id(a) = {id}" +
                 "RETURN id(a) AS id, a.title AS title, a.partner AS partner," +

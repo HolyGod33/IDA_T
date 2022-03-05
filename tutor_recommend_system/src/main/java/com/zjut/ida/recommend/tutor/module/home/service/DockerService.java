@@ -59,6 +59,8 @@ public class DockerService {
                 .itemRange(Stream.iterate(0, item -> item + 1).limit(ITEM_NUM).collect(Collectors.toList()))
                 .messDropout(Arrays.stream(new Integer[]{0, 0, 0}).collect(Collectors.toList()))
                 .build());
+        System.out.println("DockerService.java==requestKgatRecommendList()");
+        System.out.println("\t requestBody="+requestBody);
         // 发请求
         HttpEntity<JSONObject> request = new HttpEntity<>(requestBody, headers);
         ResponseEntity<String> response = restTemplate.postForEntity(requestUrl, request, String.class);
@@ -66,12 +68,14 @@ public class DockerService {
             throw new BusinessException(ResponseCode.MODEL_ERROR);
         }
         // 排序
+        System.out.println("\t responseBody="+response.getBody());
         JSONArray responseBody = JSONObject.parseObject(response.getBody())
                 .getJSONArray("outputs")
                 .getJSONArray(0);
         List<BigDecimal> scoredList = Arrays.stream(responseBody.toArray())
                 .map(ele -> new BigDecimal(ele.toString()))
                 .collect(Collectors.toList());
+        System.out.println("\t scoredList="+scoredList);
         // 推荐列表
         return topN(scoredList, topN);
     }
@@ -89,6 +93,8 @@ public class DockerService {
             BigDecimal value = scoredList.get(i);
             sortedMap.put(value, i);
         }
+        System.out.println("DockerService.java==topN()");
+        System.out.println("\t sortedMap="+sortedMap);
 
         // 获取训练集
         List<Integer> trainingItemList = getTrainItems();
@@ -102,6 +108,7 @@ public class DockerService {
                 recommendList.add(itemIndex.longValue());
             }
         }
+        System.out.println("\t recommendList="+recommendList);
 
         return recommendList;
     }

@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" th:href="@{css/bootstrap.min.css}">
     <link rel="stylesheet" th:href="@{css/tutor-recommend-system/index.css}">
+    <script type="text/javascript" src="/ida/js/idahostaddress.js"></script>
     <style>
         #search-bar-module ul li {
             float: left;
@@ -75,7 +76,8 @@
         <img src="img/idaTitle.png" alt="logosa112132122" style="width:15%;height:15%;" class="mt-3"/>
         <a id="qa" class="position-absolute" style="right: 29%;top: 5%;color: white;" onclick="qa()">智能问答</a>
         <a id="avatar" class="position-absolute" style="right: 17%;top: 5%;color: white;" href="dashboard" target="_blank">个人中心</a>
-        <a class="position-absolute" style="right: 5%;top: 5%;color: white;" href="http://localhost:8080/ida/user/info" target="_blank">个人中心(校外)</a>
+        <a id="loginoutside" class="position-absolute" style="right: 5%;top: 5%;color: white;" target="_blank">个人中心(校外)</a>
+
 
     </div>
 
@@ -685,7 +687,7 @@
 <script type="text/javascript">
 
     function qa() {
-        var url = 'http://10.12.45.59:8010/index';                             //转向网页的地址;(这里就是填写第三方工具给的链接)
+        var url = 'http://'+idahostaddress+':8010/index';                             //转向网页的地址;(这里就是填写第三方工具给的链接)
         var name = '智能问答';                    //网页名称，可为空;
         var iWidth = 400;                          //弹出窗口的宽度;
         var iHeight = 600;                         //弹出窗口的高度;
@@ -697,8 +699,10 @@
     }
 
     $(function() {
+        $("#loginoutside").attr("href","http://"+idahostaddress+":8080/ida/user/info")
+
         $.ajax({
-            url: "http://localhost:8080/ida/recommend/recommendList",
+            url: "http://"+idahostaddress+":8080/ida/recommend/recommendList",
             type: "post",
             dataType: "json",
             traditional: true,
@@ -879,7 +883,7 @@
     }
     
     function jumpToLogin() {
-        window.location.href = 'http://localhost:8080/ida/login';
+        window.location.href = 'http://'+idahostaddress+':8080/ida/login';
     }
 </script>
 </html>

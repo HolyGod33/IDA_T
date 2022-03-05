@@ -1,6 +1,7 @@
 package com.zjut.ida.achievement_recommend_system;
 
 import org.neo4j.driver.v1.*;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,8 +10,16 @@ import static org.neo4j.driver.v1.Values.parameters;
 
 public class UserHistoryService {
 
-    private final static String NEO4JURL="bolt://10.12.45.59:7687";
+
+
+    @Value("${spring.data.neo4j.uri}")
+    private final static String NEO4JBASEURI="bolt://10.12.45.49";
+
+    private final static String NEO4JURL=NEO4JBASEURI+":7687";
+
+    @Value("${spring.data.neo4j.username}")
     private final static String NEO4JNAME="neo4j";
+    @Value("${spring.data.neo4j.password}")
     private final static String NEO4JPWD="neo4j";
 
 
@@ -23,6 +32,7 @@ public class UserHistoryService {
         }
 
         //连接neo4j
+//        System.out.println("UserHistoryService=NEO4JURL="+NEO4JBASEURI+":7687");
         Driver driver = GraphDatabase.driver(NEO4JURL, AuthTokens.basic(NEO4JNAME, NEO4JPWD));
         Session session = driver.session();
         String sql1 = "MATCH (a:Article) WHERE id(a) = {id}" +

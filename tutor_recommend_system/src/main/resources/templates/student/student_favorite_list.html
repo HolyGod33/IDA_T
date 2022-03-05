@@ -8,7 +8,7 @@
      th:id="'delete'+${tutor.id}">
     <!--点击学者姓名后，跳转到详情页-->
     <p>
-        <a th:href="'http://10.12.45.59:8080/ida/scholar/findscholarsbynamelike?scholarName='+${tutor.name}"
+        <a th:href="'http://10.12.45.49:8080/ida/scholar/findscholarsbynamelike?scholarName='+${tutor.name}"
            target="_blank"
            style="font-size: x-large"
            th:text="${tutor.name}">

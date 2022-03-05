@@ -1,4 +1,4 @@
-const BASE_URL = "http://10.12.45.59:8081/"
+const BASE_URL = "http://10.12.45.49:8081/"
 const TOKEN_KEY = "ida_token"
 const ENTITY_TYPE = [
     {name: "论文"},

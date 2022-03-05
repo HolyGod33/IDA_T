@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.neo4j.driver:neo4j-java-driver:1.6.3">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../../MAVEN_localRepository/org/neo4j/driver/neo4j-java-driver/1.6.3/neo4j-java-driver-1.6.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/driver/neo4j-java-driver/1.6.3/neo4j-java-driver-1.6.3.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../../../MAVEN_localRepository/org/neo4j/driver/neo4j-java-driver/1.6.3/neo4j-java-driver-1.6.3-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/driver/neo4j-java-driver/1.6.3/neo4j-java-driver-1.6.3-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../../../MAVEN_localRepository/org/neo4j/driver/neo4j-java-driver/1.6.3/neo4j-java-driver-1.6.3-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/driver/neo4j-java-driver/1.6.3/neo4j-java-driver-1.6.3-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

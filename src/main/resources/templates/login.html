@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="#">
     <link rel="stylesheet" th:href="@{css/bootstrap.min.css}">
     <link rel="stylesheet" th:href="@{css/tutor-recommend-system/index.css}">
+    <script type="text/javascript" src="/ida/js/idahostaddress.js"></script>
 </head>
 <body style="background-image: url(img/loginBackground.png)">
 
@@ -14,7 +15,7 @@
     <img src="img/idaLogo1.png" alt="logosa112132122" style="width:10%" class="rounded-circle ml-3"/>
     <img src="img/idaTitle.png" alt="logosa112132122" style="width:15%;height:15%;" class="mt-3"/>
     <a id="avatar" class="position-absolute" style="left: 92%;top: 5%;color: white;" href="dashboard" target="_blank">个人中心</a>
-    <a class="position-absolute" style="left: 80%;top: 5%;color: white;" href="http://localhost:8080/ida/user/info" target="_blank">个人中心(校外)</a>
+    <a id="loginoutside" class="position-absolute" style="left: 80%;top: 5%;color: white;" target="_blank">个人中心(校外)</a>
 </div>
 
 <!--alert-->
@@ -70,7 +71,7 @@
                        class="form-control mb-3"
                        type="password"
                        placeholder="密码"/>
-                <a href="http://localhost:8080/ida" id="non-school-login-Btn"  class="btn btn-primary" style="width: 100%" type="button" onclick="Login()">登录</a>
+                <a id="non-school-login-Btn"  class="btn btn-primary" style="width: 100%" type="button" onclick="Login()">登录</a>
             </div>
             <a class="btn btn-sm float-left text-primary pl-0 d-inline-block"
                href="#">
@@ -102,6 +103,11 @@
     }
 
     $(document).ready(function () {
+
+        $("#loginoutside").attr("href","http://"+idahostaddress+":8080/ida/user/info")
+        $("#non-school-login-Btn").attr("href","http://"+idahostaddress+":8080/ida")
+
+
         // alert
         const alertComp = $(".alert")
         const msgComp = $(".alert strong")
@@ -177,13 +183,13 @@
 
         $.ajax({
             type: "POST",
-            url: "http://localhost:8080/ida/user/login",
+            url: "http://"+idahostaddress+":8080/ida/user/login",
             dataType: "json",
             data:JSON.stringify(obj),
             contentType : "application/json",
             success: function (data) {
                 console.log(data);
-                window.location.href="http://localhost:8080/ida"
+                window.location.href="http://"+idahostaddress+":8080/ida"
             },
             error: function (e) {
                 console.log(e);

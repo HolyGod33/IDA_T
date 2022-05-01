@@ -37,8 +37,8 @@ public class Scholar {
     private String email;
     private String maxPageCount;
     private String affiliate;
-    private String scholarId;
-    private String entityId;
+//    private String scholarId;
+//    private String entityId;
     private String doMain;
 
     private Article article;

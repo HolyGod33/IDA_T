@@ -248,4 +248,16 @@ public class ScholarServiceImpl implements ScholarService {
 //        return scholarDao.findPublishArticleCountByScholarName1(scholarName);
         return results;
     }
+
+    @Override
+    public List<Scholar> findScholarsById(List<Long> scholarIdList) {
+        List<Scholar> scholarList=new ArrayList<>();
+        for(Long id:scholarIdList){
+            System.out.println("id="+id);
+            Scholar temp=scholarDao.findScholarsById(id.intValue());
+            scholarList.add(temp);
+            System.out.println("temp="+temp);
+        }
+        return scholarList;
+    }
 }

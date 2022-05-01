@@ -4,6 +4,7 @@ import com.zjut.ida.entity.HorizontalProject;
 import com.zjut.ida.entity.Partner;
 import com.zjut.ida.entity.PublishArticleCount;
 import com.zjut.ida.entity.Scholar;
+import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 import java.util.Map;
@@ -27,5 +28,7 @@ public interface ScholarService {
     List<Partner> findPartnersByScholarNameForCount(String scholarName, Integer count);
 
     Object findPartnersByScholarNameForCount1(String scholarName, Integer count);
+
+    List<Scholar> findScholarsById(List<Long> scholarIdList);
 
 }

@@ -45,4 +45,7 @@ public interface ScholarDao extends Neo4jRepository<Scholar,Long> {
 
     @Query("MATCH(s1:Scholar)-[r1]-(a)-[r2]-(s2:Teacher) WHERE s1.name={0} AND s2.name<>{0} AND NOT (a:Organization) RETURN s2 AS scholar,count(a) AS count ORDER BY count DESC LIMIT {1}")
     List<Partner> findPartnersByScholarNameForCount(String scholarName, int count);
+
+    @Query("match(n:Scholar) where id(n)={0} return n")
+    Scholar findScholarsById(@Param("scholarId")Integer scholarId);
 }

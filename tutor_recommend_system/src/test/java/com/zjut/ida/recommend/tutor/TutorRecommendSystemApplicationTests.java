@@ -1,12 +1,10 @@
 package com.zjut.ida.recommend.tutor;
 
-import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import com.zjut.ida.recommend.tutor.core.entity.SysStudent;
 import com.zjut.ida.recommend.tutor.core.exception.BusinessException;
-import com.zjut.ida.recommend.tutor.core.neo4jentity.NSysStudent;
-import com.zjut.ida.recommend.tutor.dao.SysStudentMapper;
+import com.zjut.ida.recommend.tutor.core.m2nentity.NSysStudent;
+import com.zjut.ida.recommend.tutor.module.common.service.DictService;
 import com.zjut.ida.recommend.tutor.module.home.dto.RegisterDTO;
-import com.zjut.ida.recommend.tutor.neo4jdao.SysStudentDao;
+import com.zjut.ida.recommend.tutor.m2ndao.SysStudentDao;
 import com.zjut.ida.recommend.tutor.utils.CommonUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.Test;
@@ -15,13 +13,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.CollectionUtils;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
 import static com.zjut.ida.recommend.tutor.utils.enums.ResponseCode.USER_EXIST;
-import static com.zjut.ida.recommend.tutor.utils.enums.ResponseCode.USER_REGISTER_ERROR;
 
 @SpringBootTest
 class TutorRecommendSystemApplicationTests {
@@ -30,6 +26,9 @@ class TutorRecommendSystemApplicationTests {
     @Autowired
     private SysStudentDao sysStudentDao;
 
+
+    @Autowired
+    private DictService dictService;
 
     @Test
     void contextLoads() {
@@ -50,10 +49,10 @@ class TutorRecommendSystemApplicationTests {
         System.out.println(dto);
         NSysStudent student = sysStudentDao.findNSysStudentByStudentId(dto.getStudentId());
         // 用户已存在
-//        if (student != null) {
-//            throw new BusinessException(USER_EXIST);
-//        }
-//        System.out.println(student);
+        if (student != null) {
+            throw new BusinessException(USER_EXIST);
+        }
+        System.out.println(student);
 
 
         student = new NSysStudent();
@@ -68,9 +67,7 @@ class TutorRecommendSystemApplicationTests {
                     .collect(Collectors.toList());
             student.setStudySpeciality(StringUtils.join(tempList, "&"));
         }
-        if(sysStudentDao.save(student)==null){
-            System.out.println("student==null");
-        }
+        sysStudentDao.save(student);
 
 
         // 插入
@@ -80,6 +77,11 @@ class TutorRecommendSystemApplicationTests {
 //        System.out.println(student);
 //        return true;
 
+    }
+
+    @Test
+    void testDictService(){
+        System.out.println(dictService.getClassDict(2017, "计算机科学与技术学院"));
     }
 
 }

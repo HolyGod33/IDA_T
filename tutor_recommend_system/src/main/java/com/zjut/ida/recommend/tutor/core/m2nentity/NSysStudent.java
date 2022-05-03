@@ -1,4 +1,4 @@
-package com.zjut.ida.recommend.tutor.core.neo4jentity;
+package com.zjut.ida.recommend.tutor.core.m2nentity;
 
 
 import lombok.Data;
@@ -11,7 +11,7 @@ import org.springframework.data.neo4j.core.schema.Property;
 /**
  * @author Casterx on 2022/5/1.
  */
-@Node("Student")
+@Node("SysStudent")
 @Data
 public class NSysStudent {
 

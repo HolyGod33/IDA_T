@@ -1,0 +1,310 @@
+/* The style designed for the display of recommendation results*/
+.pt-0{
+    display: flex;
+    flex: 1 1;
+    align-items: center;
+    height: 85px;
+}
+
+.header-left{
+    display: flex;
+    flex: 1 1;
+    align-items: center;
+    width:65%;
+}
+/*页面最上方导航栏中的网站logo图*/
+.logo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    order: 1;
+    height: 100%;
+    margin-bottom: 0;
+    width:25%;
+}
+
+.top-nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    order: 2;
+    width: 100%;
+    height: 100%;
+    margin-top: 14px;
+    margin-left: 20px;
+}
+
+.nav-link{
+    color: #dfdfdf;
+    font-size: 13px;
+}
+
+.header-right{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    order: 3;
+    width: 20%;
+    margin-left: -10px;
+}
+
+.login-icon{
+    margin-right: 15px;
+}
+
+.form-control{
+    width:70%;
+    margin: 0 auto;
+    height:35px;
+    border-radius: 24px;
+    font-size: 15px;
+}
+.website-info{
+    padding-right: 70px;
+    padding-top: 35px;
+    color: white;
+}
+/*导航栏下方的整个块级展示区域*/
+.main-content{
+    display: flex;
+}
+
+.recommend-nav{
+    width: 70%;
+    margin-top: 20px;
+}
+.recommend-link{
+    font-size:16px;
+    color: black;
+    font-weight: 700;
+    margin-right: 20px;
+}
+/*用于展示推荐结果的整个块级区域*/
+.show-recommend-result{
+    width: 77%;
+    margin-top: 10px;
+}
+
+/*放置每类推荐结果的框*/
+.recommend-box {
+    display: block;
+    flex-direction: row;
+    padding: 14px 16px;
+    margin: 15px 15px 15px;
+    border:1px solid #eefefe;
+    --legend_icon_color: #009089;
+    --legend_color: #009089;
+    --split_line_border_color: #d7ece9;
+    background: #eefefe;
+    border-radius: 5px;
+}
+
+/*放置鼠标时有阴影效果*/
+.recommend-box:hover {
+    box-shadow: 2px 4px 8px 0 hsl(0,0%,71%);
+    cursor: pointer;
+}
+
+/*推荐结果的类型：导师、项目、论文...*/
+.recommend-type{
+    color: #0f141c;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size:18px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+/*相关信息*/
+.recommend-information{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: hidden;
+    color: #202124;
+    font-size: 14px;
+    opacity: .7;
+}
+
+.relative-recommend {
+    position: relative;
+    padding: 12px 16px 0;
+}
+
+.relative-recommend:before {
+    position: absolute;
+    top: 21px;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    z-index: 1;
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: #1a73e8;
+    border-radius: 2px;
+    content: "";
+}
+
+.recommend-subTitle {
+    display: flex;
+    color: #0f141c;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size:18px;
+    font-weight: 700;
+    line-height: 19.6px;
+}
+
+.recommend-content {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.title-first-info{
+    padding: 0 12px 0 11px;
+}
+.first-info{
+    padding: 0 12px 0 0;
+}
+
+/*.first-info:after{
+    position:relative;
+    top: 85%;
+    right: 586px;
+    width: 4px;
+    height: 4px;
+    background: #202124;
+    border-radius: 2px;
+    transform: translateY(-70%);
+    display: block;
+    content: ""
+}*/
+
+.second-info{
+    padding: 0 12px 0 0;
+}
+
+/*.second-info:after{
+    position:relative;
+    top: 85%;
+    right: 499px;
+    width: 4px;
+    height: 4px;
+    background: #202124;
+    border-radius: 2px;
+    transform: translateY(-70%);
+    display: block;
+    content: ""
+}*/
+.third-info{
+    padding: 0 12px 0 0;
+}
+
+.BoxFooter {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: -5px;
+    color: #1a73e8;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+}
+.right-side{
+    width:30%;
+    margin-top: 20px;
+}
+.right-homeLogin {
+    box-sizing: border-box;
+    margin: 15px 15px 20px 0;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    text-align: center;
+    background-color:rgb(238, 249, 255);
+    border-radius: 4px;
+    border: 1px solid rgb(218, 220, 224);
+}
+
+.p1 {
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: PingFangSC-Medium,PingFang SC;
+    line-height: 20px;
+}
+
+.p2 {
+    margin-bottom: 13px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: PingFangSC-Semibold,PingFang SC;
+    line-height: 30px;
+}
+.login-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97px;
+    height: 40px;
+    margin: 0 auto;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: PingFangSC-Medium,PingFang SC;
+    background: #1a73e8;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.rotation-diagram{
+    text-align: center;
+    margin: 15px 15px 20px 0;
+    background-color:rgb(238, 249, 255);
+    padding: 25px 16px 50px;
+    border-radius: 10px;
+}
+
+.carousel{
+    height:230px;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-control-prev{
+    background-color: #91979c;
+}
+
+.carousel-control-next{
+    background-color: #91979c;
+}
+/*
+.recommends-tutor-orgCard .a-core-home2-c-recommends-paper-orgBox .scholar-line>div {
+    display: inline-block;
+}
+
+!*其中的每一位学者*!
+.recommends-tutor-orgCard .a-core-home2-c-recommends-paper-orgBox .scholar-line .scholars {
+    margin-top: 0;
+}
+
+!*显示学者所用的字体*!
+.font-author {
+    font-family: verdana;
+}
+
+.a-aminer-components-pops-person-person-link-personLink {
+    position: relative;
+}
+
+.recommends-tutor-orgCard .a-core-home2-c-recommends-paper-orgBox .scholar-line .scholars .author_label {
+    color: #202124;
+    opacity: .7;
+}
+
+.a-aminer-components-pub-c-authors-authors .scholars .mr {
+    margin-right: 5px;
+}
+*/
+

@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3233666 */
+  src: url('iconfont.ttf?t=1649698109757') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wenzhang:before {
+  color: white;
+  font-size: 25px;
+  content: "\e84e";
+}
+
+.icon-dibudaohanglan-:before {
+  color: white;
+  font-size: 25px;
+  content: "\e62a";
+}
+
+.icon-chengyuan:before {
+  color: white;
+  font-size: 25px;
+  content: "\e73d";
+}
+
+.icon-wenda:before {
+  color: white;
+  content: "\e893";
+  font-size: 35px;
+}
+
+.icon-denglu1:before {
+  color: white;
+  font-size: 35px;
+  content: "\e604";
+}
+
+.icon-gengduo:before {
+  content: "\e68b";
+}
+

@@ -1,15 +1,19 @@
 <!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <title>导师推荐</title>
-  <link rel="stylesheet" href="../static/CSS/iconfont.css">
-  <link rel="stylesheet" href="../static/CSS/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="../static/CSS/displayframe.css">
-  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" th:href="@{css/iconfont.css}">
+  <link rel="stylesheet" th:href="@{css/bootstrap.min.css}">
+<!--  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <link rel="stylesheet" type="text/css" th:href="@{css/displayframe.css}">
+  <script type="text/javascript" th:src="@{js/jquery-3.2.1.min.js}"></script>
+  <script type="text/javascript" th:src="@{js/bootstrap.min.js}"></script>
+  <script type="text/javascript" th:src="@{js/idahostaddress.js}"></script>
+<!--  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>-->
+<!--  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
   <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
-  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 
 
@@ -36,8 +40,10 @@
   <div class="pt-0" style="margin-top: -10px;background: #0b1222;">
     <div class="header-left">
       <div class="logo">
-        <img src="../static/img/idaLogo1.png" alt="logosa112132122" style="width:40%" class="rounded-circle ml-3"/>
-        <img src="../static/img/idaTitle.png" alt="logosa112132122" style="width:60%;height:15%;" class="mt-3"/>
+<!--        <img src="../static/img/idaLogo1.png" alt="logosa112132122" style="width:40%" class="rounded-circle ml-3"/>-->
+        <img th:src="@{img/idaLogo1.png}" alt="logosa112132122" style="width:40%" class="rounded-circle ml-3"/>
+<!--        <img src="../static/img/idaTitle.png" alt="logosa112132122" style="width:60%;height:15%;" class="mt-3"/>-->
+        <img th:src="@{img/idaTitle.png}" alt="logosa112132122" style="width:60%;height:15%;" class="mt-3"/>
       </div>
       <!--功能分类-->
       <div class="top-nav" style="width:65%;">
@@ -51,7 +57,6 @@
                 <span style="margin-top: 7px;"></span>
                 <li class="nav-item">
                   <a class="nav-link"
-                     onclick="jump()"
                      href="#">研究领域</a>
                 </li>
                 <span style="margin-top: 7px;"></span>
@@ -80,13 +85,13 @@
     </div>
     <div class="header-right">
       <div class="question-icon">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="#" onclick="qa()">
           <span>智能问答</span>
           <i class="iconfont icon-wenda"></i>
         </a>
       </div>
       <div class="login-icon">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="dashboard">
           <span>个人中心</span>
           <i class="iconfont icon-denglu1"></i>
         </a>
@@ -153,14 +158,16 @@
       <div class="container">
         <div class="span6">
           <ul class="nav nav-pills">
-            <li role="presentation" class="active"><a class="recommend-link" href="TeacherRecommend.html" target="myIframe">导师推荐</a></li>
+            <li role="presentation" class="active"><a class="recommend-link" href="recommend/TeacherRecommend.html" target="myIframe">导师推荐</a></li>
             <li role="presentation"><a class="recommend-link" href="PaperRecommend.html" target="myIframe">论文推荐</a></li>
             <li role="presentation"><a class="recommend-link" href="home3.html" target="myIframe">项目推荐</a></li>
             <li role="presentation"><a class="recommend-link" href="home2.html" target="myIframe">成果推荐</a></li>
             <li role="presentation"><a class="recommend-link" href="home3.html" target="myIframe">专著推荐</a></li>
           </ul>
         </div>
-        <iframe src="TeacherRecommend.html" style="width: 100%" frameborder="0" scrolling="no"
+<!--        <iframe src="TeacherRecommend.html" style="width: 100%" frameborder="0" scrolling="no"-->
+<!--                name="myIframe" id="myIframe" onload="adjustHeight(this)"></iframe>-->
+        <iframe th:src="@{/TeacherRecommend}" style="width: 100%" frameborder="0" scrolling="no"
                 name="myIframe" id="myIframe" onload="adjustHeight(this)"></iframe>
       </div>
 
@@ -192,13 +199,16 @@
           <!-- 轮播图片 -->
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="../static/img/first.jpg">
+<!--              <img src="../static/img/first.jpg">-->
+              <img th:src="@{img/first.jpg}">
             </div>
             <div class="carousel-item">
-              <img src="../static/img/second.png">
+<!--              <img src="../static/img/second.png">-->
+              <img th:src="@{img/second.png}">
             </div>
             <div class="carousel-item">
-              <img src="../static/img/third.jpeg">
+<!--              <img src="../static/img/third.jpeg">-->
+              <img th:src="@{img/third.jpeg}">
             </div>
           </div>
 
@@ -216,6 +226,34 @@
 
   </div>
 <script>
+  $(document).ready(function () {
+    $("#search").on("keypress", function (event) {
+      var inputValue = $("#search").val()
+      if (event.keyCode === 13) {
+        $("#search").blur();
+        // document.getElementById("loadingDiv").style.display = "block"
+        location.href = "all/findallbyanywords?words=" + inputValue;
+      }
+    })
+  })
+
+  function qa() {
+    var url = 'http://'+idahostaddress+':8010/index';                             //转向网页的地址;(这里就是填写第三方工具给的链接)
+    var name = '智能问答';                    //网页名称，可为空;
+    var iWidth = 400;                          //弹出窗口的宽度;
+    var iHeight = 600;                         //弹出窗口的高度;
+    //获得窗口的垂直位置
+    var iTop = (window.screen.availHeight - iHeight - 100);
+    //获得窗口的水平位置
+    var iLeft = (window.screen.availWidth - iWidth - 100);
+    window.open(url, name, 'height=' + iHeight + ',,innerHeight=' + iHeight + ',width=' + iWidth + ',innerWidth=' + iWidth + ',top=' + iTop + ',left=' + iLeft + ',status=no,toolbar=no,menubar=no,location=no,resizable=no,scrollbars=0,titlebar=no');
+  }
+
+
+  function jump(){
+    window.location.href="Community_wmk/";
+  }
+
   function  adjustHeight(iframe) {
     let bHeight = iframe.contentWindow.document.body.scrollHeight;
     let dHeight = iframe.contentWindow.document.documentElement.scrollHeight;

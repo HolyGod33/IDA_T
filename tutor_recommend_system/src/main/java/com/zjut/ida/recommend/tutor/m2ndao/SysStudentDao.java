@@ -1,12 +1,9 @@
-package com.zjut.ida.recommend.tutor.neo4jdao;
+package com.zjut.ida.recommend.tutor.m2ndao;
 
-import com.zjut.ida.recommend.tutor.core.entity.SysStudent;
-import com.zjut.ida.recommend.tutor.core.neo4jentity.NSysStudent;
+import com.zjut.ida.recommend.tutor.core.m2nentity.NSysStudent;
 import org.springframework.data.neo4j.repository.Neo4jRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-
-import java.util.List;
 
 /**
  * @author Casterx on 2022/5/1.

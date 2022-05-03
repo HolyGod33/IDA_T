@@ -1,4 +1,5 @@
-const BASE_URL = "http://10.12.45.49:8081/"
+//原始：const BASE_URL = "http://10.12.45.49:8081/" 修改为下面调试
+const BASE_URL = "http://localhost:8081/"
 const TOKEN_KEY = "ida_token"
 const ENTITY_TYPE = [
     {name: "论文"},

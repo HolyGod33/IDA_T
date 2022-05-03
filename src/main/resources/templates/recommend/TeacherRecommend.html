@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{css/iconfont.css}">
+    <link rel="stylesheet" th:href="@{css/bootstrap.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{css/displayframe.css}">
+    <script type="text/javascript" th:src="@{js/bootstrap.min.js}"></script>
+</head>
+<body>
+<div class="show-recommend-result">
+    <div class="recommend-box">
+
+        <div><p>【可能感兴趣的导师】</p></div>
+
+        <div>
+            <ul>
+                <li th:each="scholar:${tutor}">
+                    <div class="recommend-type">
+                        <span>[[${scholar.name}]]</span>
+                    </div>
+                    <div class="recommend-information">
+							 <span class="title-first-info">
+								<span>
+								<span style="font-weight: bold">学院：</span>
+								</span>
+								<span>[[${scholar.organization}?${scholar.organization}:'暂无']]</span>
+							</span>
+                        <span class="second-info">
+								<span>
+								<span style="font-weight: bold">研究方向：</span>
+								</span>
+								<span>[[${scholar.studySpeciality}?${scholar.studySpeciality}:'暂无']]</span>
+							</span>
+                        <span class="third-info">
+								<span>
+								<span style="font-weight: bold">邮箱：</span>
+								</span>
+								<span>[[${scholar.email}?${scholar.email}:'暂无']]</span>
+							</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="BoxFooter">
+            <i class="iconfont icon-gengduo"></i>
+            <span>查看更多感兴趣的导师</span>
+        </div>
+
+    </div>
+
+
+</div>
+</body>
+</html>

@@ -5,41 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52dd2c32-a019-444c-8732-19fffc4fad58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_ben_manes_caffeine_caffeine_2_8_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_65_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_39_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_39_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_39_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_39_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_39_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_39_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_2_12_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_16_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_1_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_1_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_1_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_10_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_1_10_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/IDA_T.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IDA_T.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_06.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_07.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_5_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_5_2_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_5_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_5_2_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_lite_5_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_lite_5_2_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/dao/ScholarDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/dao/ScholarDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/entity/Scholar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/entity/Scholar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/service/ScholarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/service/ScholarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/service/impl/ScholarServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/service/impl/ScholarServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/controller/RootController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/controller/RootController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/tutor-recommend-system/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/tutor-recommend-system/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/TeacherRecommend.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/recommend/TeacherRecommend.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/TutorRecommendation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/core/neo4jentity/NSysStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/core/m2nentity/NSysStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/module/common/service/DictService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/module/common/service/DictService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/module/home/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/module/home/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/neo4jdao/SysStudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/m2ndao/SysStudentDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/test/java/com/zjut/ida/recommend/tutor/TutorRecommendSystemApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/test/java/com/zjut/ida/recommend/tutor/TutorRecommendSystemApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,31 +57,27 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/img" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ProgrameTest\ProjectTest\IDA_Final\IDA_T\src\main\resources\static\img" />
+      <recent name="E:\ProgrameTest\ProjectTest\IDA_Final\IDA_T\src\main\resources\static\css" />
       <recent name="E:\ProgrameTest\ProjectTest\IDA_Final\IDA_T\src\main\resources\templates" />
+      <recent name="E:\ProgrameTest\ProjectTest\IDA_Final\IDA_T\src\main\resources\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\ProgrameTest\ProjectTest\IDA_Final\IDA_T\src\main\resources\templates\recommend" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zjut.ida.recommend.tutor.core.m2nentity" />
+      <recent name="com.zjut.ida.recommend.tutor.m2ndao" />
       <recent name="com.zjut.ida.tool" />
       <recent name="com.zjut.ida.recommend.tutor.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TutorRecommendSystemApplicationTests.contextLoads">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.IdaApplication">
     <configuration name="TutorRecommendSystemApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tutor_recommend_system" />
       <extension name="coverage">
@@ -118,6 +89,22 @@
       <option name="PACKAGE_NAME" value="com.zjut.ida.recommend.tutor" />
       <option name="MAIN_CLASS_NAME" value="com.zjut.ida.recommend.tutor.TutorRecommendSystemApplicationTests" />
       <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TutorRecommendSystemApplicationTests.testDictService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tutor_recommend_system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zjut.ida.recommend.tutor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zjut.ida.recommend.tutor" />
+      <option name="MAIN_CLASS_NAME" value="com.zjut.ida.recommend.tutor.TutorRecommendSystemApplicationTests" />
+      <option name="METHOD_NAME" value="testDictService" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,8 +132,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TutorRecommendSystemApplicationTests.contextLoads" />
         <item itemvalue="Spring Boot.IdaApplication" />
+        <item itemvalue="JUnit.TutorRecommendSystemApplicationTests.testDictService" />
+        <item itemvalue="JUnit.TutorRecommendSystemApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +187,10 @@
       <workItem from="1651208789374" duration="13533000" />
       <workItem from="1651382268456" duration="3584000" />
       <workItem from="1651387720109" duration="1021000" />
-      <workItem from="1651390720334" duration="7716000" />
+      <workItem from="1651390720334" duration="11408000" />
+      <workItem from="1651465191947" duration="16422000" />
+      <workItem from="1651544087696" duration="3968000" />
+      <workItem from="1651559625464" duration="3220000" />
     </task>
     <servers />
   </component>

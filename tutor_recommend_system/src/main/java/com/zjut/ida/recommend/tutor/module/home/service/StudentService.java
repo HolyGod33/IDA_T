@@ -1,13 +1,14 @@
 package com.zjut.ida.recommend.tutor.module.home.service;
 
 import com.alibaba.fastjson.JSONObject;
-import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.zjut.ida.recommend.tutor.core.entity.SysStudent;
 import com.zjut.ida.recommend.tutor.core.exception.BusinessException;
+import com.zjut.ida.recommend.tutor.core.m2nentity.NSysStudent;
 import com.zjut.ida.recommend.tutor.dao.ModelStudentMapMapper;
 import com.zjut.ida.recommend.tutor.dao.SysStudentMapper;
 import com.zjut.ida.recommend.tutor.module.home.dto.RegisterDTO;
 import com.zjut.ida.recommend.tutor.module.home.vo.StudentVO;
+import com.zjut.ida.recommend.tutor.m2ndao.SysStudentDao;
 import com.zjut.ida.recommend.tutor.utils.CommonUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
@@ -36,6 +37,8 @@ public class StudentService {
     @Autowired
     private RedisTemplate redisTemplate;
 
+    @Autowired
+    private SysStudentDao sysStudentDao;
     /**
      * 登录
      *
@@ -44,7 +47,7 @@ public class StudentService {
      * @return token
      */
     public JSONObject login(String studentId, String password) {
-        SysStudent student = studentMapper.selectById(studentId);
+        NSysStudent student = sysStudentDao.findNSysStudentByStudentId(studentId);
         // 用户不存在
         if (student == null) {
             throw new BusinessException(USER_NOT_EXIST);
@@ -70,20 +73,56 @@ public class StudentService {
     }
 
     /**
-     * 注册
+     * 注册(Mysql)
+     *
+     * @param dto 注册信息
+     * @return 注册成功/失败
+     */
+//    @Transactional(rollbackFor = Exception.class)
+//    public boolean register(RegisterDTO dto) {
+//        SysStudent student = studentMapper.selectOne(Wrappers.<SysStudent>lambdaQuery()
+//                .eq(SysStudent::getStudentId, dto.getStudentId()));
+//        // 用户已存在
+//        if (student != null) {
+//            throw new BusinessException(USER_EXIST);
+//        }
+//        student = new SysStudent();
+//        BeanUtils.copyProperties(dto, student);
+//        // 设置密码
+//        student.setHashSalt(CommonUtils.random(36, 4));
+//        student.setPassword(CommonUtils.MD5(student.getPassword() + student.getHashSalt()));
+//        // 设置兴趣爱好
+//        if (!CollectionUtils.isEmpty(dto.getStudySpecialityList())) {
+//            List<String> tempList = dto.getStudySpecialityList().stream()
+//                    .map(x -> x = StringUtils.strip(x, "\n "))
+//                    .collect(Collectors.toList());
+//            student.setStudySpeciality(StringUtils.join(tempList, "&"));
+//        }
+//        // 插入
+//        if (studentMapper.insert(student) != 1) {
+//            throw new BusinessException(USER_REGISTER_ERROR);
+//        }
+//        return true;
+//    }
+
+
+    /**
+     * 注册(Neo4j)
      *
      * @param dto 注册信息
      * @return 注册成功/失败
      */
     @Transactional(rollbackFor = Exception.class)
     public boolean register(RegisterDTO dto) {
-        SysStudent student = studentMapper.selectOne(Wrappers.<SysStudent>lambdaQuery()
-                .eq(SysStudent::getStudentId, dto.getStudentId()));
+        NSysStudent student = sysStudentDao.findNSysStudentByStudentId(dto.getStudentId());
         // 用户已存在
         if (student != null) {
             throw new BusinessException(USER_EXIST);
         }
-        student = new SysStudent();
+        System.out.println(student);
+
+
+        student = new NSysStudent();
         BeanUtils.copyProperties(dto, student);
         // 设置密码
         student.setHashSalt(CommonUtils.random(36, 4));
@@ -95,10 +134,7 @@ public class StudentService {
                     .collect(Collectors.toList());
             student.setStudySpeciality(StringUtils.join(tempList, "&"));
         }
-        // 插入
-        if (studentMapper.insert(student) != 1) {
-            throw new BusinessException(USER_REGISTER_ERROR);
-        }
+        sysStudentDao.save(student);
         return true;
     }
 

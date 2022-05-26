@@ -23,6 +23,8 @@ public class Scholar {
 
     @Property("teacher_id")
     private String teacherId;
+
+
     private String name;
     private String sex;
     private String organization;
@@ -57,5 +59,14 @@ public class Scholar {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+
+    public Scholar(String name,String organization,String email,String studySpeciality){
+        this.name=name;
+        this.organization=organization;
+        this.email=email;
+        this.studySpeciality=studySpeciality;
+
     }
 }

@@ -26,8 +26,8 @@ public class MkganController {
 
     @RequestMapping(value="/getRecommendList",method = RequestMethod.GET)
 //    @ResponseBody
-    public String getRecommendList(Model model){
-        List<Long> list=mkganService.requestMkganRecommendList(10);
+    public String getRecommendList(Model model,String studentId){
+        List<Long> list=mkganService.requestMkganRecommendList(10,studentId);
         Map<String,List<Scholar>> map=new HashMap<>();
         model.addAttribute("tutor",scholarService.findScholarsById(list));
         return "TeacherRecommend";

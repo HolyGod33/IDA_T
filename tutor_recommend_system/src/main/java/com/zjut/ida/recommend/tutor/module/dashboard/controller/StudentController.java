@@ -38,6 +38,12 @@ public class StudentController {
         return Response.bool(studentService.changeInfo(dto));
     }
 
+    @PutMapping("updateStudySpecialityList")
+    @ResponseBody
+    public JSONObject updateStudySpecialityList(@RequestBody StudentDTO dto) {
+        return Response.bool(studentService.changeStudySpecialityInfo(dto));
+    }
+
     @GetMapping("history/list")
     public String historyList(@RequestParam("pageNum") int pageNum,
                               @RequestParam("pageSize") int pageSize,

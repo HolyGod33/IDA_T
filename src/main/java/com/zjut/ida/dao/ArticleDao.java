@@ -55,6 +55,19 @@ public interface ArticleDao extends Neo4jRepository<Article,Long> {
     List<Article> findArticlesByScholarWords(@Param("words")String words);
 
 
+    @Query("match(n:SysStudent)-[r:History]-(m:Scholar)\n" +
+            "optional match(m)-[r1]-(m1:Article)\n" +
+            "with m,count(m) as historyCount,m1\n" +
+            "order by historyCount desc\n" +
+            "return m1 limit {0}")
+    List<Article> findArticlesByHistoryColdStart(int count);
 
 
+    @Query("match(n:SysStudent)-[r:History]-(m:Scholar)\n" +
+            "optional match(m)-[r1]-(m1:Article)\n" +
+            "where id(m) in {0}\n" +
+            "with m,count(m) as historyCount,m1\n" +
+            "order by historyCount desc\n" +
+            "return m1 limit {1}")
+    List<Article> findArticlesByHistory(List<Long> scholarIdList,int count);
 }

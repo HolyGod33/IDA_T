@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{css/iconfont.css}">
+    <link rel="stylesheet" th:href="@{css/bootstrap.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{css/displayframe.css}">
+    <script type="text/javascript" th:src="@{js/bootstrap.min.js}"></script>
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" th:src="@{js/tutor-recommend-system/jquery.animate-shadow-min.js}"></script>
+    <script type="text/javascript" th:src="@{js/tutor-recommend-system/constants.js}"></script>
+    <script type="text/javascript" th:src="@{js/tutor-recommend-system/utils.js}"></script>
+</head>
+<body>
+<div class="show-recommend-result">
+    <div class="recommend-box">
+
+        <div><p>【可能感兴趣的论文】</p></div>
+
+        <div class="relative-recommend" th:each="paper:${papers}">
+
+            <div class="recommend-subTitle">
+                <span>[[${paper.title}]]</span>
+            </div>
+
+            <div class="recommend-information">
+
+                <span class="first-info">
+                  <span>
+                    <span style="font-weight: bold">作者：</span>
+                  </span>
+                  <span>[[${paper.partner}?${paper.partner}:'暂无']]</span>
+                </span>
+
+                <span class="second-info">
+                  <span>
+                    <span style="font-weight: bold">年份：</span>
+                  </span>
+                  <span>[[${paper.year}?${paper.year}:'暂无']]</span>
+                </span>
+
+                <span class="third-info">
+                  <span>
+                    <span style="font-weight: bold">期刊：</span>
+                  </span>
+                  <span>[[${paper.journal}?${paper.journal.name}:'暂无']]</span>
+                </span>
+
+            </div>
+        </div>
+
+
+<!--        <div class="BoxFooter">-->
+<!--            <i class="iconfont icon-gengduo"></i>-->
+<!--            <span>查看更多感兴趣的导师</span>-->
+<!--        </div>-->
+
+    </div>
+
+
+</div>
+
+<script>
+
+
+
+</script>
+</body>
+</html>

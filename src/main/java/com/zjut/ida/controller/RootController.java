@@ -1,15 +1,21 @@
 package com.zjut.ida.controller;
 
+import com.zjut.ida.dao.ArticleDao;
+import com.zjut.ida.dao.ScholarDao;
+import com.zjut.ida.entity.Article;
 import com.zjut.ida.entity.Scholar;
 import com.zjut.ida.mkgan.MkganServiceImpl;
+import com.zjut.ida.service.ArticleService;
 import com.zjut.ida.service.ScholarService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -29,22 +35,81 @@ public class RootController {
     private ScholarService scholarService;
 
 
-    /**
-     * 主页
-     */
-    @GetMapping("zpy")
-    public String zpy() {
-        return "TutorRecommendation";
-    }
+    @Autowired
+    private ArticleDao articleDao;
+
+    @Autowired
+    private RedisTemplate redisTemplate;
+
+    @Autowired
+    private ScholarDao scholarDao;
+
+//    /**
+//     * 主页
+//     */
+//    @GetMapping("zpy")
+//    public String zpy() {
+//        return "TutorRecommendation_final";
+//    }
+
 
 
     @GetMapping("TeacherRecommend")
-    public String teacherRecommend(Model model) {
-        List<Long> list=mkganService.requestMkganRecommendList(10);
-        Map<String,List<Scholar>> map=new HashMap<>();
-        model.addAttribute("tutor",scholarService.findScholarsById(list));
+    public String teacherRecommend(Model model,@RequestParam(value = "studentId", required = true) String studentId) {
+        List<Scholar> scholarList;
+        if(studentId==null || studentId.equals("null")){
+            scholarList=scholarDao.findScholarsByHistoryCount(10);
+        }else{
+            String studentRemapId=getStudentRemapId(studentId);
+            System.out.println("studentRemapId="+studentRemapId);
+            if(!studentRemapId.equals("null") && !studentRemapId.isEmpty()){
+                List<Long> list=mkganService.requestMkganRecommendList(10,studentId);
+                scholarList=scholarService.findScholarsById(list);
+            }else{
+                scholarList=scholarDao.findScholarsByHistoryCount(10);
+            }
+        }
+        model.addAttribute("tutor",scholarList);
+
+
+//        List<Scholar> scholarList=new ArrayList<>();
+//        String[] strs=new String[]{"A","B","C","D","E","F","G","H","I","J"};
+//        String[] names=new String[]{"刘一","陈二","张三","李四","王五","刘钊","孙棋","周拔","吴九","郑石"};
+//
+//        for(int i=0;i<10;i++){
+//            scholarList.add(new Scholar(names[i],"学院"+strs[i],"方向"+strs[i],"邮箱"+strs[i]));
+//        }
+//        model.addAttribute("tutor",scholarList);
         return "recommend/TeacherRecommend";
+
+
     }
+
+    @GetMapping("PaperRecommend")
+    public String paperRecommend(Model model,@RequestParam(value = "studentId", required = true) String studentId) {
+
+        List<Article> articleList;
+        if(studentId==null || studentId.equals("null")){
+            articleList= articleDao.findArticlesByHistoryColdStart(10);
+        }else{
+            String studentRemapId=getStudentRemapId(studentId);
+            if(!studentRemapId.equals("null")  && !studentRemapId.isEmpty()){
+                List<Long> list=mkganService.requestMkganRecommendList(10,studentId);
+                articleList= articleDao.findArticlesByHistory(list,10);
+            }else{
+                articleList= articleDao.findArticlesByHistoryColdStart(10);
+            }
+        }
+
+        model.addAttribute("papers",articleList);
+        return "recommend/PaperRecommend";
+
+    }
+
+    private String getStudentRemapId(String studentID) {
+        return String.valueOf(redisTemplate.opsForValue().get(studentID));
+    }
+
 
     /**
      * 登录页

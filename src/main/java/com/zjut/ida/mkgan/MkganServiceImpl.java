@@ -1,6 +1,8 @@
 package com.zjut.ida.mkgan;
 
 import com.alibaba.fastjson.JSONObject;
+import com.zjut.ida.dao.ScholarDao;
+import com.zjut.ida.entity.Scholar;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.http.HttpEntity;
@@ -25,10 +27,12 @@ public class MkganServiceImpl {
     private String signatureName="serving_default";
     private final Integer ITEM_NUM = 100;
 
+
+
     @Autowired
     private RedisTemplate redisTemplate;
 
-    public List<Long> requestMkganRecommendList(Integer topN){
+    public List<Long> requestMkganRecommendList(Integer topN,String studentId){
         RestTemplate restTemplate = new RestTemplate();
         // 请求头
         HttpHeaders headers = new HttpHeaders();
@@ -36,7 +40,8 @@ public class MkganServiceImpl {
         // 请求体
         JSONObject requestBody = new JSONObject();
         requestBody.put("signature_name", signatureName);
-        List<Integer> user_inputs=Arrays.asList(Integer.parseInt(getStudentRemapId("201706022605")));
+        String studentRemapId=getStudentRemapId(studentId);
+        List<Integer> user_inputs=Arrays.asList(Integer.parseInt(studentRemapId));
         List<Integer> list=Stream.iterate(0, item -> item + 1).limit(ITEM_NUM).collect(Collectors.toList());
         List<List<Integer>> item_inputs=new ArrayList<>(new ArrayList<>());
         for(Integer l:list){
@@ -62,6 +67,8 @@ public class MkganServiceImpl {
 
         // 推荐列表
         return topN(scoredList, topN);
+
+
     }
 
 

@@ -1,0 +1,41 @@
+2022-05-09 11:08:15.313 ERROR 17320 --- [http-nio-8081-exec-7] c.z.i.r.tutor.config.aspect.LogAspect    : 400 Bad Request: [{
+    "error": "JSON Value: null Type: Null is not of expected type: int32"
+}]
+2022-05-09 11:08:38.465 ERROR 17320 --- [http-nio-8081-exec-6] c.z.i.r.tutor.config.aspect.LogAspect    : null
+2022-05-09 11:08:47.734 ERROR 17320 --- [http-nio-8081-exec-3] c.z.i.r.tutor.config.aspect.LogAspect    : 用户密码错误
+2022-05-09 11:09:01.414 ERROR 17320 --- [http-nio-8081-exec-1] c.z.i.r.tutor.config.aspect.LogAspect    : null
+2022-05-09 11:10:14.523 ERROR 17320 --- [http-nio-8081-exec-5] c.z.i.r.tutor.config.aspect.LogAspect    : 400 Bad Request: [{
+    "error": "JSON Value: null Type: Null is not of expected type: int32"
+}]
+2022-05-09 11:10:14.590 ERROR 17320 --- [http-nio-8081-exec-6] c.z.i.r.tutor.config.aspect.LogAspect    : 400 Bad Request: [{
+    "error": "JSON Value: null Type: Null is not of expected type: int32"
+}]
+2022-05-09 11:10:30.691 ERROR 17320 --- [http-nio-8081-exec-10] c.z.i.r.tutor.config.aspect.LogAspect    : 400 Bad Request: [{
+    "error": "JSON Value: null Type: Null is not of expected type: int32"
+}]
+2022-05-09 11:10:30.725 ERROR 17320 --- [http-nio-8081-exec-9] c.z.i.r.tutor.config.aspect.LogAspect    : 400 Bad Request: [{
+    "error": "JSON Value: null Type: Null is not of expected type: int32"
+}]
+2022-05-09 11:11:16.275 ERROR 17320 --- [http-nio-8081-exec-7] c.z.i.r.tutor.config.aspect.LogAspect    : 400 Bad Request: [{
+    "error": "JSON Value: null Type: Null is not of expected type: int32"
+}]
+2022-05-09 12:42:19.074 ERROR 17120 --- [http-nio-8081-exec-1] c.z.i.r.tutor.config.aspect.LogAspect    : 400 Bad Request: [{
+    "error": "JSON Value: null Type: Null is not of expected type: int32"
+}]
+2022-05-09 12:44:18.656 ERROR 17120 --- [http-nio-8081-exec-2] c.z.i.r.tutor.config.aspect.LogAspect    : 400 Bad Request: [{
+    "error": "JSON Value: null Type: Null is not of expected type: int32"
+}]
+2022-05-09 13:44:09.987 ERROR 10732 --- [http-nio-8081-exec-4] c.z.i.r.tutor.config.aspect.LogAspect    : Expected a result with a single record, but this result contains at least one more. Ensure your query returns only one record.
+2022-05-09 13:44:49.581 ERROR 10732 --- [http-nio-8081-exec-6] c.z.i.r.tutor.config.aspect.LogAspect    : Expected a result with a single record, but this result contains at least one more. Ensure your query returns only one record.
+2022-05-09 14:43:16.090 ERROR 8952 --- [http-nio-8081-exec-4] c.z.i.r.tutor.config.aspect.LogAspect    : 400 Bad Request: [{
+    "error": "JSON Value: null Type: Null is not of expected type: int32"
+}]
+2022-05-09 14:45:15.633 ERROR 8952 --- [http-nio-8081-exec-5] c.z.i.r.tutor.config.aspect.LogAspect    : 400 Bad Request: [{
+    "error": "JSON Value: null Type: Null is not of expected type: int32"
+}]
+2022-05-09 16:25:12.534 ERROR 1916 --- [http-nio-8081-exec-4] c.z.i.r.tutor.config.aspect.LogAspect    : 400 Bad Request: [{
+    "error": "JSON Value: null Type: Null is not of expected type: int32"
+}]
+2022-05-09 16:27:12.436 ERROR 1916 --- [http-nio-8081-exec-3] c.z.i.r.tutor.config.aspect.LogAspect    : 400 Bad Request: [{
+    "error": "JSON Value: null Type: Null is not of expected type: int32"
+}]

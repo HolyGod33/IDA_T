@@ -2,6 +2,7 @@ package com.zjut.ida.recommend.tutor.module.home.service;
 
 import com.zjut.ida.recommend.tutor.config.SysStudentHolder;
 import com.zjut.ida.recommend.tutor.dao.ModelTutorMapMapper;
+import com.zjut.ida.recommend.tutor.m2ndao.SysScholarDao;
 import com.zjut.ida.recommend.tutor.module.home.service.strategy.recommend.impl.KgatModelRecommendStrategy;
 import com.zjut.ida.recommend.tutor.module.home.vo.TutorVO;
 import org.neo4j.driver.Driver;
@@ -32,6 +33,9 @@ public class TutorService {
     private ModelTutorMapMapper tutorMapMapper;
 
     @Autowired
+    private SysScholarDao sysScholarDao;
+
+    @Autowired
     private KgatModelRecommendStrategy kgatModelStrategy;
 
     private static final Integer MAX_STUDY_SPECIALITY_SIZE = 20;
@@ -41,15 +45,15 @@ public class TutorService {
 
     @Deprecated
     public List<Long> getNeo4jIdListByRemapIds(List<Integer> remapIdList) {
-        return tutorMapMapper.findNeo4jIdsByRemapIds(remapIdList);
+        return sysScholarDao.findNeo4jIdsByRemapIds(remapIdList);
     }
 
     public Long getNeo4jIdByRemapId(Long remapId) {
-        return tutorMapMapper.findNeo4jIdByRemapId(remapId);
+        return sysScholarDao.findNeo4jIdByRemapId(remapId);
     }
 
     public Long getRemapIdByNeo4jId(Long tutorNeo4jId) {
-        return tutorMapMapper.findRemapIdByNeo4jId(tutorNeo4jId);
+        return sysScholarDao.findRemapIdByNeo4jId(tutorNeo4jId);
     }
 
     public TutorVO getTutorByNeo4jId(Long tutorNeo4jId) {

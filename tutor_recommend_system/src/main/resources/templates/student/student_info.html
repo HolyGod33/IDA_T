@@ -14,7 +14,7 @@
              alt="头像"
              style="width: 50%;"
              class="mb-3 mt-3">
-        <div class="mb-3" th:text="${student.studentName}"></div>
+        <div class="mb-3" th:text="${student.studentName}" id="studentNameValue"></div>
     </div>
     <!--性别-->
     <div id="studentGender"
@@ -33,8 +33,10 @@
             </svg>
             <strong>学生性别</strong>
         </span>
-        <span th:if="${student.studentGender} == 0">男</span>
-        <span th:if="${student.studentGender} == 1">女</span>
+        <div id="studentSexValue">
+            <span th:if="${student.studentGender} == 0" gender="0">男</span>
+            <span th:if="${student.studentGender} == 1" gender="1">女</span>
+        </div>
     </div>
     <!--学号-->
     <div id="studentId"
@@ -53,7 +55,7 @@
             </svg>
             <strong>学生学号</strong>
         </span>
-        <span th:text="${student.studentId}"></span>
+        <span th:text="${student.studentId}" id="studentIdValue"></span>
     </div>
     <!--学院-->
     <div id="collegeName"
@@ -69,7 +71,7 @@
             </svg>
             <strong>学生学院</strong>
         </span>
-        <span th:text="${student.collegeName}"></span>
+        <span th:text="${student.collegeName}" id="studentCollegeNameValue"></span>
     </div>
     <!--班级-->
     <div id="studentClass"
@@ -86,7 +88,7 @@
             </svg>
             <strong>学生班级</strong>
         </span>
-        <span th:text="${student.studentClass}"></span>
+        <span th:text="${student.studentClass}" id="studentClassValue"></span>
     </div>
     <!--入学日期-->
     <div id="admissionDate"
@@ -103,7 +105,7 @@
             </svg>
             <strong>入学时间</strong>
         </span>
-        <span th:text="${student.admissionYear}+'年'"></span>
+        <span th:text="${student.admissionYear}+'年'" id="studentAdmissionYearValue"></span>
     </div>
     <!--个人爱好-->
     <div id="studySpeciality"
@@ -120,7 +122,7 @@
             <strong>兴趣方向</strong>
         </span>
         <span  style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"
-               class="col p-0"
+               class="col p-0" id="studySpecialityValue"
                th:if="${!#strings.isEmpty(student.studySpeciality)}"
                th:text="${student.studySpeciality}">
         </span>

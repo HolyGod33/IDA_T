@@ -6,10 +6,13 @@ import com.zjut.ida.recommend.tutor.config.SysStudentHolder;
 import com.zjut.ida.recommend.tutor.core.entity.ModelStudentMap;
 import com.zjut.ida.recommend.tutor.core.entity.SysStudent;
 import com.zjut.ida.recommend.tutor.core.entity.SysTutorRelative;
+import com.zjut.ida.recommend.tutor.core.m2nentity.NSysStudent;
 import com.zjut.ida.recommend.tutor.core.page.SimplePageInfo;
 import com.zjut.ida.recommend.tutor.dao.ModelStudentMapMapper;
 import com.zjut.ida.recommend.tutor.dao.SysCFMapper;
 import com.zjut.ida.recommend.tutor.dao.SysTutorRelativeMapper;
+import com.zjut.ida.recommend.tutor.m2ndao.SysScholarDao;
+import com.zjut.ida.recommend.tutor.m2ndao.SysStudentDao;
 import com.zjut.ida.recommend.tutor.module.home.service.combine.TreeRich;
 import com.zjut.ida.recommend.tutor.module.home.service.combine.engine.IEngine;
 import com.zjut.ida.recommend.tutor.module.home.service.combine.engine.impl.TreeEngineHandle;
@@ -56,6 +59,11 @@ public class RecommendService {
     private LabelStrategyFactory labelStrategyFactory;
     @Autowired
     private KgatModelRecommendStrategy kgatModelStrategy;
+
+    @Autowired
+    private SysStudentDao studentDao;
+    @Autowired
+    private SysScholarDao scholarDao;
 
 
     /**
@@ -118,7 +126,7 @@ public class RecommendService {
      * @return 决策值键值对
      */
     private Map<RuleKeyType, Integer> getMatterValues() {
-        SysStudent student = studentHolder.getStudent();
+        NSysStudent student = studentHolder.getStudent();
         // 构造决策值
         Map<RuleKeyType, Integer> matterValue = new HashMap<>();
         if (student == null) {
@@ -148,16 +156,17 @@ public class RecommendService {
      * @return 布尔值
      */
     public boolean isTrain() {
-        SysStudent student = studentHolder.getStudent();
+        NSysStudent student = studentHolder.getStudent();
         if (student == null) {
             // 未注册
             return false;
         } else {
             // 已注册
-            return Optional.ofNullable(studentMapMapper.selectOne(Wrappers.<ModelStudentMap>lambdaQuery()
-                    .select(ModelStudentMap::getStudentId)
-                    .eq(ModelStudentMap::getStudentName, student.getStudentName())))
-                    .isPresent();
+//            return Optional.ofNullable(studentMapMapper.selectOne(Wrappers.<ModelStudentMap>lambdaQuery()
+//                    .select(ModelStudentMap::getStudentId)
+//                    .eq(ModelStudentMap::getStudentName, student.getStudentName())))
+//                    .isPresent();
+            return true;
         }
     }
 
@@ -167,13 +176,13 @@ public class RecommendService {
      * @return 布尔值
      */
     public boolean hasHistory() {
-        SysStudent student = studentHolder.getStudent();
+        NSysStudent student = studentHolder.getStudent();
         if (student == null) {
             // 未注册
             return false;
         } else {
             // 已注册
-            return cfMapper.hasEnoughHistory(student.getStudentId());
+            return studentDao.hasEnoughHistory(student.getStudentId())>10;
         }
     }
 
@@ -185,9 +194,7 @@ public class RecommendService {
      */
     public List<TutorVO> getRelativeList(Long tutorNeo4jId) {
         Long remapId = tutorService.getRemapIdByNeo4jId(tutorNeo4jId);
-        SysTutorRelative relative = relativeMapper.selectOne(Wrappers.<SysTutorRelative>lambdaQuery()
-                .eq(SysTutorRelative::getTutorRemapId, remapId));
-        List<String> relativeRemapIdList = Arrays.stream(relative.getTutorRelativeIdList().split(","))
+        List<String> relativeRemapIdList = Arrays.stream(scholarDao.findTutorRelativeIdListByTutorRemapId(remapId).split(","))
                 .collect(Collectors.toList());
 
         if (CollectionUtils.isEmpty(relativeRemapIdList)) {

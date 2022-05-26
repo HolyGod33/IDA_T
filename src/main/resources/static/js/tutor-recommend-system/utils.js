@@ -3,6 +3,8 @@ function isEmpty(obj) {
     return typeof obj === 'undefined' || obj == null || obj === '';
 }
 
+let tokenUserAttr=['studentId','studentName','studentClass']
+
 // 弹出 alert
 function alertMsg(alertComp, msgComp, msg) {
     msgComp.text(msg)
@@ -149,14 +151,52 @@ function getToken() {
     }
 }
 
+function getTokenUserName() {
+    let studentName = localStorage.getItem("studentName")
+    if (!isEmpty(studentName)) {
+        return {
+            "studentName": studentName
+        }
+    } else {
+        return null
+    }
+}
+
+function getTokenUserId() {
+    let studentId = localStorage.getItem("studentId")
+    if (!isEmpty(studentId)) {
+        return {
+            "studentId": studentId
+        }
+    } else {
+        // return null
+        return {
+            "studentId": "null"
+        }
+    }
+}
+
 // 设置 token
 function setToken(token) {
     localStorage.setItem(TOKEN_KEY, token)
 }
 
+function setTokenUser(user) {
+    for (var index in tokenUserAttr){
+        localStorage.setItem(tokenUserAttr[index], user[tokenUserAttr[index]])
+    }
+}
+
 // 移除 token
 function removeToken() {
     localStorage.removeItem(TOKEN_KEY)
+}
+
+function removeTokenUser() {
+    // localStorage.removeItem("user")
+    for (var index in tokenUserAttr){
+        localStorage.removeItem(tokenUserAttr[index])
+    }
 }
 
 // 列表淡入

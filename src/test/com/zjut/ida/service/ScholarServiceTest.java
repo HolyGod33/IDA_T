@@ -5,6 +5,7 @@ import com.zjut.ida.entity.Achievement;
 import com.zjut.ida.entity.Article;
 import com.zjut.ida.entity.Partner;
 import com.zjut.ida.entity.Scholar;
+import com.zjut.ida.service.impl.HorizontalProjectServiceImpl;
 import com.zjut.ida.tool.ExcelFormatUtil;
 import org.apache.poi.xssf.usermodel.*;
 import org.junit.Test;
@@ -28,6 +29,9 @@ public class ScholarServiceTest {
 
     @Autowired
     private AchievementService achievementService;
+
+    @Autowired
+    private HorizontalProjectServiceImpl service;
 
     @Test
     public void findPartnersByScholarNameForCountTest() {
@@ -113,5 +117,10 @@ public class ScholarServiceTest {
         fileOutputStream.flush();
         fileOutputStream.close();
         xssfWorkbook.close();
+    }
+
+    @Test
+    public void test2(){
+        System.out.println(service.findHorizontalProjectsByScholarName("张元鸣"));
     }
 }

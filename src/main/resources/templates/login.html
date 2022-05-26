@@ -16,6 +16,7 @@
     <img src="img/idaTitle.png" alt="logosa112132122" style="width:15%;height:15%;" class="mt-3"/>
     <a id="avatar" class="position-absolute" style="left: 92%;top: 5%;color: white;" href="dashboard" target="_blank">个人中心</a>
     <a id="loginoutside" class="position-absolute" style="left: 80%;top: 5%;color: white;" target="_blank">个人中心(校外)</a>
+    <a class="position-absolute" style="left: 75%;top: 5%;color: white;" href="/ida">首页</a>
 </div>
 
 <!--alert-->
@@ -156,6 +157,7 @@
                 success: res => {
                     if (res.result_code === 0) {
                         setToken(res.data.token)
+                        setTokenUser(res.data.user)
                         window.location.href="/ida"
                     } else {
                         alertMsg(alertComp, msgComp, res.result_msg)

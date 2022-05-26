@@ -14,6 +14,7 @@
     <img src="img/idaLogo1.png" alt="logosa112132122" style="width:10%" class="rounded-circle ml-3"/>
     <img src="img/idaTitle.png" alt="logosa112132122" style="width:15%;height:15%;" class="mt-3"/>
     <a id="avatar" class="position-absolute" style="left: 92%;top: 5%;color: white;" href="dashboard" target="_blank">个人中心</a>
+    <a class="position-absolute" style="left: 80%;top: 5%;color: white;" href="/ida">首页</a>
 </div>
 
 <!--alert-->
@@ -297,6 +298,10 @@
         let studentClassSelector = $("#student-class option:selected")
         studentClassSelector = isEmpty(studentClassSelector.attr("value")) ? null : studentClassSelector.text()
 
+        let studySpecialityList = $("#studySpecialityValue").text().split(",")
+
+        // $("#categoryModal .modal-body button[class~='active']").each(function () { tempList.push($(this).text()) })
+
         return {
             "studentId": $("#student-id").val(),
             "studentName": $("#student-name").val(),
@@ -304,7 +309,8 @@
             "password": $("#school-password").val(),
             "collegeName": collegeSelector,
             "admissionYear": admissionYearSelector,
-            "studentClass": studentClassSelector
+            "studentClass": studentClassSelector,
+            "studySpecialityList": studySpecialityList
         }
     }
 
@@ -342,6 +348,7 @@
                         res = JSON.parse(res)
                         console.error(res)
                         removeToken()
+                        removeTokenUser()
                         window.location.href="login?redirectMsg=" + res.result_msg
                     } catch (e) {
                         $("#student-info").html(res)
@@ -353,6 +360,7 @@
                         })
                         logoutBtn.click(function () {
                             removeToken()
+                            removeTokenUser()
                             window.location.href="login"
                         })
                         // 模态框填入学生学号
@@ -406,6 +414,8 @@
                 }
             })
         }
+
+
         // 获取历史浏览信息 / 收藏列表
         let getNavContent = function(url, pageNum, pageSize) {
             $.ajax({
@@ -418,6 +428,7 @@
                         res = JSON.parse(res)
                         console.error(res)
                         removeToken()
+                        removeTokenUser()
                         window.location.href="login?redirectMsg="+res.result_msg
                     } catch(e) {
                         $("#nav-content").html(res)
@@ -432,6 +443,8 @@
                 }
             })
         }
+
+
         // 导航条
         $(".nav .nav-link").click(function () {
             let navLinkList = $(".nav .nav-link")
@@ -486,13 +499,31 @@
                     '<span class="sr-only">Loading...</span>')
             let tempList = []
             $("#categoryModal .modal-body button[class~='active']").each(function () { tempList.push($(this).text()) })
+            // var str="";
+            // for (var item1 in tempList){
+            //     str +=item1+":"+tempList[item1]+"\n";
+            // }
+            // console.log("tempList==="+str)
+            // data=getChangeInfo()
+            // data["studySpecialityList"]=tempList
+            // console.log("data="+data)
+            // var str="";
+            // for (var item1 in data){
+            //     str +=item1+":"+data[item1]+"\n";
+            // }
+            // console.log("data==="+str)
             $.ajax({
                 contentType: "application/json",
                 type: "PUT",
-                url: BASE_URL + "student/update",
+                url: BASE_URL + "student/updateStudySpecialityList",
                 dataType: "json",
                 headers: getToken(),
-                data: JSON.stringify({"studySpecialityList": tempList}),
+                data: JSON.stringify({
+                    "studySpecialityList": tempList,
+                    "studentId":$("#studentIdValue").text()
+                }),
+                // data: JSON.stringify(data),
+                // data: JSON.stringify(getChangeInfo()),
                 success: res => {
                     $("#categoryModal").modal("hide")
                     getStudentInfo()

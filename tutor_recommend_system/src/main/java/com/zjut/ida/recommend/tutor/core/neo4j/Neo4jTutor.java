@@ -19,11 +19,11 @@ public class Neo4jTutor {
     @Property("tutor_type")
     private String tutorType;
     private String doMain;
-    private String scholarId;
+//    private String scholarId;
     private String education;
     private String teacherId;
     private String sex;
-    private String entityId;
+//    private String entityId;
     @Property("sub_organization")
     private String subOrganization;
     private String title;

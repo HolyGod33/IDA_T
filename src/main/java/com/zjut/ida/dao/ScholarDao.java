@@ -48,4 +48,10 @@ public interface ScholarDao extends Neo4jRepository<Scholar,Long> {
 
     @Query("match(n:Scholar) where id(n)={0} return n")
     Scholar findScholarsById(@Param("scholarId")Integer scholarId);
+
+    @Query("match(n:SysStudent)-[r:History]-(m:Scholar) \n" +
+            "with m,count(m) as historyCount\n" +
+            "order by historyCount desc\n" +
+            "return m limit {0}")
+    List<Scholar> findScholarsByHistoryCount(int count);
 }

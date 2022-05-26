@@ -1,11 +1,14 @@
 package com.zjut.ida.recommend.tutor.core.m2nentity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.zjut.ida.recommend.tutor.core.neo4j.Neo4jTutor;
 import lombok.Data;
-import org.springframework.data.neo4j.core.schema.GeneratedValue;
-import org.springframework.data.neo4j.core.schema.Id;
-import org.springframework.data.neo4j.core.schema.Node;
-import org.springframework.data.neo4j.core.schema.Property;
+import org.neo4j.ogm.annotation.NodeEntity;
+import org.springframework.data.neo4j.core.schema.*;
+
+import java.util.List;
 
 
 /**
@@ -69,6 +72,16 @@ public class NSysStudent {
     private String studySpeciality;
 
 
+    @Relationship(value = "Choose")
+    @JsonIgnoreProperties
+    @JsonIgnore
+    private List<Neo4jTutor>  tutorList;
+
+
+    @Relationship(value = "History")
+    @JsonIgnoreProperties
+    @JsonIgnore
+    private List<Neo4jTutor>  historyTutorList;
 //    /**
 //     * 逻辑删除
 //     */

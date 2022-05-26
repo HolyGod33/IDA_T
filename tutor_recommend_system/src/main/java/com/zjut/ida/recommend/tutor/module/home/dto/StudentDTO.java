@@ -17,6 +17,7 @@ public class StudentDTO {
     private String studentClass;
     private Integer studentGender;
     private Integer admissionYear;
+    private String collegeName;
     private List<String> studySpecialityList;
 
     public void checkField() {

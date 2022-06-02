@@ -2,14 +2,12 @@ package com.zjut.ida.service.impl;
 
 import com.zjut.ida.dao.ArticleDao;
 import com.zjut.ida.entity.Article;
-import com.zjut.ida.entity.PublishArticleCount;
 import com.zjut.ida.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -43,4 +41,13 @@ public class ArticleServiceImpl implements ArticleService {
         return articleDao.findArticlesByScholarNameAndYear(scholarName,year);
     }
 
+    @Override
+    public List<Article> findArticlesById(List<Long> articleIdList) {
+        List<Article> articleList=new ArrayList<>();
+        for(Long id:articleIdList){
+            Article temp=articleDao.findArticlesById(id.intValue());
+            articleList.add(temp);
+        }
+        return articleList;
+    }
 }

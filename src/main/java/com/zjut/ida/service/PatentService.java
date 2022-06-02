@@ -1,5 +1,6 @@
 package com.zjut.ida.service;
 
+import com.zjut.ida.entity.Article;
 import com.zjut.ida.entity.Patent;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -13,4 +14,5 @@ public interface PatentService {
 
     List<Patent> findPatentByScholarName(String scholarName);
 
+    List<Patent> findPatentsById(List<Long> patentIdList);
 }

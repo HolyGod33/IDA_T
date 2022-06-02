@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{css/iconfont.css}">
+    <link rel="stylesheet" th:href="@{css/bootstrap.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{css/displayframe.css}">
+    <script type="text/javascript" th:src="@{js/bootstrap.min.js}"></script>
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" th:src="@{js/tutor-recommend-system/jquery.animate-shadow-min.js}"></script>
+    <script type="text/javascript" th:src="@{js/tutor-recommend-system/constants.js}"></script>
+    <script type="text/javascript" th:src="@{js/tutor-recommend-system/utils.js}"></script>
+</head>
+<body>
+
+<h3 class="spinner-border text-primary" id="TeacherRecommendSpinner"
+    role="status"
+    style="position: absolute;float: left;left: 48%;top: 43%;z-index: 10; width: 4rem;height: 4rem;display: block">
+    <span class="sr-only">Loading...</span>
+</h3>
+
+<div class="show-recommend-result">
+
+<!--    <div class="recommend-box">-->
+
+<!--&lt;!&ndash;        <div style='color: #0f141c;&ndash;&gt;-->
+<!--&lt;!&ndash;    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;&ndash;&gt;-->
+<!--&lt;!&ndash;    font-size:18px;&ndash;&gt;-->
+<!--&lt;!&ndash;    font-weight: 700;&ndash;&gt;-->
+<!--&lt;!&ndash;    line-height: 26px;'>【可能感兴趣的导师】</div>&ndash;&gt;-->
+
+<!--        <div class="relative-recommend" th:each="scholar:${Scholar}">-->
+
+<!--            <div class="recommend-subTitle">-->
+<!--                <a class="recommend-content"-->
+<!--                   th:onclick="'addChoose('+${scholar.id}+')'"-->
+<!--                   th:href="'http://10.12.45.49:8080/ida/scholar/findscholarsbynamelike?scholarName='+${scholar.name}"-->
+<!--                target="_blank"-->
+<!--                style="text-decoration: none;color: black">-->
+<!--                    [[${scholar.name}]]</a>-->
+<!--            </div>-->
+
+<!--            <div class="recommend-information">-->
+
+<!--                <span class="first-info">-->
+<!--                  <span>-->
+<!--                    <span style="font-weight: bold">学院：</span>-->
+<!--                  </span>-->
+<!--                  <span>[[${scholar.organization}?${scholar.organization}:'暂无']]</span>-->
+<!--                </span>-->
+
+<!--                <span class="second-info">-->
+<!--                  <span>-->
+<!--                    <span style="font-weight: bold">研究方向：</span>-->
+<!--                  </span>-->
+<!--                  <span>[[${scholar.studySpeciality}?${scholar.studySpeciality}:'暂无']]</span>-->
+<!--                </span>-->
+
+<!--                <span class="third-info">-->
+<!--                  <span>-->
+<!--                    <span style="font-weight: bold">邮箱：</span>-->
+<!--                  </span>-->
+<!--                  <span>[[${scholar.email}?${scholar.email}:'暂无']]</span>-->
+<!--                </span>-->
+
+<!--            </div>-->
+<!--        </div>-->
+
+    <div class="recommend-box" th:each="scholar:${Scholar}">
+        <div class="each-tutor row">
+            <div class="avatar col-md-2">
+                <img th:src="../static/img/439337.jpg">
+            </div>
+            <div class="info col-md-13 row">
+                <div class="tutor-name col-md-10">
+                    <a>
+<!--                       th:onclick="'addChoose('+${scholar.id}+')'"-->
+<!--                       th:href="'http://10.12.45.49:8080/ida/scholar/findscholarsbynamelike?scholarName='+${scholar.name}">-->
+
+<!--                        <span style="color: #333;">[[${scholar.name}]]</span>-->
+                        <span style="color: #333;">xzs</span>
+                    </a>
+                    <i class="iconfont icon-xingbienan"></i>
+                </div>
+                <div class="tutor-organization col-md-6">
+                    <i class="iconfont icon-xueyuan"></i>
+                    <span>[[${scholar.organization}?${scholar.organization}:'暂无']]</span>
+                </div>
+                <div class="tutor-title col-md-4">
+                    <i class="iconfont icon-ziyuan74zhicheng"></i>
+                    <span>[[${scholar.title}?${scholar.title}:'暂无']]</span>
+                </div>
+                <div class="tutor-email col-md-6">
+                    <i class="iconfont icon-youxiang1"></i>
+                    <span>[[${scholar.email}?${scholar.email}:'暂无']]</span>
+                </div>
+                <div class="tutor-type col-md-4">
+                    <i class="iconfont icon-daoshi--"></i>
+                    <span>[[${scholar.tutorType}?${scholar.tutorType}:'暂无']]</span>
+                </div>
+                <div class="tutor-direction col-md-10">
+                    <i class="iconfont icon-yanjiu"></i>
+                    <span>研究方向：[[${scholar.studySpeciality}?${scholar.studySpeciality}:'暂无']]</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="BoxFooter">
+            <i class="iconfont icon-gengduo"></i>
+            <span>查看更多感兴趣的导师</span>
+        </div>
+
+    </div>
+
+
+</div>
+
+<script>
+
+    function addChoose(tutorNeo4jId) {
+        console.log(tutorNeo4jId)
+        if (hasToken()) {
+            $.ajax({
+                contentType: 'application/json',
+                type: 'POST',
+                url: BASE_URL+"choose/add",
+                dataType: "json",
+                headers: getToken(),
+                data: JSON.stringify(tutorNeo4jId),
+                success: res => {
+                    if (res.result_code !== 0) {
+                        removeToken()
+                    }
+                }
+            })
+        }
+    }
+
+
+    // $(document).finish(function(){
+    //
+    //     console.log("完成")
+    //     $("#TeacherRecommendSpinner").style.display = "block"
+    //
+    // })
+
+    $(document).ready(function () {
+        document.getElementById("TeacherRecommendSpinner").style.display = "none"
+    })
+
+
+
+
+
+</script>
+</body>
+</html>

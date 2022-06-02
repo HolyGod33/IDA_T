@@ -8,35 +8,27 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app-log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/app-log/log_error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app-log/log_total.log" beforeDir="false" afterPath="$PROJECT_DIR$/app-log/log_total.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/controller/RootController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/controller/RootController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/dao/ArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/dao/ArticleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/dao/ScholarDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/dao/ScholarDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/entity/Scholar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/entity/Scholar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/dao/HorizontalProjectDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/dao/HorizontalProjectDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/dao/PatentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/dao/PatentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/dao/VerticalProjectDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/dao/VerticalProjectDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/mkgan/MkganController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/mkgan/MkganController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/mkgan/MkganServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/mkgan/MkganServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/service/HorizontalProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/service/HorizontalProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/service/PatentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/service/PatentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/service/VerticalProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/service/VerticalProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/service/impl/HorizontalProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/service/impl/HorizontalProjectServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/service/impl/PatentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/service/impl/PatentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zjut/ida/service/impl/VerticalProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zjut/ida/service/impl/VerticalProjectServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/displayframe.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/tutor-recommend-system/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/tutor-recommend-system/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/tutor-recommend-system/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/tutor-recommend-system/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/TutorRecommendation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/iconfont.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/iconfont.ttf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/recommend/TeacherRecommend.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/zjut/ida/service/ScholarServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/zjut/ida/service/ScholarServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/config/SysStudentHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/config/SysStudentHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/config/interceptor/RecommendInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/config/interceptor/RecommendInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/config/interceptor/UniversalInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/config/interceptor/UniversalInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/core/m2nentity/NSysStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/core/m2nentity/NSysStudent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/core/neo4j/Neo4jTutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/core/neo4j/Neo4jTutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/m2ndao/SysStudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/m2ndao/SysStudentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/module/dashboard/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/module/dashboard/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/module/dashboard/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/module/dashboard/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/module/home/dto/StudentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/module/home/dto/StudentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/module/home/service/RecommendService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/module/home/service/RecommendService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/module/home/service/TutorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/main/java/com/zjut/ida/recommend/tutor/module/home/service/TutorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/main/resources/templates/student/student_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/main/resources/templates/student/student_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_recommend_system/src/test/java/com/zjut/ida/recommend/tutor/TutorRecommendSystemApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_recommend_system/src/test/java/com/zjut/ida/recommend/tutor/TutorRecommendSystemApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/recommend/PaperRecommend.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/recommend/ArticleRecommend.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/recommend/TeacherRecommend.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/recommend/ScholarRecommend.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +40,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -81,13 +74,16 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/recommend" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\ProgrameTest\ProjectTest\IDA_Final\IDA_T\src\main\resources\templates\recommend" />
       <recent name="E:\ProgrameTest\ProjectTest\IDA_Final\IDA_T\src\main\resources\static\css" />
+      <recent name="E:\ProgrameTest\ProjectTest\IDA_Final\IDA_T\src\main\resources\static\img\new" />
       <recent name="E:\ProgrameTest\ProjectTest\IDA_Final\IDA_T\src\main\resources\templates" />
       <recent name="E:\ProgrameTest\ProjectTest\IDA_Final\IDA_T\src\main\resources\static\img" />
-      <recent name="E:\ProgrameTest\ProjectTest\IDA_Final\IDA_T\src\main\resources\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\ProgrameTest\ProjectTest\IDA_Final\IDA_T\src\main\resources\templates\recommend" />
@@ -100,7 +96,23 @@
       <recent name="com.zjut.ida.recommend.tutor.core.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ScholarServiceTest.test2">
+  <component name="RunManager" selected="Spring Boot.IdaApplication">
+    <configuration name="CKANTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IDA_T" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zjut.ida.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zjut.ida.service" />
+      <option name="MAIN_CLASS_NAME" value="com.zjut.ida.service.CKANTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ScholarServiceTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IDA_T" />
       <extension name="coverage">
@@ -128,22 +140,6 @@
       <option name="PACKAGE_NAME" value="com.zjut.ida.recommend.tutor" />
       <option name="MAIN_CLASS_NAME" value="com.zjut.ida.recommend.tutor.TutorRecommendSystemApplicationTests" />
       <option name="METHOD_NAME" value="createHashSalt" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TutorRecommendSystemApplicationTests.testChooseDao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tutor_recommend_system" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zjut.ida.recommend.tutor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zjut.ida.recommend.tutor" />
-      <option name="MAIN_CLASS_NAME" value="com.zjut.ida.recommend.tutor.TutorRecommendSystemApplicationTests" />
-      <option name="METHOD_NAME" value="testChooseDao" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ScholarServiceTest.test2" />
         <item itemvalue="Spring Boot.IdaApplication" />
+        <item itemvalue="JUnit.CKANTest.test" />
+        <item itemvalue="JUnit.ScholarServiceTest.test2" />
         <item itemvalue="JUnit.TutorRecommendSystemApplicationTests.createHashSalt" />
         <item itemvalue="JUnit.TutorRecommendSystemApplicationTests.testStudentService" />
-        <item itemvalue="JUnit.TutorRecommendSystemApplicationTests.testChooseDao" />
       </list>
     </recent_temporary>
   </component>
@@ -265,6 +261,11 @@
       <workItem from="1653282767017" duration="1214000" />
       <workItem from="1653351564087" duration="603000" />
       <workItem from="1653359395051" duration="600000" />
+      <workItem from="1653539970018" duration="8157000" />
+      <workItem from="1653878097451" duration="6230000" />
+      <workItem from="1654047085284" duration="16094000" />
+      <workItem from="1654071982140" duration="2319000" />
+      <workItem from="1654155066061" duration="780000" />
     </task>
     <servers />
   </component>
@@ -277,6 +278,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.util.NoSuchElementException" package="java.util" />
           <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="2" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

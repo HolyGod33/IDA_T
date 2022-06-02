@@ -2,6 +2,7 @@ package com.zjut.ida.dao;
 
 import com.zjut.ida.entity.Article;
 import com.zjut.ida.entity.PublishArticleCount;
+import com.zjut.ida.entity.Scholar;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.neo4j.annotation.Query;
@@ -70,4 +71,7 @@ public interface ArticleDao extends Neo4jRepository<Article,Long> {
             "order by historyCount desc\n" +
             "return m1 limit {1}")
     List<Article> findArticlesByHistory(List<Long> scholarIdList,int count);
+
+    @Query("match(n:Article) where id(n)={0} return n")
+    Article findArticlesById(@Param("articleId")Integer articleId);
 }

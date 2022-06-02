@@ -11,6 +11,60 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-yanjiu:before {
+  content: "\e641";
+  font-size: 18px;
+  color: #1c5a8d;
+}
+
+.icon-daoshi--:before {
+  content: "\e659";
+  font-size: 18px;
+  color: #a27e7e;
+}
+
+.icon-ziyuan74zhicheng:before {
+  content: "\e6ed";
+  font-size: 18px;
+  color: #656a65;
+}
+.icon-youxiang1:before {
+  content: "\e612";
+  color: #b5c4b1;
+  font-size: 18px;
+}
+
+.icon-xueyuan:before {
+  content: "\e652";
+  font-size: 18px;
+  color: #907dac;
+}
+
+.icon-xingbienan:before {
+  content: "\e639";
+  color: #78c7d7
+}
+
+.icon-xueyuan1:before {
+  content: "\e601";
+}
+
+.icon--5:before {
+  content: "\e600";
+  font-size: 28px;
+  color: #c1cbd7;
+}
+
+.icon-nv:before {
+  content: "\e60c";
+  color: #ed969e;
+}
+
+.icon-youxiang:before {
+  content: "\e608";
+  font-size: 35px;
+  color: #b5c4b1;
+}
 .icon-wenzhang:before {
   color: white;
   font-size: 25px;
@@ -33,12 +87,16 @@
   color: white;
   content: "\e893";
   font-size: 35px;
+  position: relative;
+  top:8px;
 }
 
 .icon-denglu1:before {
   color: white;
   font-size: 35px;
   content: "\e604";
+  position: relative;
+  top:8px;
 }
 
 .icon-gengduo:before {

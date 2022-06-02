@@ -1,6 +1,7 @@
 package com.zjut.ida.service.impl;
 
 import com.zjut.ida.dao.VerticalProjectDao;
+import com.zjut.ida.entity.Patent;
 import com.zjut.ida.entity.VerticalProject;
 import com.zjut.ida.service.VerticalProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -22,5 +24,15 @@ public class VerticalProjectServiceImpl implements VerticalProjectService {
     @Override
     public List<VerticalProject> findVerticalProjectByScholarName(String scholarName) {
         return verticalProjectDao.findVerticalProjectByScholarName(scholarName);
+    }
+
+    @Override
+    public List<VerticalProject> findVerticalProjectsById(List<Long> verticalProjectIdList) {
+        List<VerticalProject> verticalProjectList=new ArrayList<>();
+        for(Long id:verticalProjectIdList){
+            VerticalProject temp=verticalProjectDao.findVerticalProjectsById(id.intValue());
+            verticalProjectList.add(temp);
+        }
+        return verticalProjectList;
     }
 }

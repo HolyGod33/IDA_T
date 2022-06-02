@@ -1,3 +1,4 @@
+
 /* The style designed for the display of recommendation results*/
 .pt-0{
     display: flex;
@@ -96,18 +97,17 @@
     flex-direction: row;
     padding: 14px 16px;
     margin: 15px 15px 15px;
-    border:1px solid #eefefe;
     --legend_icon_color: #009089;
     --legend_color: #009089;
     --split_line_border_color: #d7ece9;
-    background: #eefefe;
+    background: white;
     border-radius: 5px;
+    border: 1px solid #e6e6e6;
 }
 
 /*放置鼠标时有阴影效果*/
 .recommend-box:hover {
     box-shadow: 2px 4px 8px 0 hsl(0,0%,71%);
-    cursor: pointer;
 }
 
 /*推荐结果的类型：导师、项目、论文...*/
@@ -117,7 +117,50 @@
     font-size:18px;
     font-weight: 700;
     line-height: 26px;
+    margin-bottom: 10px;
 }
+.avatar img{
+    width: 82px;
+    height: 118px;
+}
+.info{
+    color: #333;
+    flex: 1 1;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;;
+    line-height: 30px;
+    margin-top: 2px;
+}
+.tutor-name{
+    font-weight: bold;
+    font-size: 20px;
+}
+.tutor-organization{
+    font-size: 13px;
+}
+.tutor-title{
+    font-size: 13px;
+}
+.tutor-type{
+    font-size: 13px;
+}
+.tutor-email{
+    font-size: 15px;
+    font-family: "PingFang SC", "Times New Roman", Georgia, Serif, serif;
+}
+.tutor-direction{
+    font-size: 13px;
+}
+
+/*.research-frame{*/
+/*    display: inline-block;*/
+/*    background: #f6f7f9;*/
+/*    color: #555;*/
+/*    border: 1px solid #d9d9d9;*/
+/*    border-radius: 2px;*/
+/*    margin: 0 5px 5px 0;*/
+/*    padding: 2px 10px;*/
+/*    font-size: 10px;*/
+/*}*/
 
 /*相关信息*/
 .recommend-information{
@@ -224,7 +267,7 @@
 
 .right-side{
     width: 30%;
-    margin-top: 10px;
+    margin-top: 34px;
     margin-left: 10px;
     /*position: relative;*/
     float: right;

@@ -1,10 +1,12 @@
 package com.zjut.ida.dao;
 
+import com.zjut.ida.entity.HorizontalProject;
 import com.zjut.ida.entity.VerticalProject;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.neo4j.annotation.Query;
 import org.springframework.data.neo4j.repository.Neo4jRepository;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -25,5 +27,8 @@ public interface VerticalProjectDao extends Neo4jRepository<VerticalProject,Long
     List<VerticalProject> findVerticalProjectsByNameContains(String words);
 
     List<VerticalProject> findVerticalProjectsByCooperatorsContains(String words);
+
+    @Query("match(n:VerticalProject) where id(n)={0} return n")
+    VerticalProject findVerticalProjectsById(@Param("verticalProjectId")Integer verticalProjectId);
 
 }

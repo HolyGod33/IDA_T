@@ -7,7 +7,8 @@
   <link rel="stylesheet" th:href="@{css/iconfont.css}">
   <link rel="stylesheet" th:href="@{css/bootstrap.min.css}">
   <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="../ida/css/displayframe.css">
+<!--  <link rel="stylesheet" type="text/css" href="../ida/css/displayframe.css">-->
+  <link rel="stylesheet" type="text/css" th:href="@{css/displayframe.css}">
   <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
   <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -183,11 +184,11 @@
                   <ul class="nav nav-pills">
 <!--                    <li role="presentation" class="active"><a class="recommend-link" th:href="@{TeacherRecommend}" target="myIframe">导师推荐</a></li>-->
 <!--                    <li role="presentation" class="active"><a class="recommend-link" th:href="@{TeacherRecommend}" target="myIframe">导师推荐</a></li>-->
-                    <li role="presentation" class="active"><a class="recommend-link" id="tutorRecommendA" href="#" target="myIframe">导师推荐</a></li>
-                    <li role="presentation"><a class="recommend-link" id="paperRecommendA" th:href="@{TeacherRecommend}" target="myIframe">论文推荐</a></li>
-                    <li role="presentation"><a class="recommend-link" id="projectRecommendA" th:href="@{TeacherRecommend}" target="myIframe">项目推荐</a></li>
-                    <li role="presentation"><a class="recommend-link" id="resultRecommendA" th:href="@{TeacherRecommend}" target="myIframe">成果推荐</a></li>
-                    <li role="presentation"><a class="recommend-link" id="monographRecommendA" th:href="@{TeacherRecommend}" target="myIframe">专著推荐</a></li>
+                    <li role="presentation" class="active"><a class="recommend-link" id="ScholarRecommendA" href="#" target="myIframe">导师推荐</a></li>
+                    <li role="presentation"><a class="recommend-link" id="ArticleRecommendA" target="myIframe">论文推荐</a></li>
+                    <li role="presentation"><a class="recommend-link" id="PatentRecommendA"  target="myIframe">专利推荐</a></li>
+                    <li role="presentation"><a class="recommend-link" id="VerticalProjectRecommendA"  target="myIframe">纵向项目推荐</a></li>
+                    <li role="presentation"><a class="recommend-link" id="HorizontalProjectRecommendA" target="myIframe">横向项目推荐</a></li>
                   </ul>
                </div>
                 <iframe  frameborder="0" scrolling="no" style="width: 100%"
@@ -274,12 +275,14 @@
   $(document).ready(function () {
 
 
-    $("#tutorRecommendA").attr("href","TeacherRecommend?studentId="+getTokenUserId().studentId)
-    $("#paperRecommendA").attr("href","PaperRecommend?studentId="+getTokenUserId().studentId)
-    $("#projectRecommendA").attr("href","TeacherRecommend?studentId="+getTokenUserId().studentId)
-    $("#resultRecommendA").attr("href","TeacherRecommend?studentId="+getTokenUserId().studentId)
-    $("#monographRecommendA").attr("href","TeacherRecommend?studentId="+getTokenUserId().studentId)
-    $("#myIframe").attr("src","TeacherRecommend?studentId="+getTokenUserId().studentId)
+    hrefUrl="getRecommendList?studentId="+getTokenUserId().studentId+"&type="
+    // $("#ScholarRecommendA").attr("href","TeacherRecommend?studentId="+getTokenUserId().studentId)
+    $("#ScholarRecommendA").attr("href",hrefUrl+"Scholar")
+    $("#ArticleRecommendA").attr("href",hrefUrl+"Article")
+    $("#PatentRecommendA").attr("href",hrefUrl+"Patent")
+    $("#VerticalProjectRecommendA").attr("href",hrefUrl+"VP")
+    $("#HorizontalProjectRecommendA").attr("href",hrefUrl+"HP")
+    $("#myIframe").attr("src",hrefUrl+"Scholar")
     // $("#tutorRecommendA").attr("href","TeacherRecommend")
 
     $("#search").on("keypress", function (event) {

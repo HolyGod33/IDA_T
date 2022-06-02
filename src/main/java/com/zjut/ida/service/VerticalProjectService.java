@@ -1,5 +1,6 @@
 package com.zjut.ida.service;
 
+import com.zjut.ida.entity.Patent;
 import com.zjut.ida.entity.VerticalProject;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -13,4 +14,6 @@ public interface VerticalProjectService {
 
 
     List<VerticalProject> findVerticalProjectByScholarName(String scholarName);
+
+    List<VerticalProject> findVerticalProjectsById(List<Long> verticalProjectIdList);
 }

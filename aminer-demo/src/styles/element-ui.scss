@@ -1,0 +1,52 @@
+/* 切换语言弹出框 */
+.popper-switch-lang {
+  opacity: 0.9;
+}
+
+/* 产品列表弹出框 */
+.popper-product {
+  min-width: 30px;
+  min-height: 32px;
+  padding: 6px 8px;
+  text-align: left;
+  text-decoration: none;
+  word-wrap: break-word;
+
+  font-size: 12px !important;
+
+  width: 300px;
+  color: #000;
+  background: hsla(0, 0%, 100%, .9);
+  border: 1px solid hsla(0, 0%, 87.8%, .5);
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+
+  line-height: 1.5;
+  opacity: 0.97;
+}
+
+/* 用户弹出框 */
+.popper-user {
+  position: absolute;
+  top: 50px;
+  right: -11px;
+  transition: opacity .2s;
+
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  padding: 12px 22px 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  .popper__arrow {
+    display: none;
+  }
+}
+
+/* dialog的遮罩层 */
+.v-modal {
+  opacity: 0;
+}

@@ -1,0 +1,59 @@
+.ant-btn {
+  outline: 0;
+  line-height: 1.5715;
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s cubic-bezier(.645, .045, .355, 1);
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+  padding: 4px 15px;
+  border-radius: 2px;
+  color: #000;
+  border: 1px solid #d5d5d5;
+  background: #fff none;
+}
+
+.ant-btn, .ant-btn:active, .ant-btn:focus {
+  outline: 0;
+}
+
+.ant-btn-primary {
+  color: #fff;
+  border-color: #1890ff;
+  background: #1890ff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .12);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, .045);
+}
+
+.ant-form {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-feature-settings: "tnum", "tnum";
+}
+
+.ant-input-group {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5;
+  list-style: none;
+  font-feature-settings: "tnum", "tnum";
+  position: relative;
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}

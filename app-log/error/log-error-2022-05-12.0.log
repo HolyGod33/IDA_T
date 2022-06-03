@@ -1,5 +1,0 @@
-2022-05-12 10:38:44.771 ERROR 15632 --- [http-nio-8081-exec-7] c.z.i.r.tutor.config.aspect.LogAspect    : null
-2022-05-12 10:39:19.012 ERROR 15632 --- [http-nio-8081-exec-1] c.z.i.r.tutor.config.aspect.LogAspect    : null
-2022-05-12 15:43:18.203 ERROR 10772 --- [http-nio-8081-exec-1] c.z.i.r.tutor.config.aspect.LogAspect    : null
-2022-05-12 16:32:09.418 ERROR 10772 --- [http-nio-8081-exec-2] c.z.i.r.tutor.config.aspect.LogAspect    : 用户已存在
-2022-05-12 17:03:26.084 ERROR 10772 --- [http-nio-8081-exec-1] c.z.i.r.tutor.config.aspect.LogAspect    : null

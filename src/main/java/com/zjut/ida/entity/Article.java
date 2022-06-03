@@ -3,10 +3,7 @@ package com.zjut.ida.entity;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import org.neo4j.ogm.annotation.GeneratedValue;
-import org.neo4j.ogm.annotation.Id;
-import org.neo4j.ogm.annotation.NodeEntity;
-import org.neo4j.ogm.annotation.Relationship;
+import org.neo4j.ogm.annotation.*;
 
 import java.util.List;
 
@@ -29,7 +26,14 @@ public class Article {
     private String citeCount;
     private String partner;
 
-    @Relationship(type = "Published",direction = Relationship.OUTGOING)
+    private String journalAttr;
+    @Property("abstract")
+    private String articleAbstract;
+
+    @Relationship(type = "Publish", direction = Relationship.INCOMING)
+    private List<Scholar> scholarList;
+
+    @Relationship(type = "Published", direction = Relationship.OUTGOING)
     private Journal journal;
 
     public Long getId() {
@@ -87,6 +91,5 @@ public class Article {
     public void setJournal(Journal journal) {
         this.journal = journal;
     }
-
 
 }

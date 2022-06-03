@@ -1,11 +1,13 @@
 package com.zjut.ida.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import lombok.*;
-import org.neo4j.ogm.annotation.*;
-
-import java.beans.ConstructorProperties;
-import java.util.List;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+import org.neo4j.ogm.annotation.GeneratedValue;
+import org.neo4j.ogm.annotation.Id;
+import org.neo4j.ogm.annotation.NodeEntity;
+import org.neo4j.ogm.annotation.Property;
 
 /**
  * @author Casterx on 2019/10/10.
@@ -14,7 +16,7 @@ import java.util.List;
 @NoArgsConstructor
 @NodeEntity
 @ToString
-@JsonIgnoreProperties(value = {"scholarId","entityId"})
+@JsonIgnoreProperties(value = {"scholarId", "entityId"})
 public class Scholar {
 
     @Id
@@ -23,7 +25,6 @@ public class Scholar {
 
     @Property("teacher_id")
     private String teacherId;
-
 
     private String name;
     private String sex;
@@ -39,11 +40,16 @@ public class Scholar {
     private String email;
     private String maxPageCount;
     private String affiliate;
-//    private String scholarId;
+    //    private String scholarId;
 //    private String entityId;
     private String doMain;
 
-    private Article article;
+//    private Article article;
+
+    private String homepage;
+    private String address;
+    private String experience;
+    private String bio;
 
     public Long getId() {
         return id;
@@ -61,12 +67,11 @@ public class Scholar {
         this.name = name;
     }
 
-
-    public Scholar(String name,String organization,String email,String studySpeciality){
-        this.name=name;
-        this.organization=organization;
-        this.email=email;
-        this.studySpeciality=studySpeciality;
-
+    public Scholar(String name, String organization, String email, String studySpeciality) {
+        this.name = name;
+        this.organization = organization;
+        this.email = email;
+        this.studySpeciality = studySpeciality;
     }
+
 }

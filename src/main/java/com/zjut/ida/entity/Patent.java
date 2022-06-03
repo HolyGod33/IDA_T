@@ -6,7 +6,9 @@ import lombok.ToString;
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
-import org.neo4j.ogm.annotation.Property;
+import org.neo4j.ogm.annotation.Relationship;
+
+import java.util.List;
 
 /**
  * @author Casterx on 2019/10/27.
@@ -16,6 +18,7 @@ import org.neo4j.ogm.annotation.Property;
 @NodeEntity
 @ToString
 public class Patent {
+
     @Id
     @GeneratedValue
     private Long id;
@@ -33,6 +36,14 @@ public class Patent {
     private String honoree;
     Achievement achievement;
 
+    private String authorizationDate;
+
+    @Relationship(type = "FirstInvent", direction = Relationship.INCOMING)
+    private Scholar firstScholar;
+
+    @Relationship(type = "SecondInvent", direction = Relationship.INCOMING)
+    private List<Scholar> scholarList;
+
     public Long getId() {
         return id;
     }
@@ -40,4 +51,5 @@ public class Patent {
     public void setId(Long id) {
         this.id = id;
     }
+
 }

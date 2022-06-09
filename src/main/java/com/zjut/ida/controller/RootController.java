@@ -6,11 +6,15 @@ import com.zjut.ida.mkgan.MkganServiceImpl;
 import com.zjut.ida.service.*;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.sound.midi.MidiDevice;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author wly
@@ -88,6 +92,9 @@ public class RootController {
 //    }
 
     @Autowired
+    private RedisTemplate redisTemplate;
+
+    @Autowired
     private MkganServiceImpl mkganService;
 
     @Autowired
@@ -110,31 +117,131 @@ public class RootController {
 
     @RequestMapping(value="/getRecommendList",method = RequestMethod.GET)
     public String getRecommendList(Model model,String studentId,String type){
-        List<Long> list=mkganService.requestRecommendList(type,topN,studentId);
-        switch(type){
-            case MkganConstant.SCHOLAR:
-                List<Scholar> scholarList=scholarService.findScholarsById(list);
-                System.out.println("getRecommendList="+scholarList);
-                model.addAttribute(type,scholarList);
-                break;
-            case MkganConstant.ARTICLE:
-                model.addAttribute(type,articleService.findArticlesById(list));
-                break;
-            case MkganConstant.PATENT:
-                model.addAttribute(type,patentService.findPatentsById(list));
-                break;
-            case MkganConstant.VP:
-                model.addAttribute(type,verticalProjectService.findVerticalProjectsById(list));
-                break;
-            case MkganConstant.HP:
-                model.addAttribute(type,horizontalProjectService.findHorizontalProjectsById(list));
-                break;
-            default:
-                break;
+        List<Map<String,Object>> reslist;
+        if(studentId==null || studentId.equals("null")){
+            reslist= getColdStartList(type,topN);
+        }else{
+            String studentRemapId=getStudentRemapId(studentId);
+            if(!studentRemapId.equals("null") && !studentRemapId.isEmpty()){
+                List<Long> idList=mkganService.requestRecommendList(type,topN,studentId);
+                reslist=getRecList(type,idList);
+            }else{
+                reslist= getColdStartList(type,topN);
+            }
         }
-        System.out.println("type="+type);
+
+        model.addAttribute(type,reslist);
         return "recommend/"+type+"Recommend";
 
+//        List<Long> list=mkganService.requestRecommendList(type,topN,studentId);
+//        switch(type){
+//            case MkganConstant.SCHOLAR:
+//                List<Map<String,Object>> scholarList=scholarService.findHistoryCountByScholarIdList(list);
+//                model.addAttribute(type,scholarList);
+//                break;
+//            case MkganConstant.ARTICLE:
+//                model.addAttribute(type,articleService.findArticlesById(list));
+//                break;
+//            case MkganConstant.PATENT:
+//                model.addAttribute(type,patentService.findPatentsById(list));
+//                break;
+//            case MkganConstant.VP:
+//                model.addAttribute(type,verticalProjectService.findVerticalProjectsById(list));
+//                break;
+//            case MkganConstant.HP:
+//                model.addAttribute(type,horizontalProjectService.findHorizontalProjectsById(list));
+//                break;
+//            default:
+//                break;
+//        }
+//        System.out.println("type="+type+",studentId="+studentId);
+//        return "recommend/"+type+"Recommend";
+
+    }
+
+//    public List<Map<String,Object>> getSuibian(String studentId,String type){
+//        List<Map<String,Object>> reslist;
+//        if(studentId==null || studentId.equals("null")){
+//            System.out.println("冷启动1");
+//            reslist= getColdStartList(type);
+//        }else{
+//            List<Long> idList=mkganService.requestRecommendList(type,topN,studentId);
+//            String studentRemapId=getStudentRemapId(studentId);
+//            if(!studentRemapId.equals("null") && !studentRemapId.isEmpty()){
+//                System.out.println("不是冷启动");
+//                reslist=getRecList(type,idList);
+//            }else{
+//                System.out.println("冷启动2");
+//                reslist= getColdStartList(type);
+//            }
+//        }
+//
+//        return reslist;
+//    }
+
+
+    private<T> List<T> getColdStartList(String type,int topN){
+        List<T> list;
+        switch(type){
+            case MkganConstant.SCHOLAR:
+                List<Map<String,Object>> middleList=scholarService.findColdStartByHistoryCount(topN);
+                System.out.println("getColdStartList===middleList=="+middleList);
+                for(Map<String,Object> map:middleList){
+                    Scholar currentScholar=(Scholar)map.get("scholar");
+                    List<Map<String,Object>> teachStudent=scholarService.findStudentByScholarId(currentScholar.getId());
+                    map.put("teachStudent",teachStudent);
+                }
+                list=(List<T>)middleList;
+                break;
+            case MkganConstant.ARTICLE:
+                list=(List<T>)articleService.findColdStartByHistoryCount(topN);
+                break;
+            case MkganConstant.PATENT:
+                list=(List<T>)patentService.findColdStartByHistoryCount(topN);
+                break;
+            case MkganConstant.VP:
+                list=(List<T>)verticalProjectService.findColdStartByHistoryCount(topN);
+                break;
+            case MkganConstant.HP:
+                list=(List<T>)horizontalProjectService.findColdStartByHistoryCount(topN);
+                break;
+            default:
+                list=null;
+                break;
+        }
+        return list;
+    }
+
+
+    private<T> List<T> getRecList(String type,List<Long> idList){
+        List<T> list;
+        switch(type){
+            case MkganConstant.SCHOLAR:
+                list=(List<T>)scholarService.findHistoryCountByScholarIdList(idList);
+                break;
+            case MkganConstant.ARTICLE:
+                list=(List<T>)articleService.findArticlesById(idList);
+                break;
+            case MkganConstant.PATENT:
+                list=(List<T>)patentService.findPatentsById(idList);
+                break;
+            case MkganConstant.VP:
+                list=(List<T>)verticalProjectService.findVerticalProjectsById(idList);
+                break;
+            case MkganConstant.HP:
+                list=(List<T>)horizontalProjectService.findHorizontalProjectsById(idList);
+                break;
+            default:
+                list=null;
+                break;
+        }
+        return list;
+    }
+
+
+
+    private String getStudentRemapId(String studentd) {
+        return String.valueOf(redisTemplate.opsForValue().get("user_"+studentd));
     }
 
 

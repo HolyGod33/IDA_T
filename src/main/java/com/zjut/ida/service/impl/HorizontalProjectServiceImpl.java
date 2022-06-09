@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Casterx on 2019/10/27.
@@ -34,5 +35,10 @@ public class HorizontalProjectServiceImpl implements HorizontalProjectService {
             horizontalProjectList.add(temp);
         }
         return horizontalProjectList;
+    }
+
+    @Override
+    public List<HorizontalProject> findColdStartByHistoryCount(int topN) {
+        return horizontalProjectDao.findColdStartByHistoryCount(topN);
     }
 }

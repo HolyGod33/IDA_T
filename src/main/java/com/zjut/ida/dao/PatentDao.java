@@ -10,6 +10,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Casterx on 2019/10/27.
@@ -30,5 +31,12 @@ public interface PatentDao extends Neo4jRepository<Patent,Long> {
 
     @Query("match(n:Patent) where id(n)={0} return n")
     Patent findPatentsById(@Param("patentId")Integer patentId);
+
+    @Query("match(n:SysStudent)-[r:History]-(m:Scholar)\n" +
+            "optional match(m)-[r1]-(m1:Patent)\n" +
+            "with m,count(m) as history,m1\n" +
+            "order by history desc\n" +
+            "return m1 limit {0}")
+    List<Patent> findColdStartByHistoryCount(int count);
 
 }

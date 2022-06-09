@@ -11,6 +11,10 @@
     <script type="text/javascript" th:src="@{js/tutor-recommend-system/jquery.animate-shadow-min.js}"></script>
     <script type="text/javascript" th:src="@{js/tutor-recommend-system/constants.js}"></script>
     <script type="text/javascript" th:src="@{js/tutor-recommend-system/utils.js}"></script>
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
 
@@ -24,48 +28,57 @@
     <div class="recommend-box" th:each="scholar:${Scholar}">
         <div class="each-tutor row">
             <div class="avatar col-md-2">
-                <img th:src="@{'img/new/'+${scholar.id}+'.jpg'}" th:onerror="src='img/new/default.jpg'">
+                <img th:src="@{'img/new/'+${scholar.scholar.id}+'.jpg'}" th:onerror="src='img/new/default.jpg'">
             </div>
             <div class="info col-md-13 row">
                 <div class="tutor-name col-md-10">
-                    <a target="_blank"
-                       th:onclick="'addChoose('+${scholar.id}+')'"
-                       th:href="'http://10.12.45.49:8080/ida/scholar/findscholarsbynamelike?scholarName='+${scholar.name}">
+<!--                    <a target="_blank"-->
+<!--                       th:onclick="'addChoose('+${scholar.scholar.id}+')'"-->
+<!--                       th:href="'http://10.12.45.49:8080/ida/scholar/findscholarsbynamelike?scholarName='+${scholar.scholar.name}">-->
 
-                        <span style="color: #333;">[[${scholar.name}]]</span>
+                    <a target="_blank"
+                       th:onclick="'addChoose('+${scholar.scholar.id}+')'"
+                       th:href="'all/findallbyanywords?words='+${scholar.scholar.name}">
+                        <span style="color: #333;">[[${scholar.scholar.name}]]</span>
 <!--                        <span style="color: #333;">xzs</span>-->
                     </a>
-                    <i class="iconfont icon-xingbienan"></i>
+                    <i th:if="${scholar.scholar.sex} eq '男'" class="iconfont icon-xingbienan"></i>
+                    <i th:if="${scholar.scholar.sex} eq '女'" class="iconfont icon-nv"></i>
+<!--                    <i class="iconfont icon-nv"></i>-->
+                    <div class="click-num">
+                        <i class="iconfont icon-dianjiliang"></i>
+                        <span style="color: #333;">点击量：[[${scholar.history}]]</span>
+<!--                        <span style="color: #333;">点击量：33</span>-->
+                    </div>
                 </div>
                 <div class="tutor-organization col-md-6">
                     <i class="iconfont icon-xueyuan"></i>
-                    <span>[[${scholar.organization}?${scholar.organization}:'暂无']]</span>
+                    <span>[[${scholar.scholar.organization}?${scholar.scholar.organization}:'暂无']]</span>
                 </div>
                 <div class="tutor-title col-md-4">
                     <i class="iconfont icon-ziyuan74zhicheng"></i>
-                    <span>[[${scholar.title}?${scholar.title}:'暂无']]</span>
+                    <span>[[${scholar.scholar.title}?${scholar.scholar.title}:'暂无']]</span>
                 </div>
                 <div class="tutor-email col-md-6">
                     <i class="iconfont icon-youxiang1"></i>
-                    <span>[[${scholar.email}?${scholar.email}:'暂无']]</span>
+                    <span>[[${scholar.scholar.email}?${scholar.scholar.email}:'暂无']]</span>
                 </div>
                 <div class="tutor-type col-md-4">
                     <i class="iconfont icon-daoshi--"></i>
-                    <span>[[${scholar.tutorType}?${scholar.tutorType}:'暂无']]</span>
+                    <span>[[${scholar.scholar.tutorType}?${scholar.scholar.tutorType}:'暂无']]</span>
                 </div>
-                <div class="tutor-direction col-md-10">
+                <div class="tutor-direction col-md-6">
                     <i class="iconfont icon-yanjiu"></i>
-                    <span>研究方向：[[${scholar.studySpeciality}?${scholar.studySpeciality}:'暂无']]</span>
+                    <span>[[${scholar.scholar.studySpeciality}?${scholar.scholar.studySpeciality}:'暂无']]方向</span>
                 </div>
             </div>
         </div>
     </div>
 
 
-        <div class="BoxFooter">
-            <i class="iconfont icon-gengduo"></i>
-            <span>查看更多感兴趣的导师</span>
-        </div>
+<!--    <div class="load-more">-->
+<!--        <span class="load-btn"><a href="#">再推荐几条看看</a></span>-->
+<!--    </div>-->
 
     </div>
 
@@ -76,6 +89,7 @@
 
     document.body.οnlοad=getImg;
 
+
     function getImg()
     {
         for(var i=0;i<document.images.length;i++)
@@ -85,16 +99,23 @@
         }
     }
 
+
+
     function addChoose(tutorNeo4jId) {
-        console.log(tutorNeo4jId)
+        console.log("开始addChoose,添加历史交互="+JSON.stringify(tutorNeo4jId))
+        // data={
+        //     studentId:getTokenUserId().studentId,
+        //     tutorNeo4jId:tutorNeo4jId
+        // }
+        // console.log("data="+JSON.stringify(data))
         if (hasToken()) {
             $.ajax({
-                contentType: 'application/json',
-                type: 'POST',
-                url: BASE_URL+"choose/add",
-                dataType: "json",
-                headers: getToken(),
-                data: JSON.stringify(tutorNeo4jId),
+                // contentType: 'application/json',
+                type: 'GET',
+                url: BASE_URL+"choose/add?studentId="+getTokenUserId().studentId+"&tutorNeo4jId="+tutorNeo4jId,
+                // dataType: "json",
+                // headers: getToken(),
+                // data: JSON.stringify(data),
                 success: res => {
                     if (res.result_code !== 0) {
                         removeToken()
@@ -107,6 +128,13 @@
 
     $(document).ready(function () {
         document.getElementById("TeacherRecommendSpinner").style.display = "none"
+
+        $('.load-btn').mouseover(function(){
+            $(".load-btn").css("background","#ECEDF2");
+        });
+        $('.load-btn').mouseout(function(){
+            $(".load-btn").css("background","#eff6ef");
+        });
     })
 
 
@@ -116,7 +144,6 @@
     //         e.target.src = 'img/new/default.jpg';
     //     }
     // },true)
-
 
 
 

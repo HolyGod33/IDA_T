@@ -7,17 +7,26 @@
     <link rel="stylesheet" th:href="@{css/bootstrap.min.css}">
     <link rel="stylesheet" th:href="@{css/tutor-recommend-system/index.css}">
     <script type="text/javascript" src="/ida/js/idahostaddress.js"></script>
+
+<!--    <link rel="stylesheet" href="/ida/css/bootstrap.min.css">-->
+<!--    <link rel="stylesheet" type="text/css" href="/ida/css/displayframe.css">-->
+<!--    <script type="text/javascript" src="/ida/js/newHeader.js"></script>-->
+<!--    <script type="text/javascript" src="/ida/js/idahostaddress.js"></script>-->
+    <link rel="stylesheet" href="/ida/css/iconfont.css">
+
 </head>
 <body style="background-image: url(img/loginBackground.png)">
 
 <!--头部-->
 <div class="pt-0" style="margin-top: -10px;background: #0b1222;">
-    <img src="img/idaLogo1.png" alt="logosa112132122" style="width:10%" class="rounded-circle ml-3"/>
-    <img src="img/idaTitle.png" alt="logosa112132122" style="width:15%;height:15%;" class="mt-3"/>
+    <img src="/ida/img/new/idaLogo1.png" alt="logosa112132122" style="width:10%" class="rounded-circle ml-3"/>
+    <img src="/ida/img/new/idaTitle.png" alt="logosa112132122" style="width:15%;height:15%;" class="mt-3"/>
     <a id="avatar" class="position-absolute" style="left: 92%;top: 5%;color: white;" href="dashboard" target="_blank">个人中心</a>
     <a id="loginoutside" class="position-absolute" style="left: 80%;top: 5%;color: white;" target="_blank">个人中心(校外)</a>
     <a class="position-absolute" style="left: 75%;top: 5%;color: white;" href="/ida">首页</a>
 </div>
+<!--<div th:include="newHeader::commonHeader"></div>-->
+
 
 <!--alert-->
 <div class="alert alert-warning text-center position-absolute custom-alert"

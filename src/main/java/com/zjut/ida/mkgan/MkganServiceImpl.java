@@ -58,7 +58,7 @@ public class MkganServiceImpl {
             String results=response.getBody();
             String[] resultsArray=results.substring(1,results.length()-2).split(",");
             for(int i=0;i<resultsArray.length;i++){
-                System.out.println(resultsArray[i]);
+//                System.out.println(resultsArray[i]);
                 scoredList.add(BigDecimal.valueOf(Double.parseDouble(resultsArray[i])));
             }
         }else{
@@ -146,7 +146,7 @@ public class MkganServiceImpl {
             Integer itemIndex = iter.next().getValue();
             recommendList.add(getItemRemapId(type,itemIndex.toString()));
         }
-        System.out.println("\t recommendList="+recommendList);
+//        System.out.println("\t recommendList="+recommendList);
 
         return recommendList;
     }

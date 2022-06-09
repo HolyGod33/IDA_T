@@ -190,6 +190,7 @@ function setTokenUser(user) {
 // 移除 token
 function removeToken() {
     localStorage.removeItem(TOKEN_KEY)
+    removeTokenUser()
 }
 
 function removeTokenUser() {

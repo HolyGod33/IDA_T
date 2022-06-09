@@ -260,4 +260,19 @@ public class ScholarServiceImpl implements ScholarService {
         }
         return scholarList;
     }
+
+    @Override
+    public List<Map<String, Object>> findHistoryCountByScholarIdList(List<Long> scholarIdList) {
+        return scholarDao.findHistoryCountByScholarIdList(scholarIdList);
+    }
+
+    @Override
+    public List<Map<String, Object>> findColdStartByHistoryCount(int topN) {
+        return scholarDao.findColdStartByHistoryCount(topN);
+    }
+
+    @Override
+    public List<Map<String, Object>> findStudentByScholarId(Long scholarId) {
+        return scholarDao.findStudentByScholarId(scholarId);
+    }
 }

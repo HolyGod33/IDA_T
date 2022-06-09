@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/ida/css/iconfont.css">
+    <link rel="stylesheet" href="/ida/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="/ida/css/displayframe.css">
+<!--    <link rel="stylesheet" type="text/css" th:href="@{css/displayframe.css}">-->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/ida/js/idahostaddress.js"></script>
+    <script type="text/javascript" src="/ida/js/tutor-recommend-system/jquery.animate-shadow-min.js"></script>
+    <script type="text/javascript" src="/ida/js/tutor-recommend-system/constants.js"></script>
+    <script type="text/javascript" src="/ida/js/tutor-recommend-system/utils.js"></script>
+</head>
+<body>
+<footer th:fragment="commonHeader" style="background: #484393;">
+<div class="pt-0" style="margin-top: -10px;background: #0b1222;">
+    <div class="header-left">
+        <div class="logo">
+            <img src="/ida/img/new/idaLogo1.png" alt="logosa112132122" style="width:30%" class="rounded-circle img-responsive"/>
+            <img src="/ida/img/new/idaTitle.png" alt="logosa112132122" style="width:60%;height:15%;" class="img-responsive"/>
+        </div>
+        <!--功能分类-->
+        <div class="top-nav" style="width:65%;">
+            <div class="container">
+                <div class="row">
+                    <div class="span6">
+                        <ul class="nav nav-pills nav-justified">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/ida">推荐首页</a>
+                            </li>
+                            <span style="margin-top: 7px;"></span>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="http://10.12.45.49:8082/ida/index.html#/AllSubject">学科分析</a>
+                            </li>
+                            <span style="margin-top: 7px;"></span>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   href="#">教师分析</a>
+                            </li>
+                            <span style="margin-top: 7px;"></span>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   onclick="jump()"
+                                   href="#">研究团队</a>
+                            </li>
+                            <span style="margin-top: 7px;"></span>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">成果分析</a>
+                            </li>
+                            <span style="margin-top: 7px;"></span>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">评价标准</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="question-icon">
+            <a class="nav-link" href="#" onclick="qa()">
+                <span>智能问答</span>
+                <i class="iconfont icon-wenda"></i>
+            </a>
+        </div>
+        <div class="login-icon">
+            <a class="nav-link" href="/ida/dashboard">
+                <span>个人中心</span>
+                <i class="iconfont icon-denglu1" ></i>
+            </a>
+        </div>
+    </div>
+
+</div>
+</footer>
+
+</body>
+
+</html>

@@ -11,6 +11,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Casterx on 2019/10/17.
@@ -66,12 +67,12 @@ public interface ArticleDao extends Neo4jRepository<Article,Long> {
 
     @Query("match(n:SysStudent)-[r:History]-(m:Scholar)\n" +
             "optional match(m)-[r1]-(m1:Article)\n" +
-            "where id(m) in {0}\n" +
-            "with m,count(m) as historyCount,m1\n" +
-            "order by historyCount desc\n" +
-            "return m1 limit {1}")
-    List<Article> findArticlesByHistory(List<Long> scholarIdList,int count);
+            "with m,count(m) as history,m1\n" +
+            "order by history desc\n" +
+            "return m1 limit {0}")
+    List<Article> findColdStartByHistoryCount(int count);
 
     @Query("match(n:Article) where id(n)={0} return n")
     Article findArticlesById(@Param("articleId")Integer articleId);
+
 }

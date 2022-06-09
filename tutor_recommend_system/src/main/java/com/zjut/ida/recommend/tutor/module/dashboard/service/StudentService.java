@@ -79,9 +79,36 @@ public class StudentService {
     public boolean changeInfo(StudentDTO dto) {
         dto.checkField();
         NSysStudent student = new NSysStudent();
+//        System.out.println("changeInfo dto="+dto);
         BeanUtils.copyProperties(dto, student);
         NSysStudent neo4jStudent=studentDao.findNSysStudentByStudentId(dto.getStudentId());
-
+//        System.out.println("changeInfo neo4jStudent="+neo4jStudent);
+//        System.out.println("changeInfo 前student="+student);
+        if(StringUtils.isBlank(student.getStudentName())){
+//            System.out.println("修改学生姓名");
+            student.setStudentName(neo4jStudent.getStudentName());
+        }
+        if(student.getStudentGender()==null){
+//            System.out.println("修改学生性别");
+            student.setStudentGender(neo4jStudent.getStudentGender());
+        }
+        if(StringUtils.isBlank(student.getCollegeName())){
+//            System.out.println("修改学生学院名字");
+            student.setCollegeName(neo4jStudent.getCollegeName());
+        }
+        if(student.getAdmissionYear()==null){
+//            System.out.println("修改学生入学年份");
+            student.setAdmissionYear(neo4jStudent.getAdmissionYear());
+        }
+        if(StringUtils.isBlank(student.getStudentClass())){
+//            System.out.println("修改学生班级");
+            student.setStudentClass(neo4jStudent.getStudentClass());
+        }
+//        System.out.println("changeInfo student="+student);
+        if (StringUtils.isBlank(dto.getPassword())) {
+            student.setHashSalt(neo4jStudent.getHashSalt());
+            student.setPassword(neo4jStudent.getPassword());
+        }
         // 更新密码
         if (StringUtils.isNotBlank(dto.getPassword())) {
             student.setHashSalt(CommonUtils.random(36, 4));
@@ -191,8 +218,8 @@ public class StudentService {
     }
 
 
-    public boolean addHistory(Long tutorNeo4jId) {
-        studentDao.saveHistory(studentHolder.getStudentId(),tutorNeo4jId);
+    public boolean addHistory(String studentId,Long tutorNeo4jId) {
+        studentDao.saveHistory(studentId,tutorNeo4jId);
         return true;
     }
 }

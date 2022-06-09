@@ -1,6 +1,7 @@
 package com.zjut.ida.service;
 
 import com.zjut.ida.IdaApplication;
+import com.zjut.ida.dao.ScholarDao;
 import com.zjut.ida.entity.Achievement;
 import com.zjut.ida.entity.Article;
 import com.zjut.ida.entity.Partner;
@@ -26,6 +27,9 @@ public class ScholarServiceTest {
 
     @Autowired
     private ScholarService scholarService;
+
+    @Autowired
+    private ScholarDao scholarDao;
 
     @Autowired
     private AchievementService achievementService;
@@ -122,5 +126,20 @@ public class ScholarServiceTest {
     @Test
     public void test2(){
         System.out.println(service.findHorizontalProjectsByScholarName("张元鸣"));
+    }
+
+
+    @Test
+    public void test3(){
+//        List<Map<String,Object>> list=scholarDao.findHistoryCountByScholarId(401428);
+//        System.out.println(list);
+
+//        List<Integer> scholarIdList=new ArrayList<Integer>(){{
+//            add(461334);
+//            add(447719);
+//        }};
+//        List<Map<String,Object>> list=scholarDao.findHistoryCountByScholarIdList(scholarIdList);
+//        System.out.println(list);
+
     }
 }

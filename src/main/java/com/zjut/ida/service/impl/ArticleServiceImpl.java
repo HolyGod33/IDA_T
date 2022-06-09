@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Casterx on 2019/10/17.
@@ -49,5 +50,10 @@ public class ArticleServiceImpl implements ArticleService {
             articleList.add(temp);
         }
         return articleList;
+    }
+
+    @Override
+    public List<Article> findColdStartByHistoryCount(int topN) {
+        return articleDao.findColdStartByHistoryCount(topN);
     }
 }

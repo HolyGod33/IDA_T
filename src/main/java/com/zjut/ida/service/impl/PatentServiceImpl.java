@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Casterx on 2019/10/27.
@@ -34,5 +35,10 @@ public class PatentServiceImpl implements PatentService {
             patentList.add(temp);
         }
         return patentList;
+    }
+
+    @Override
+    public List<Patent> findColdStartByHistoryCount(int topN) {
+        return patentDao.findColdStartByHistoryCount(topN);
     }
 }

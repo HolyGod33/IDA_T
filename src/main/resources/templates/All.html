@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="/ida/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/ida/css/displayframe.css">
+    <script type="text/javascript" src="/ida/js/newHeader.js"></script>
+    <script type="text/javascript" src="/ida/js/idahostaddress.js"></script>
+    <link rel="stylesheet" href="/ida/css/iconfont.css">
 
 </head>
 
 <body>
 
-<div th:include="Header::commonHeader"></div>
+<div th:include="newHeader::commonHeader"></div>
+
 
 <div class="container" >
     <div class="mt-5" th:if="${all.scholarList.size()}eq 0" >
@@ -57,7 +62,8 @@
             <div class="media">
                 <div class="media-body p-2">
                     <!--点击学者姓名后，跳转到详情页-->
-                    <p><h5><a th:href="@{'/scholar/findscholarsbynamelike?scholarName='+${scholar.name}}"><span>[[${scholar.name}]]</span></a>
+<!--                    <p><h5><a th:href="@{'/scholar/findscholarsbynamelike?scholarName='+${scholar.name}}"><span>[[${scholar.name}]]</span></a>-->
+                    <p><h5><a th:href="@{'/aps/profile/'+${scholar.id}+'/'+${scholar.name}}"><span>[[${scholar.name}]]</span></a>
                     &emsp;<small style="font-size: 60%;">[[${scholar.title}?${scholar.title}:_]]</small>
                     &emsp;<small style="font-size: 60%;">[[${scholar.tutorType}?${scholar.tutorType}:_]]</small>
                 </h5></p>

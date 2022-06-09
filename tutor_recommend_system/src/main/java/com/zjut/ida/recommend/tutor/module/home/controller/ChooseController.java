@@ -8,10 +8,7 @@ import com.zjut.ida.recommend.tutor.module.home.service.CFService;
 import com.zjut.ida.recommend.tutor.utils.Response;
 import com.zjut.ida.recommend.tutor.utils.enums.PrivilegeEnum;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author wly
@@ -33,8 +30,12 @@ public class ChooseController {
 //        return Response.bool(cfService.addHistory(tutorNeo4jId));
 //    }
 
-    @PostMapping("add")
-    public JSONObject add(@RequestBody Long tutorNeo4jId) {
-        return Response.bool(studentDao.addHistory(tutorNeo4jId));
+    @GetMapping("add")
+    public JSONObject add(String studentId,Long tutorNeo4jId) {
+        System.out.println("choose/add中的tutorNeo4jId为="+tutorNeo4jId+",studentId="+studentId);
+
+        boolean res=studentDao.addHistory(studentId,tutorNeo4jId);
+        System.out.println("choose/add中的res为="+res);
+        return Response.bool(res);
     }
 }

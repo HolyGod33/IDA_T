@@ -10,6 +10,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Casterx on 2019/10/23.
@@ -31,4 +32,11 @@ public interface VerticalProjectDao extends Neo4jRepository<VerticalProject,Long
     @Query("match(n:VerticalProject) where id(n)={0} return n")
     VerticalProject findVerticalProjectsById(@Param("verticalProjectId")Integer verticalProjectId);
 
+
+    @Query("match(n:SysStudent)-[r:History]-(m:Scholar)\n" +
+            "optional match(m)-[r1]-(m1:VerticalProject)\n" +
+            "with m,count(m) as history,m1\n" +
+            "order by history desc\n" +
+            "return m1 limit {0}")
+    List<VerticalProject> findColdStartByHistoryCount(int count);
 }

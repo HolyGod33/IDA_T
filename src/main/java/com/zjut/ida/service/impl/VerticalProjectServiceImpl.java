@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Casterx on 2019/10/23.
@@ -34,5 +35,10 @@ public class VerticalProjectServiceImpl implements VerticalProjectService {
             verticalProjectList.add(temp);
         }
         return verticalProjectList;
+    }
+
+    @Override
+    public List<VerticalProject> findColdStartByHistoryCount(int topN) {
+        return verticalProjectDao.findColdStartByHistoryCount(topN);
     }
 }

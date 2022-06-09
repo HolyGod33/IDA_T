@@ -65,20 +65,28 @@
         }
     </style>
 
+    <link rel="stylesheet" href="/ida/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/ida/css/displayframe.css">
+    <script type="text/javascript" src="/ida/js/newHeader.js"></script>
+    <script type="text/javascript" src="/ida/js/idahostaddress.js"></script>
+    <link rel="stylesheet" href="/ida/css/iconfont.css">
+
 </head>
 
 <body style="margin: 0px">
-    <div class="container-fluid" id="loadingDiv"
-         style="position: absolute;z-index: 10;background-color:rgba(255,255,255,0.3);width: 100%;height: 100%;display: none">
-        <img id="gifImg" src="/ida/img/loading-2.gif" class="text-center"
-             style="z-index: 10;position:absolute;top: 52%;left:48%"/>
-    </div>
+<!--    <div class="container-fluid" id="loadingDiv"-->
+<!--         style="position: absolute;z-index: 10;background-color:rgba(255,255,255,0.3);width: 100%;height: 100%;display: none">-->
+<!--        <img id="gifImg" src="/ida/img/loading-2.gif" class="text-center"-->
+<!--             style="z-index: 10;position:absolute;top: 52%;left:48%"/>-->
+<!--    </div>-->
 
 
-    <div class="row" style="padding-top: 0px;margin-top: -10px;background: #484393;">
-        <img src="/ida/img/idaLogo1.png" alt="logosa112132122" style="cursor: pointer;width:10%" class="rounded-circle ml-3" onclick="window.location='/ida'" />
-        <img src="/ida/img/idaTitle.png" alt="logosa112132122" style="cursor: pointer;width:15%;height:15%;margin-top:2%" onclick="window.location='/ida'"/>
-    </div>
+<!--    <div class="row" style="padding-top: 0px;margin-top: -10px;background: #484393;">-->
+<!--        <img src="/ida/img/idaLogo1.png" alt="logosa112132122" style="cursor: pointer;width:10%" class="rounded-circle ml-3" onclick="window.location='/ida'" />-->
+<!--        <img src="/ida/img/idaTitle.png" alt="logosa112132122" style="cursor: pointer;width:15%;height:15%;margin-top:2%" onclick="window.location='/ida'"/>-->
+<!--    </div>-->
+
+<div th:include="newHeader::commonHeader"></div>
 
         <div id='container'>
             <div id='button_container'>

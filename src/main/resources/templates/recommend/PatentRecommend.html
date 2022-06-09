@@ -15,42 +15,37 @@
 <body>
 <div class="show-recommend-result">
 
-    <div class="recommend-box row" th:each="paper:${Article}">
+    <div class="recommend-box row" th:each="patent:${Patent}">
         <div class="recommend-subTitle col-10">
-            <span>[[${paper.title}]]</span>
+            <span>[[${patent.name}]]</span>
         </div>
         <div class="paper-info row">
             <div class="first-info col-5">
                 <i class="iconfont icon-zuozhe"></i>
-                <span style="font-weight: bold">作者：</span>
-                <span>[[${paper.partner}?${paper.partner}:'暂无']]</span>
+                <span style="font-weight: bold">第一发明人：</span>
+                <span>[[${patent.firstInventor}?${patent.firstInventor}:'暂无']]</span>
             </div>
 
             <div class="second-info col-5">
-                <i class="iconfont icon-nianfen"></i>
-                <span style="font-weight: bold">年份：</span>
-                <span>[[${paper.year}?${paper.year}:'暂无']]</span>
+                <i class="iconfont icon-zhuanlixinxi"></i>
+                <span style="font-weight: bold">类型：</span>
+                <span>[[${patent.type}?${patent.type}:'暂无']]</span>
             </div>
 
-            <div class="third-info col-5">
-                <i class="iconfont icon-zazhiqikan"></i>
-                <span style="font-weight: bold">期刊：</span>
-                <span>[[${paper.journal}?${paper.journal.name}:'暂无']]</span>
-            </div>
 
             <div class="each-info col-5">
-                <i class="iconfont icon-yinyongliang"></i>
-                <span style="font-weight: bold">引用量：</span>
-                <span>[[${paper.citeCount}?${paper.citeCount}:'0']]</span>
+                <i class="iconfont icon-shijian"></i>
+                <span style="font-weight: bold">授权日期：</span>
+                <span>[[${patent.applyDate}?${patent.applyDate}:'暂无']]</span>
             </div>
-            <div class="each-info col-12">
-                <i class="iconfont icon-guanjianzi"></i>
-                <span style="font-weight: bold">关键字：</span>
-                <span>[[${paper.keyWord}?${paper.keyWord}:'暂无']]</span>
+
+            <div class="third-info col-6">
+                <i class="iconfont icon-suoshuzuzhi"></i>
+                <span style="font-weight: bold">所属学院：</span>
+                <span>[[${patent.organization}?${patent.organization}:'暂无']]</span>
             </div>
         </div>
     </div>
-
 
 
 <!--    <div class="load-more">-->

@@ -82,24 +82,6 @@ public class MkganController {
         return "recommend/"+type+"Recommend";
 
 
-
-//        switch(type){
-//            case MkganConstant.SCHOLAR:
-//                list=mkganService.requestRecommendList(type,topN,studentId);
-//                model.addAttribute(type,scholarService.findScholarsById(list));
-//                break;
-//            case MkganConstant.ARTICLE:
-//            case MkganConstant.PATENT:
-//            case MkganConstant.VP:
-//            case MkganConstant.HP:
-//                list=mkganService.requestRecommendList(type,topN,studentId);
-//                model.addAttribute(type,scholarService.findScholarsById(list));
-//            break;
-//            default:
-//                break;
-//
-//        }
-
     }
 
 

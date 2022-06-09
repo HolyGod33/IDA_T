@@ -91,6 +91,7 @@ public class UniversalInterceptor implements AsyncHandlerInterceptor {
     }
 
     private void clear() {
+        System.out.println("调用了clear，清除用户登录状态");
         if (stuHolder.exist()) {
             stuHolder.clear();
         }
